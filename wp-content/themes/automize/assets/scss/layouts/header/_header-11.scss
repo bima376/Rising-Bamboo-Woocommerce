@@ -1,0 +1,132 @@
+/* Default Header 11 */
+.rbb-default-header {
+	&.header-11 {
+		.header-policy {
+			overflow-x: auto;
+		}
+		.sidebar-header11-top-content {
+			width: 25%;
+			min-width: 355px;
+			.wp-block-media-text {
+				display: flex;
+				align-items: center;
+				padding: 21px 0;
+				.wp-block-media-text__media {
+					width: 40px;
+					margin-right: 20px;
+				}
+				.wp-block-media-text__content {
+					padding-left: 10px;
+					p {
+						&:first-child {
+							margin-bottom: 5px;
+						}
+						&:last-child {
+							font-size: 12px;
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+		.rbb-header-sticky {
+			.header-inner {
+				.vertical-menu {
+					.vertical-menu-title i {
+						border-right: none;
+					}
+					.menu-container {
+						border-radius: 10px;
+					}
+				}
+				.rbb-product-search-content {
+					.button-icon {
+						width: 44px !important;
+						&:hover {
+							.search-icon {
+								color: var(--rbb-general-secondary-color);
+							}
+						}
+						.search {
+							display: none;
+						}
+					}
+				}
+			}
+			&.header-stuck {
+				.header-inner {
+					box-shadow: none;
+					height: 100%;
+					padding: 0;
+					.header-top {
+						height: 100%;
+						position: absolute;
+						width: 100%;
+						top: 0;
+						left: 50%;
+						transform: translateX(-50%);
+						background-color: var(--rbb-menu-sticky-background-color);
+						> div {
+							height: 100%;
+						}
+					}
+					.rbb-branding {
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						left: 15px;
+					}
+					.header-policy {
+						display: none;
+					}
+					.header-right-group {
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						right: 15px;
+					}
+					.vertical-menu {
+						display: none;
+					}
+					@media (min-width: 1024px) {
+						.rbb-main-navigation {
+							ul {
+								li.level-1 {
+									&.active-parent > a,
+									&.active > a,
+									> a:hover {
+										color: var(--rbb-general-link-hover-color);
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+	.rbb-default-header {
+		&.header-11 {
+			.toggle-megamenu .icon-directional,
+			.toggle-megamenu {
+				&::after,
+				&::before {
+					background: #fff;
+				}
+			}
+			.rbb-search-categories {
+				display: none;
+			}
+			.rbb-product-search-content {
+				.input-group {
+					max-width: 230px;
+				}
+			}
+			#rbb-branding a img.logo {
+				max-width: 150px;
+			}
+		}
+	}
+}

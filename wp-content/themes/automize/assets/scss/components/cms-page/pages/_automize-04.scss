@@ -1,0 +1,49 @@
+// .................homepage 4.................
+body {
+	&:not(.automize-04) {
+		.rbb-default-header {
+			&.header-4 {
+				.rbb-header-sticky {
+					box-shadow: 4px 7px 15px 0 rgba(0, 0, 0, 0.1098039216);
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1366px) and (max-width: 1500px) {
+	.Group-slider {
+		.elementor-column-gap-custom {
+			.elementor-col-50 {
+				width: 48%;
+			}
+			.elementor-col-25 {
+				width: 26%;
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.category-title {
+		.elementor-heading-title {
+			font-size: 14px !important;
+			padding: 0 15px;
+			height: 45px;
+			line-height: 45px;
+			border-radius: 5px;
+			background-color: #f1f1f1;
+			&::after {
+				content: "\e9fe";
+				font-family: rbb-font, serif;
+				float: right;
+			}
+			&.active {
+				&::after {
+					content: "\e9f7";
+				}
+			}
+		}
+		.elementor-inner-section {
+			display: none;
+		}
+	}
+}

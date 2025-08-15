@@ -1,0 +1,70 @@
+// .................homepage 5.................
+@media (min-width: 1366px) {
+	body {
+		&.automize-05 {
+			.header-2 + div {
+				.group-left {
+					width: 0% !important;
+				}
+				.group-slider {
+					width: 80% !important;
+				}
+				.group-right {
+					width: 25% !important;
+					.banner-image {
+						max-width: 285px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1366px) and (max-width: 1500px) {
+	body {
+		&.automize-05 {
+			.group-left {
+				width: 28.7% !important;
+			}
+			.group-slider {
+				width: 51.5% !important;
+			}
+			.group-right {
+				width: 30% !important;
+				.banner-image {
+					max-width: 285px;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1200px) and (max-width: 1365px) {
+	body {
+		&.automize-05 {
+			.group-left {
+				width: 12% !important;
+			}
+			.group-slider {
+				width: 58% !important;
+			}
+			.group-right {
+				width: 40% !important;
+				.banner-image {
+					max-width: 280px;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1280px) {
+	body {
+		&.automize-05 {
+			.rbb-default-header {
+				&.header-5 {
+					.vertical-menu-title {
+						pointer-events: none;
+					}
+				}
+			}
+		}
+	}
+}

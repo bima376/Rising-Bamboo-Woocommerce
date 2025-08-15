@@ -1,0 +1,155 @@
+// ..........newsletter..............
+.newsletter-style2 {
+	form.wpcf7-form {
+		.footer-form {
+			p {
+				margin-bottom: 0;
+			}
+			.wpcf7-form-control-wrap {
+				display: block;
+				input {
+					background: #fff;
+					border-radius: 5px;
+					box-shadow: 3px 3px 6px #00000014;
+					&::placeholder {
+						color: #a1a1a1;
+						letter-spacing: 1px;
+					}
+				}
+			}
+			.button {
+				z-index: 9;
+				position: absolute;
+				top: 5px;
+				right: 5px;
+				width: auto;
+				height: 56px;
+				border-radius: 5px;
+				min-width: 155px;
+				text-align: center;
+				margin: 0;
+				&:hover {
+					background-color: var(--rbb-general-primary-color);
+				}
+			}
+			&.submitting {
+				.wpcf7-spinner {
+					z-index: 11;
+				}
+			}
+			.wpcf7-spinner {
+				bottom: auto;
+				top: 17px;
+				left: auto;
+				right: 22px;
+			}
+		}
+	}
+}
+body {
+	#rbb-promotion-popup {
+		z-index: 99999;
+		.rbb-modal-dialog {
+			max-width: 920px;
+			.rbb-promotion-popup-inner {
+				.newsletter-form {
+					.footer-form {
+						.wpcf7-form-control-wrap {
+							input {
+								background: transparent;
+								text-align: center;
+								margin-bottom: 20px;
+								border:
+									1px solid
+									var(--rbb-general-secondary-color);
+								border-style: dashed;
+								border-width: 1px;
+								transition: 0s;
+								&:focus {
+									border:
+										1px solid
+										var(--rbb-general-primary-color);
+									border-style: dashed;
+									border-width: 1px;
+								}
+								&::placeholder {
+									color: #aaa;
+									font-size: 10px;
+									font-weight: 500;
+								}
+							}
+						}
+						.button {
+							top: auto;
+							position: relative;
+							width: 100%;
+							right: 0;
+							font-size: var(--typography-button-font-size);
+							height: 50px;
+							margin-bottom: 0;
+							transition: 0.35s;
+							background: var(--rbb-general-primary-color);
+							&:hover {
+								background: var(--rbb-general-secondary-color);
+							}
+						}
+						.wpcf7-spinner {
+							bottom: 11px;
+							top: auto;
+							right: 50%;
+							z-index: 9;
+							transform: translateX(50%);
+						}
+					}
+				}
+				#rbb_dont_show_again {
+					width: 20px;
+					height: 20px;
+					border-radius: 3px;
+					border-width: 1px;
+					border-style: solid;
+					border-color: var(--rbb-account-input-border-color);
+					margin-right: 10px;
+					position: relative;
+					&:focus {
+						box-shadow: none;
+					}
+					&:checked {
+						background: var(--rbb-general-primary-color);
+						&::before {
+							content: "\eb43";
+							font-size: 10px;
+							color: #fff;
+							display: inline-block;
+							border-radius: 3px;
+							position: absolute;
+							top: 4px;
+							left: 4px;
+							line-height: 13px;
+							text-align: center;
+							transition: 0.3s;
+							z-index: 1;
+							font-family: rbb-font, serif;
+							background: var(--rbb-general-primary-color);
+						}
+					}
+				}
+			}
+		}
+		&.promotion {
+			.rbb-modal-dialog .rbb-modal-header .rbb-close-modal {
+				right: 50%;
+				transform: translateX(50%);
+				top: -67px;
+			}
+		}
+	}
+}
+@media (max-width: 370px) {
+	.rbb-promotion-popup-inner {
+		.desc {
+			max-width: 260px;
+			display: inline-block;
+		}
+	}
+}

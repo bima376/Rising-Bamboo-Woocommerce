@@ -1,0 +1,41 @@
+.footer-contact3 {
+	.elementor-icon-list-item {
+		a {
+			width: auto !important;
+			&:hover {
+				span {
+					color: var(--rbb-general-link-hover-color) !important;
+				}
+			}
+		}
+		.elementor-icon-list-text {
+			span {
+				font-size: 18px;
+				font-weight: bold;
+			}
+		}
+		&:hover {
+			.elementor-icon-list-icon {
+				svg {
+					animation: hexagonIcon 1s linear infinite;
+				}
+			}
+		}
+	}
+}
+.footer-6 {
+	.elementor-shortcode {
+		.content {
+			color: var(--rbb-general-body-text-color);
+			i {
+				color: #000;
+			}
+			p {
+				color: var(--rbb-title-color);
+				strong {
+					color: var(--rbb-title-color);
+				}
+			}
+		}
+	}
+}

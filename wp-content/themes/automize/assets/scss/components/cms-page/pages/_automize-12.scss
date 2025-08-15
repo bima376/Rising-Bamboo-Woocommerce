@@ -1,0 +1,62 @@
+// .................homepage 12.................
+body {
+	&.automize-12 {
+		.group-banner {
+			.elementor-container {
+				margin: 0 -5px;
+			}
+			.banner-8 {
+				> div {
+					> div {
+						border-radius: 0;
+					}
+				}
+			}
+		}
+		.rbb_woo_products {
+			&.flash-sale {
+				.thumbnail-container {
+					max-width: 385px;
+					margin: 0 auto;
+				}
+				.item-product {
+					.product-popup {
+						padding: 0 30px 20px;
+					}
+				}
+			}
+		}
+		.rbb-testimonial {
+			&.layout-3 {
+				.item-content {
+					> div {
+						&:last-child {
+							background: #fff;
+							&::before {
+								border-right-color: #fff;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1366px) and (max-width: 1500px) {
+	body {
+		&.automize-12 {
+			.rbb_woo_products {
+				&.flash-sale {
+					.thumbnail-container {
+						max-width: 340px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 1199px) {
+	body.automize-12 .rbb_woo_products.flash-sale .thumbnail-container {
+		max-width: 417px;
+	}
+}

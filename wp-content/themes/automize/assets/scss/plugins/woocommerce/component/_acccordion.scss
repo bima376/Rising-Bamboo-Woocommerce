@@ -1,0 +1,61 @@
+.rbb-accordion {
+	.rbb-accordion-title {
+		font-size: 16px;
+		color: #909090;
+		padding: 13px 0;
+		border-bottom: 1px solid #ededed;
+		position: relative;
+		transition: 0.3s;
+		&:after {
+			content: "\eaf4";
+			position: absolute;
+			font-family: "rbb-font" !important;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 0px;
+			font-size: 18px;
+			font-weight: 400;
+		}
+		&:hover,
+		&.act {
+			color: var(--rbb-general-primary-color);
+			border-bottom: 1px solid var(--rbb-general-primary-color);
+		}
+	}
+	.rbb-accordion-content {
+		#tab-description{
+			h2 {
+				display: none;
+			}
+			h3{
+				font-size: 18px;
+				color: var(--rbb-title-color);
+				padding:10px 0px;
+			}
+			ul {
+				li {
+					position: relative;
+					padding: 0 0 12px 20px;
+					&::before {
+						content: "";
+						position: absolute;
+						width: 8px;
+						height: 8px;
+						left: 0;
+						top: 9px;
+						border-radius: 100%;
+						border: 1px solid #bdbdbd;
+					}
+				}
+			}
+			ol {
+				margin-left: 40px;
+				list-style-type: decimal;
+				li {
+					position: relative;
+					padding: 0 0 12px 0;
+				}
+			}
+		}
+	}
+}

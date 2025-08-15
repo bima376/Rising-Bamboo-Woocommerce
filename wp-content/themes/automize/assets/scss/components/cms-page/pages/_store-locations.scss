@@ -1,0 +1,25 @@
+// .............Store-Locations ...............
+body {
+	&.store-locations {
+		.elementor-button-link {
+			color: var(--rbb-general-button-hover-color);
+			background: var(--rbb-general-button-color);
+			&:hover {
+				background: var(--rbb-general-button-bg-hover-color);
+			}
+		}
+	}
+}
+.border-image {
+	.elementor-widget-container {
+		overflow: hidden;
+	}
+}
+@media (max-width: 767px) {
+	.order-1 {
+		order: 1 !important;
+	}
+	.order-2 {
+		order: 2 !important;
+	}
+}

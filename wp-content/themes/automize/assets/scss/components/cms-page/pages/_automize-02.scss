@@ -1,0 +1,103 @@
+// .................homepage 2.................
+.automize-02 {
+	.rbb-default-header.header-2 {
+		margin-bottom: 0;
+	}
+	.rbb-elementor-slider {
+		&.single {
+			.rbb-slick-carousel {
+				&.slick-slider {
+					.slick-dots {
+						left: 35px;
+						transform: translateX(0);
+					}
+				}
+			}
+		}
+
+	}
+	@media (min-width: 768px) and (max-width: 1023px) {
+		.policy-icon2 {
+			.elementor-image-box-wrapper {
+				display: block !important;
+				align-items: center;
+				.elementor-image-box-img {
+					margin: 0 0 20px 0 !important;
+				}
+			}
+		}
+	}
+}
+.contact_phone {
+	.elementor-icon-list-icon {
+		animation: phone 1s linear infinite;
+	}
+}
+// ................... gallery ..............
+.gallery-content {
+	.elementor-image-gallery {
+		overflow: hidden;
+		.gallery {
+			overflow: hidden;
+			margin: 0 -28.5%;
+			transition: transform 0.4s cubic-bezier(0.29, 0.63, 0.44, 1);
+			display: flex;
+			.gallery-item {
+				padding: 5px;
+				.gallery-icon {
+					overflow: hidden;
+					a {
+						overflow: hidden;
+						img {
+							transition: all 1.5s ease-out;
+						}
+						&:hover {
+							img {
+								transform: scale(1.07, 1.07);
+							}
+						}
+					}
+				}
+			}
+		}
+		@media (max-width: 767px) {
+			.gallery {
+				margin: 0 -40%;
+			}
+		}
+	}
+	.itemy_parallax {
+		margin-bottom: 0;
+	}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+	.flash-sale-home2 {
+		.rbb_woo_products {
+			&.flash-sale {
+				.item-product {
+					.thumbnail-container {
+						order: 1;
+						float: left;
+						width: 50%;
+					}
+					.product_info {
+						order: 2;
+						padding: 0 15px;
+						margin-top: 120px;
+						width: 50%;
+						float: right;
+					}
+					.item-countdown {
+						width: 50%;
+						right: 0;
+						position: absolute;
+						.rbb-countdown {
+							margin-top: 15px;
+							padding-left: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

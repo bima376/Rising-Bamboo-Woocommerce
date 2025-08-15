@@ -1,0 +1,32 @@
+.footer-2 {
+	.elementor-shortcode {
+		.content {
+			color: #666;
+			i {
+				color: #000;
+			}
+			p {
+				color: var(--rbb-title-color);
+				strong {
+					color: var(--rbb-title-color);
+				}
+			}
+		}
+	}
+}
+footer {
+	.newsletter-style2 {
+		form.wpcf7-form .footer-form {
+			.wpcf7-form-control-wrap input {
+				height: 54px;
+			}
+			.button {
+				top: 4px;
+				right: 4px;
+				min-width: 109px;
+				line-height: 46px;
+				height: 46px;
+			}
+		}
+	}
+}

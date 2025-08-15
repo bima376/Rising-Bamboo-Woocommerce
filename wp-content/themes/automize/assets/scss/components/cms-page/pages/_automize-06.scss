@@ -1,0 +1,183 @@
+// .................homepage 6.................
+body {
+	&.automize-06 {
+		.newsletter form.wpcf7-form .footer-form .button:hover {
+			background: color-mix(in srgb, var(--rbb-general-secondary-color) 80%, #000 30%);
+		}
+		.rbb_woo_products:not(.flash-sale) {
+			.item-product {
+				.woosw-wishlist .woosw-btn {
+					font-size: calc(var(--rbb-wishlist-icon-size) * 0.64);
+				}
+				.product_info {
+					>.product-title {
+						.product_name {
+							color: #fff;
+						}
+					}
+					>.product_ratting {
+						.ratting-count {
+							color: #c3c3c3;
+						}
+					}
+					> .product_price {
+						> .woocommerce-Price-amount bdi {
+							color: var(--rbb-general-secondary-color);
+						}
+					}
+					.product-popup {
+						padding: 0 10px 10px;
+						border-bottom-left-radius: 10px;
+						border-bottom-right-radius: 10px;
+						> .product_price {
+							> .woocommerce-Price-amount bdi {
+								color: var(--rbb-general-secondary-color);
+							}
+						}
+					}
+				}
+			}
+		}
+		.rbb_posts {
+			&.default {
+				.blog_item {
+					.blog_date {
+						color: rgba(255, 255, 255, 20%) !important;
+						i {
+							color: rgba(255, 255, 255, 20%);
+						}
+					}
+					.blog_title {
+						color: #fff;
+						transition: 0.3s;
+						&:hover {
+							color: var(--rbb-general-link-hover-color);
+						}
+					}
+					.content {
+						color: #fff;
+					}
+				}
+				.blog-right {
+					&::-webkit-scrollbar-track {
+						border-left: 1px solid hsla(0, 0%, 100%, 0.1);
+						border-right: 1px solid hsla(0, 0%, 100%, 0.1);
+						background-color: #22282f;
+					}
+					&::-webkit-scrollbar-thumb {
+						background-color: #070d12;
+						border: 3px solid transparent;
+						background-clip: content-box;
+						&:hover {
+							background-color: var(--rbb-general-secondary-color);
+						}
+					}
+					.blog_item {
+						border-color: hsla(0, 0%, 100%, 0.1);
+					}
+				}
+			}
+		}
+		@media (min-width: 768px) and (max-width: 1023px) {
+			.policy-icon2 {
+				.elementor-image-box-wrapper {
+					display: block !important;
+					align-items: center;
+					.elementor-image-box-img {
+						margin: 0 0 20px 0 !important;
+					}
+				}
+			}
+		}
+		@media (min-width: 1023px) and (max-width: 1200px) {
+			.category-title .elementor-heading-title {
+				padding: 0 25px !important;
+			}
+		}
+		@media (min-width: 767px) and (max-width: 1023px) {
+			.category-title {
+				.elementor-inner-column::before {
+					right: 0 !important;
+				}
+				.elementor-heading-title {
+					padding: 0 25px !important;
+					&::after {
+						top: 3px !important;
+					}
+				}
+			}
+		}
+	}
+	.group-product {
+		.category-title {
+			position: relative;
+			@media (min-width: 768px) {
+				.elementor-heading-title {
+					position: relative;
+					z-index: 2;
+					padding: 0 35px;
+					&::after {
+						background-color: #091017;
+						content: "";
+						height: 50%;
+						left: 0;
+						position: absolute;
+						top: 0;
+						width: 100%;
+						z-index: -1;
+					}
+				}
+			}
+			@media (max-width: 767px) {
+				.elementor-heading-title {
+					color: #000 !important;
+				}
+			}
+		}
+		.rbb_woo_products {
+			&::before {
+				content: "";
+				width: 1px;
+				height: calc(100% - 73px);
+				left: -50px;
+				position: absolute;
+				top: 35px;
+				background: hsla(0, 0%, 100%, 0.1);
+				z-index: 1;
+				@media (min-width: 767px) and (max-width: 1023px) {
+					left: -10px;
+				}
+			}
+			.rbb-slick-carousel {
+				margin-bottom: 0;
+				.slick-dots {
+					bottom: auto;
+					top: -60px;
+					right: 0;
+					width: auto;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1370px) and (max-width: 1500px) {
+	body {
+		.group-product .category-title .elementor-heading-title {
+			padding: 0 29px;
+		}
+	}
+}
+@media (max-width: 1200px) {
+	.banner-group-left {
+		> .elementor-column-gap-default {
+			display: block !important;
+		}
+	}
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+	.group-product {
+		.rbb_woo_products .item-product .product_button .button .add-to-cart-icon span {
+			padding: 0 7px;
+		}
+	}
+}

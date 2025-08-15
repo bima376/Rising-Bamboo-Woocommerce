@@ -1,0 +1,29 @@
+// .................homepage 10.................
+body {
+	&.automize-10 {
+		.rbb_woo_products {
+			&.layout-4 {
+				.title_left {
+					> div {
+						justify-content: center;
+					}
+				}
+				.slick-dots {
+					li {
+						button {
+							background: #c2c2c2;
+							&:hover {
+								background: var(--rbb-general-secondary-color);
+							}
+						}
+						&.slick-active {
+							button {
+								background: var(--rbb-general-secondary-color);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

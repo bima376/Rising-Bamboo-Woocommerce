@@ -1,0 +1,37 @@
+// .................homepage 12.................
+body {
+	&.automize-11 {
+		.banner-3 {
+			border-radius: 0;
+		}
+		.rbb_woo_products {
+			&.layout-3 {
+				.all-products {
+					display: none;
+				}
+			}
+		}
+		.content-img-compare {
+			.desc {
+				color: var(--rbb-general-body-text-color);
+			}
+			.content-text {
+				padding-top: 65px;
+				ul {
+					li {
+						> div {
+							.content {
+								.description {
+									color: var(--rbb-general-body-text-color);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.content-img-compare .rbb-text-ba .rbb-ba-text {
+			color: #000;
+		}
+	}
+}
