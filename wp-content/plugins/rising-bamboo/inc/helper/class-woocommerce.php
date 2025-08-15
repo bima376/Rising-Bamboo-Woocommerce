@@ -79,6 +79,20 @@ class Woocommerce extends Singleton {
 			}
 			$args['category'] = $cat_slug;
 			$args['limit']    = $limit;
+		} elseif ( 'brand' === $by ) {
+			$brands     = self::get_brands_by_ids($ids);
+			$brand_slug = [];
+			foreach ( $brands as $brand ) {
+				$brand_slug[] = $brand->slug;
+			}
+			$args['tax_query'] = [
+				[
+					'taxonomy' => 'product_brand',
+					'field'    => 'slug',
+					'terms'    => $brand_slug,
+				],
+			];
+			$args['limit']     = $limit;
 		} elseif ( 'id' === $by ) {
 			$args['include'] = (array) $ids;
 			$args['limit']   = -1;
@@ -123,6 +137,25 @@ class Woocommerce extends Singleton {
 		return get_terms(
 			[
 				'taxonomy' => 'product_cat',
+				'include'  => (array) $ids,
+				'orderby'  => $oder_by,
+				'order'    => $oder,
+			]
+		);
+	}
+
+	/**
+	 * Get brands by ids.
+	 *
+	 * @param mixed  $ids Ids.
+	 * @param string $oder_by Order by.
+	 * @param string $oder Order.
+	 * @return int[]|string|string[]|\WP_Error|\WP_Term[]
+	 */
+	public static function get_brands_by_ids( $ids, string $oder_by = 'none', string $oder = 'ASC' ) {
+		return get_terms(
+			[
+				'taxonomy' => 'product_brand',
 				'include'  => (array) $ids,
 				'orderby'  => $oder_by,
 				'order'    => $oder,

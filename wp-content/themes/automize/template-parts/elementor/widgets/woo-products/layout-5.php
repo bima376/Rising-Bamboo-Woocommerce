@@ -73,6 +73,39 @@ if ( count($data['products']) ) {
 							</select>
 						<?php } ?>
 						<?php
+					} elseif ( 'brand' === $data['type'] ) {
+						?>
+						<?php
+						$brand_count = count($data['brands']);
+						if ( '1' < $brand_count || ( $show_filter && '1' === $brand_count ) ) {
+							?>
+							<select class="appearance-none"
+									data-class="relative inset-0 px-[30px] font-extrabold text-base uppercase cursor-pointer transition-all duration-200 ease-in border-2 rounded-3xl"
+									data-ajax='{
+										"action": "rbb_get_products_by_brand",
+										"fragment": "item-3",
+										"order_by" : "<?php echo esc_attr($order_by); ?>",
+										"order" : "<?php echo esc_attr($order); ?>",
+										"limit" : "<?php echo esc_attr($limit); ?>",
+										"show_wishlist" : <?php echo esc_attr(( $show_wishlist ) ? '1' : '0'); ?>,
+										"show_rating" : <?php echo esc_attr(( $show_rating ) ? '1' : '0'); ?>,
+										"show_quickview" : <?php echo esc_attr(( $show_quickview ) ? '1' : '0'); ?>,
+										"show_compare" : <?php echo esc_attr(( $show_compare ) ? '1' : '0'); ?>,
+										"show_add_to_cart" : <?php echo esc_attr(( $show_add_to_cart ) ? '1' : '0'); ?>
+										"show_countdown" : <?php echo esc_attr(( $show_countdown ) ? '1' : '0'); ?>,
+										"show_percentage_discount" : <?php echo esc_attr(( $show_percentage_discount ) ? '1' : '0'); ?>,
+										"show_stock" : <?php echo esc_attr(( $show_stock ) ? '1' : '0'); ?>,
+										"show_custom_field" : <?php echo esc_attr(( $show_custom_field ) ? '1' : '0'); ?>,
+										"custom_fields" : <?php echo wp_json_encode($custom_fields); ?>,
+										"custom_field_ignore" : <?php echo wp_json_encode($custom_field_ignore); ?>
+									}'
+							>
+								<?php foreach ( $data['brands'] as $brand_id => $brand ) { ?>
+									<option value="<?php echo esc_attr($brand_id); ?>"><?php echo wp_kses_post($brand); ?></option>
+								<?php } ?>
+							</select>
+						<?php } ?>
+						<?php
 					}
 					?>
 				</div>

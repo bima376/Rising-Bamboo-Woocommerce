@@ -149,6 +149,7 @@ class Products extends Base {
 				'options' => [
 					'category' => __('Category', App::get_domain()),
 					'product'  => __('Product', App::get_domain()),
+					'brand'    => __('Brand', App::get_domain()),
 				],
 			]
 		);
@@ -195,6 +196,30 @@ class Products extends Base {
 				],
 				'condition'      => [
 					$this->get_name_setting('type') => 'product',
+				],
+			]
+		);
+
+		$this->add_control(
+			$this->get_name_setting('brands'),
+			[
+				'label'          => __('Brands', App::get_domain()),
+				'description'    => __('If no brand is selected, then all products will be shown.', App::get_domain()),
+				'multiple'       => true,
+				'type'           => RisingBambooElementorControl::SELECT2,
+				'default'        => [],
+				'select2options' => [
+					'placeholder'        => __('Write Title Brand', App::get_domain()),
+					'ajax'               => [
+						'url'      => admin_url('admin-ajax.php') . '?action=rbb_get_brand&nonce=' . wp_create_nonce(App::get_nonce()),
+						'dataType' => 'json',
+						'delay'    => 500,
+						'cache'    => 'true',
+					],
+					'minimumInputLength' => 3,
+				],
+				'condition'      => [
+					$this->get_name_setting('type') => 'brand',
 				],
 			]
 		);
@@ -1411,6 +1436,14 @@ class Products extends Base {
 				$result['categories'][ $cat->term_id ] = $cat->name;
 			}
 			$result['products'] = WoocommerceHelper::get_products(( ! empty($result['categories']) ) ? array_key_first($result['categories']) : [], 'category', $order_by, $order, $limit);
+		} elseif ( 'brand' === $type ) {
+			$ids                  = $this->get_value_setting('brands');
+			$brands               = WoocommerceHelper::get_brands_by_ids($ids, 'include');
+			$result['brands']     = [];
+			foreach ( $brands as $brand ) {
+				$result['brands'][ $brand->term_id ] = $brand->name;
+			}
+			$result['products'] = WoocommerceHelper::get_products(( ! empty($result['brands']) ) ? array_key_first($result['brands']) : [], 'brand', $order_by, $order, $limit);
 		}
 		return $result;
 	}

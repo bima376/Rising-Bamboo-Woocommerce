@@ -44,6 +44,9 @@ class Ajax extends Singleton {
 		add_action('wp_ajax_rbb_get_products_by_category', [ $this, 'get_products_by_category' ]); // nonce - ok.
 		add_action('wp_ajax_nopriv_rbb_get_products_by_category', [ $this, 'get_products_by_category' ]); // nonce - ok.
 
+		add_action('wp_ajax_rbb_get_products_by_brand', [ $this, 'get_products_by_brand' ]); // nonce - ok.
+		add_action('wp_ajax_nopriv_rbb_get_products_by_brand', [ $this, 'get_products_by_brand' ]); // nonce - ok.
+
 		add_action('wp_ajax_rbb_get_testimonials', [ $this, 'rbb_get_testimonials' ]); // nonce - ok.
 		add_action('wp_ajax_nopriv_rbb_get_testimonials', [ $this, 'rbb_get_testimonials' ]); // nonce - ok.
 
@@ -195,6 +198,36 @@ class Ajax extends Singleton {
 			$order    = isset($_POST['order']) ? sanitize_text_field(wp_unslash($_POST['order'])) : 'desc';
 			$limit    = isset($_POST['limit']) ? (int) sanitize_text_field(wp_unslash($_POST['limit'])) : -1;
 			$products = WoocommerceHelper::get_products($ids, 'category', $order_by, $order, $limit);
+			$fragment = isset($_POST['fragment']) ? sanitize_text_field(wp_unslash($_POST['fragment'])) : $fragment;
+		}
+		global $product;
+		foreach ( $products as $product ) {
+			View::instance()->load(
+				'elementor/widgets/woo-products/fragments/' . $fragment,
+				wp_parse_args(
+					$_POST,
+					[
+						'product' => $product,
+					]
+				)
+			);
+		}
+	}
+
+	/**
+	 * Get product by brand.
+	 *
+	 * @return void
+	 */
+	public function get_products_by_brand(): void {
+		$products = [];
+		$fragment = 'item';
+		if ( ( check_ajax_referer(App::get_nonce(), 'nonce') ) ) {
+			$ids      = isset($_POST['id']) ? (int) sanitize_text_field(wp_unslash($_POST['id'])) : [];
+			$order_by = isset($_POST['order_by']) ? sanitize_text_field(wp_unslash($_POST['order_by'])) : 'latest';
+			$order    = isset($_POST['order']) ? sanitize_text_field(wp_unslash($_POST['order'])) : 'desc';
+			$limit    = isset($_POST['limit']) ? (int) sanitize_text_field(wp_unslash($_POST['limit'])) : -1;
+			$products = WoocommerceHelper::get_products($ids, 'brand', $order_by, $order, $limit);
 			$fragment = isset($_POST['fragment']) ? sanitize_text_field(wp_unslash($_POST['fragment'])) : $fragment;
 		}
 		global $product;
