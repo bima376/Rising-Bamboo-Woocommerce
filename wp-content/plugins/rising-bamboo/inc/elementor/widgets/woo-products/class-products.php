@@ -288,7 +288,7 @@ class Products extends Base {
 				'type'      => Controls_Manager::NUMBER,
 				'default'   => 32,
 				'condition' => [
-					$this->get_name_setting('type') => 'category',
+					$this->get_name_setting('type') => [ 'category', 'brand' ],
 				],
 			]
 		);
