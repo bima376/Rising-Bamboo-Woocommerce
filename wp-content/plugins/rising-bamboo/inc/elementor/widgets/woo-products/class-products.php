@@ -147,6 +147,7 @@ class Products extends Base {
 				'type'    => Controls_Manager::SELECT2,
 				'default' => 'category',
 				'options' => [
+					'all_product' => __('All Product', App::get_domain()),
 					'category' => __('Category', App::get_domain()),
 					'product'  => __('Product', App::get_domain()),
 					'brand'    => __('Brand', App::get_domain()),
@@ -288,7 +289,7 @@ class Products extends Base {
 				'type'      => Controls_Manager::NUMBER,
 				'default'   => 32,
 				'condition' => [
-					$this->get_name_setting('type') => [ 'category', 'brand' ],
+					$this->get_name_setting('type') => [ 'all_product', 'category', 'brand' ],
 				],
 			]
 		);
@@ -488,6 +489,9 @@ class Products extends Base {
 				'label_off'    => esc_html__('Hide', App::get_domain()),
 				'return_value' => 'yes',
 				'default'      => 'yes',
+				'condition'    => [
+					$this->get_name_setting('type') . '!' => 'all_product',
+				],
 			]
 		);
 		$this->add_control(
@@ -1332,16 +1336,24 @@ class Products extends Base {
 	 */
 	protected function render(): void {
 		$layout = $this->get_value_setting('general_layout', 'default');
+		$type = $this->get_value_setting('type', 'category');
+		$show_filter = $this->get_value_setting('general_show_filter');
+		
+		// Hide filter for all_product type
+		if ( 'all_product' === $type ) {
+			$show_filter = '';
+		}
+		
 		View::instance()->load(
 			'elementor/widgets/woo-products/' . strtolower($layout),
 			[
 				'widget'                         => $this,
 				'id'                             => $this->uniqID(),
-				'data'                           => $this->get_product_data($this->get_value_setting('type', 'products')),
+				'data'                           => $this->get_product_data($type),
 				'title'                          => $this->get_widget_title(),
 				'subtitle'                       => $this->get_value_setting('general_subtitle'),
 				'show_title'                     => $this->get_value_setting('general_show_title'),
-				'show_filter'                    => $this->get_value_setting('general_show_filter'),
+				'show_filter'                    => $show_filter,
 				'autoplay'                       => $this->get_value_setting('general_autoplay'),
 				'autoplay_speed'                 => $this->get_value_setting('general_autoplay_speed', [ 'size' => 3000 ])['size'],
 				'autoplay_pause'                 => $this->get_value_setting('general_pause'),
@@ -1423,7 +1435,9 @@ class Products extends Base {
 		$order_by = $this->get_value_setting('order_by');
 		$order    = $this->get_value_setting('order') ?? 'desc';
 		$limit    = $this->get_value_setting('limit') ?? -1;
-		if ( 'product' === $type ) {
+		if ( 'all_product' === $type ) {
+			$result['products'] = WoocommerceHelper::get_products([], 'all', $order_by, $order, $limit);
+		} elseif ( 'product' === $type ) {
 			$ids = $this->get_value_setting('products');
 			if ( ! empty($ids) ) {
 				$result['products'] = WoocommerceHelper::get_products($ids, 'id', $order_by, $order);
