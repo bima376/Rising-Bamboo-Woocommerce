@@ -56,6 +56,7 @@ if ( count($data['products']) ) {
 									"show_percentage_discount" : <?php echo esc_attr(( $show_percentage_discount ) ? '1' : '0'); ?>,
 									"show_add_to_cart" : <?php echo esc_attr(( $show_add_to_cart ) ? '1' : '0'); ?>,
 									"show_stock" : <?php echo esc_attr(( $show_stock ) ? '1' : '0'); ?>,
+									"hide_out_of_stock" : "<?php echo esc_attr($hide_out_of_stock); ?>",
 									"show_custom_field" : <?php echo esc_attr(( $show_custom_field ) ? '1' : '0'); ?>,
 									"custom_fields" : <?php echo wp_json_encode($custom_fields); ?>,
 									"custom_field_ignore" : <?php echo wp_json_encode($custom_field_ignore); ?>
@@ -88,6 +89,7 @@ if ( count($data['products']) ) {
 									"show_percentage_discount" : <?php echo esc_attr(( $show_percentage_discount ) ? '1' : '0'); ?>,
 									"show_add_to_cart" : <?php echo esc_attr(( $show_add_to_cart ) ? '1' : '0'); ?>,
 									"show_stock" : <?php echo esc_attr(( $show_stock ) ? '1' : '0'); ?>,
+									"hide_out_of_stock" : "<?php echo esc_attr($hide_out_of_stock); ?>",
 									"show_custom_field" : <?php echo esc_attr(( $show_custom_field ) ? '1' : '0'); ?>,
 									"custom_fields" : <?php echo wp_json_encode($custom_fields); ?>,
 									"custom_field_ignore" : <?php echo wp_json_encode($custom_field_ignore); ?>
