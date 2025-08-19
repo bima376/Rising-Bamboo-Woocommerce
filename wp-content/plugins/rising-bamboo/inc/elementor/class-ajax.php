@@ -197,7 +197,16 @@ class Ajax extends Singleton {
 			$order_by = isset($_POST['order_by']) ? sanitize_text_field(wp_unslash($_POST['order_by'])) : 'latest';
 			$order    = isset($_POST['order']) ? sanitize_text_field(wp_unslash($_POST['order'])) : 'desc';
 			$limit    = isset($_POST['limit']) ? (int) sanitize_text_field(wp_unslash($_POST['limit'])) : -1;
+			$hide_out_of_stock = isset($_POST['hide_out_of_stock']) ? sanitize_text_field(wp_unslash($_POST['hide_out_of_stock'])) : '';
 			$products = WoocommerceHelper::get_products($ids, 'category', $order_by, $order, $limit);
+			
+			// Filter out of stock products if hide_out_of_stock is enabled
+			if ( 'yes' === $hide_out_of_stock && ! empty($products) ) {
+				$products = array_filter($products, function($product) {
+					return $product->get_stock_status() === 'instock';
+				});
+			}
+			
 			$fragment = isset($_POST['fragment']) ? sanitize_text_field(wp_unslash($_POST['fragment'])) : $fragment;
 		}
 		global $product;
@@ -227,7 +236,16 @@ class Ajax extends Singleton {
 			$order_by = isset($_POST['order_by']) ? sanitize_text_field(wp_unslash($_POST['order_by'])) : 'latest';
 			$order    = isset($_POST['order']) ? sanitize_text_field(wp_unslash($_POST['order'])) : 'desc';
 			$limit    = isset($_POST['limit']) ? (int) sanitize_text_field(wp_unslash($_POST['limit'])) : -1;
+			$hide_out_of_stock = isset($_POST['hide_out_of_stock']) ? sanitize_text_field(wp_unslash($_POST['hide_out_of_stock'])) : '';
 			$products = WoocommerceHelper::get_products($ids, 'brand', $order_by, $order, $limit);
+			
+			// Filter out of stock products if hide_out_of_stock is enabled
+			if ( 'yes' === $hide_out_of_stock && ! empty($products) ) {
+				$products = array_filter($products, function($product) {
+					return $product->get_stock_status() === 'instock';
+				});
+			}
+			
 			$fragment = isset($_POST['fragment']) ? sanitize_text_field(wp_unslash($_POST['fragment'])) : $fragment;
 		}
 		global $product;

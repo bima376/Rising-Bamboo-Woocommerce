@@ -410,6 +410,19 @@ class Products extends Base {
 		);
 
 		$this->add_control(
+			$this->get_name_setting('hide_out_of_stock'),
+			[
+				'label'        => __('Hide Out of Stock Products', App::get_domain()),
+				'type'         => Controls_Manager::SWITCHER,
+				'label_on'     => esc_html__('Hide', App::get_domain()),
+				'label_off'    => esc_html__('Show', App::get_domain()),
+				'return_value' => 'yes',
+				'default'      => '',
+				'description'  => __('When enabled, products with out of stock status will be hidden from the display.', App::get_domain()),
+			]
+		);
+
+		$this->add_control(
 			$this->get_name_setting('custom_fields'),
 			[
 				'label'          => __('Custom Fields', App::get_domain()),
@@ -1377,6 +1390,7 @@ class Products extends Base {
 				'show_custom_field'              => $this->get_value_setting('show_custom_field'),
 				'custom_fields'                  => $this->get_value_setting('custom_fields'),
 				'custom_field_ignore'            => $this->get_custom_field_ignore(),
+				'hide_out_of_stock'              => $this->get_value_setting('hide_out_of_stock'),
 				'surrounding_animation_image_01' => $this->get_value_setting('general_surrounding_animation_image_01'),
 				'surrounding_animation_image_02' => $this->get_value_setting('general_surrounding_animation_image_02'),
 			]
@@ -1435,6 +1449,8 @@ class Products extends Base {
 		$order_by = $this->get_value_setting('order_by');
 		$order    = $this->get_value_setting('order') ?? 'desc';
 		$limit    = $this->get_value_setting('limit') ?? -1;
+		$hide_out_of_stock = $this->get_value_setting('hide_out_of_stock');
+		
 		if ( 'all_product' === $type ) {
 			$result['products'] = WoocommerceHelper::get_products([], 'all', $order_by, $order, $limit);
 		} elseif ( 'product' === $type ) {
@@ -1459,6 +1475,14 @@ class Products extends Base {
 			}
 			$result['products'] = WoocommerceHelper::get_products(( ! empty($result['brands']) ) ? array_key_first($result['brands']) : [], 'brand', $order_by, $order, $limit);
 		}
+		
+		// Filter out of stock products if hide_out_of_stock is enabled
+		if ( 'yes' === $hide_out_of_stock && ! empty($result['products']) ) {
+			$result['products'] = array_filter($result['products'], function($product) {
+				return $product->get_stock_status() === 'instock';
+			});
+		}
+		
 		return $result;
 	}
 

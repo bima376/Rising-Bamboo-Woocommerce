@@ -112,7 +112,7 @@ if ( count($data['products']) ) {
 													"show_rating" : <?php echo esc_attr(( $show_rating ) ? '1' : '0'); ?>,
 													"show_quickview" : <?php echo esc_attr(( $show_quickview ) ? '1' : '0'); ?>,
 													"show_compare" : <?php echo esc_attr(( $show_compare ) ? '1' : '0'); ?>,
-													"show_add_to_cart" : <?php echo esc_attr(( $show_add_to_cart ) ? '1' : '0'); ?>
+													"show_add_to_cart" : <?php echo esc_attr(( $show_add_to_cart ) ? '1' : '0'); ?>,
 													"show_countdown" : <?php echo esc_attr(( $show_countdown ) ? '1' : '0'); ?>,
 													"show_percentage_discount" : <?php echo esc_attr(( $show_percentage_discount ) ? '1' : '0'); ?>,
 													"show_stock" : <?php echo esc_attr(( $show_stock ) ? '1' : '0'); ?>,
