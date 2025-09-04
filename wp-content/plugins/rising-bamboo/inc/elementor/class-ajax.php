@@ -134,6 +134,7 @@ class Ajax extends Singleton {
 					[
 						'taxonomy'   => 'product_cat',
 						'name__like' => sanitize_text_field(wp_unslash($_GET['q'])),
+						'number'     => 20, // Limit results to 20
 					]
 				);
 				if ( $search_results ) {
@@ -258,6 +259,7 @@ class Ajax extends Singleton {
 					[
 						'taxonomy'   => 'product_brand',
 						'name__like' => sanitize_text_field(wp_unslash($_GET['q'])),
+						'number'     => 20, // Limit results to 20
 					]
 				);
 				if ( $search_results ) {

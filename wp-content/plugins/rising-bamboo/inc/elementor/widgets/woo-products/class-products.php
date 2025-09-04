@@ -147,7 +147,6 @@ class Products extends Base {
 				'type'    => Controls_Manager::SELECT2,
 				'default' => 'category',
 				'options' => [
-					'all_product' => __('All Product', App::get_domain()),
 					'category' => __('Category', App::get_domain()),
 					'product'  => __('Product', App::get_domain()),
 					'brand'    => __('Brand', App::get_domain()),
@@ -289,7 +288,7 @@ class Products extends Base {
 				'type'      => Controls_Manager::NUMBER,
 				'default'   => 32,
 				'condition' => [
-					$this->get_name_setting('type') => [ 'all_product', 'category', 'brand' ],
+					$this->get_name_setting('type') => [ 'category', 'brand' ],
 				],
 			]
 		);
@@ -503,7 +502,7 @@ class Products extends Base {
 				'return_value' => 'yes',
 				'default'      => 'yes',
 				'condition'    => [
-					$this->get_name_setting('type') . '!' => 'all_product',
+					$this->get_name_setting('type') => [ 'category', 'brand' ],
 				],
 			]
 		);
@@ -1352,10 +1351,6 @@ class Products extends Base {
 		$type = $this->get_value_setting('type', 'category');
 		$show_filter = $this->get_value_setting('general_show_filter');
 		
-		// Hide filter for all_product type
-		if ( 'all_product' === $type ) {
-			$show_filter = '';
-		}
 
 		View::instance()->load(
 			'elementor/widgets/woo-products/' . strtolower($layout),
@@ -1451,9 +1446,7 @@ class Products extends Base {
 		$limit    = $this->get_value_setting('limit') ?? -1;
 		$hide_out_of_stock = $this->get_value_setting('hide_out_of_stock');
 		
-		if ( 'all_product' === $type ) {
-			$result['products'] = WoocommerceHelper::get_products([], 'all', $order_by, $order, $limit);
-		} elseif ( 'product' === $type ) {
+		if ( 'product' === $type ) {
 			$ids = $this->get_value_setting('products');
 			if ( ! empty($ids) ) {
 				$result['products'] = WoocommerceHelper::get_products($ids, 'id', $order_by, $order);
