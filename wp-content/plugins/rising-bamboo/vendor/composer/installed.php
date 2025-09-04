@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'risingbamboo/risingbamboo_core',
-        'pretty_version' => 'dev-master',
-        'version' => 'dev-master',
-        'reference' => 'a6db2aa8731ff51101bfd09e3c9092e49bae012b',
+        'pretty_version' => 'dev-develop',
+        'version' => 'dev-develop',
+        'reference' => 'e71d095e816e70fcdc8cb7b6e233abee17099f81',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -170,9 +170,9 @@
             'dev_requirement' => true,
         ),
         'risingbamboo/risingbamboo_core' => array(
-            'pretty_version' => 'dev-master',
-            'version' => 'dev-master',
-            'reference' => 'a6db2aa8731ff51101bfd09e3c9092e49bae012b',
+            'pretty_version' => 'dev-develop',
+            'version' => 'dev-develop',
+            'reference' => 'e71d095e816e70fcdc8cb7b6e233abee17099f81',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -80,9 +80,4 @@ require_once get_stylesheet_directory() . '/fix-brand-select2.php';
  */
 require_once get_stylesheet_directory() . '/register-brand-taxonomy.php';
 
-/**
- * Include brand debug tools (only in admin)
- */
-if (is_admin()) {
-    require_once get_stylesheet_directory() . '/debug-brand.php';
-}
+

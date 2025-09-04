@@ -1356,7 +1356,7 @@ class Products extends Base {
 		if ( 'all_product' === $type ) {
 			$show_filter = '';
 		}
-		
+
 		View::instance()->load(
 			'elementor/widgets/woo-products/' . strtolower($layout),
 			[

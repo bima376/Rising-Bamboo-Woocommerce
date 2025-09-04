@@ -18,8 +18,6 @@ class Automize_Child_Brand_Fix {
     public function __construct() {
         add_action('wp_enqueue_scripts', [$this, 'enqueue_fix_scripts']);
         add_action('admin_enqueue_scripts', [$this, 'enqueue_fix_scripts']);
-        add_action('wp_ajax_rbb_get_brand_fix', [$this, 'rbb_get_brand_fix']);
-        add_action('wp_ajax_nopriv_rbb_get_brand_fix', [$this, 'rbb_get_brand_fix']);
     }
     
     /**
@@ -40,14 +38,14 @@ class Automize_Child_Brand_Fix {
                             allowClear: true,
                             minimumInputLength: 3,
                             ajax: {
-                                url: ajaxurl + '?action=rbb_get_brand_fix',
+                                url: ajaxurl + '?action=rbb_get_brand',
                                 dataType: 'json',
                                 delay: 500,
                                 cache: true,
                                 data: function (params) {
                                     return {
                                         q: params.term,
-                                        nonce: '" . wp_create_nonce('rbb_nonce') . "'
+                                        nonce: '" . wp_create_nonce('rbb_core_nonce') . "'
                                     };
                                 },
                                 processResults: function (data) {
@@ -66,65 +64,6 @@ class Automize_Child_Brand_Fix {
         wp_add_inline_script('jquery', $script);
     }
     
-    /**
-     * Alternative brand AJAX handler
-     */
-    public function rbb_get_brand_fix() {
-        $return = [];
-        
-        // Check nonce
-        if (!wp_verify_nonce($_GET['nonce'] ?? '', 'rbb_nonce')) {
-            wp_send_json(['results' => []]);
-            return;
-        }
-        
-        // Check if product_brand taxonomy exists
-        if (!taxonomy_exists('product_brand')) {
-            // Try alternative brand taxonomies
-            $brand_taxonomies = [
-                'product_brand',
-                'pa_brand',
-                'product_brands',
-                'brand',
-                'yith_product_brand'
-            ];
-            
-            $found_taxonomy = null;
-            foreach ($brand_taxonomies as $taxonomy) {
-                if (taxonomy_exists($taxonomy)) {
-                    $found_taxonomy = $taxonomy;
-                    break;
-                }
-            }
-            
-            if (!$found_taxonomy) {
-                wp_send_json(['results' => []]);
-                return;
-            }
-        } else {
-            $found_taxonomy = 'product_brand';
-        }
-        
-        // Get brand terms
-        if (isset($_GET['q']) && !empty($_GET['q'])) {
-            $search_results = get_terms([
-                'taxonomy'   => $found_taxonomy,
-                'name__like' => sanitize_text_field(wp_unslash($_GET['q'])),
-                'hide_empty' => false,
-            ]);
-            
-            if ($search_results && !is_wp_error($search_results)) {
-                foreach ($search_results as $result) {
-                    $return[] = [
-                        'id'   => $result->term_id,
-                        'text' => $result->name . ' (ID:' . $result->term_id . ')',
-                    ];
-                }
-            }
-        }
-        
-        wp_send_json(['results' => $return]);
-    }
 }
 
 // Initialize the fix

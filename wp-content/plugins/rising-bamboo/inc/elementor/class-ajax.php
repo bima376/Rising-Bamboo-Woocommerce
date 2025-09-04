@@ -46,6 +46,9 @@ class Ajax extends Singleton {
 
 		add_action('wp_ajax_rbb_get_products_by_brand', [ $this, 'get_products_by_brand' ]); // nonce - ok.
 		add_action('wp_ajax_nopriv_rbb_get_products_by_brand', [ $this, 'get_products_by_brand' ]); // nonce - ok.
+		
+		add_action('wp_ajax_rbb_get_products_by_brand', [ $this, 'get_products_by_brand' ]); // nonce - ok.
+		add_action('wp_ajax_nopriv_rbb_get_products_by_brand', [ $this, 'get_products_by_brand' ]); // nonce - ok.
 
 		add_action('wp_ajax_rbb_get_testimonials', [ $this, 'rbb_get_testimonials' ]); // nonce - ok.
 		add_action('wp_ajax_nopriv_rbb_get_testimonials', [ $this, 'rbb_get_testimonials' ]); // nonce - ok.
@@ -147,44 +150,6 @@ class Ajax extends Singleton {
 	}
 
 	/**
-	 * Get brand.
-	 *
-	 * @return void
-	 */
-	public function rbb_get_brand(): void {
-		$return = [];
-		if ( ( check_ajax_referer(App::get_nonce(), 'nonce') ) ) {
-			if ( isset($_POST['ids']) ) {
-                // phpcs:ignore
-				$ids    = array_map('esc_attr', $_POST['ids']);
-				$brands = WoocommerceHelper::get_brands_by_ids($ids, 'include');
-				foreach ( $brands as $brand ) {
-					$return[] = [
-						'id'   => $brand->term_id,
-						'text' => $brand->name . '(ID: ' . $brand->term_id . ')',
-					];
-				}
-			} elseif ( isset($_GET['q']) ) {
-				$search_results = get_terms(
-					[
-						'taxonomy'   => 'product_brand',
-						'name__like' => sanitize_text_field(wp_unslash($_GET['q'])),
-					]
-				);
-				if ( $search_results ) {
-					foreach ( $search_results as $result ) {
-						$return[] = [
-							'id'   => $result->term_id,
-							'text' => $result->name . ' (ID:' . $result->term_id . ')',
-						];
-					}
-				}
-			}
-		}
-		wp_send_json([ 'results' => $return ]);
-	}
-
-	/**
 	 * Get product by category.
 	 *
 	 * @return void
@@ -199,46 +164,8 @@ class Ajax extends Singleton {
 			$limit    = isset($_POST['limit']) ? (int) sanitize_text_field(wp_unslash($_POST['limit'])) : -1;
 			$hide_out_of_stock = isset($_POST['hide_out_of_stock']) ? sanitize_text_field(wp_unslash($_POST['hide_out_of_stock'])) : '';
 			$products = WoocommerceHelper::get_products($ids, 'category', $order_by, $order, $limit);
-			
-			// Filter out of stock products if hide_out_of_stock is enabled
-			if ( 'yes' === $hide_out_of_stock && ! empty($products) ) {
-				$products = array_filter($products, function($product) {
-					return $product->get_stock_status() === 'instock';
-				});
-			}
-			
 			$fragment = isset($_POST['fragment']) ? sanitize_text_field(wp_unslash($_POST['fragment'])) : $fragment;
-		}
-		global $product;
-		foreach ( $products as $product ) {
-			View::instance()->load(
-				'elementor/widgets/woo-products/fragments/' . $fragment,
-				wp_parse_args(
-					$_POST,
-					[
-						'product' => $product,
-					]
-				)
-			);
-		}
-	}
 
-	/**
-	 * Get product by brand.
-	 *
-	 * @return void
-	 */
-	public function get_products_by_brand(): void {
-		$products = [];
-		$fragment = 'item';
-		if ( ( check_ajax_referer(App::get_nonce(), 'nonce') ) ) {
-			$ids      = isset($_POST['id']) ? (int) sanitize_text_field(wp_unslash($_POST['id'])) : [];
-			$order_by = isset($_POST['order_by']) ? sanitize_text_field(wp_unslash($_POST['order_by'])) : 'latest';
-			$order    = isset($_POST['order']) ? sanitize_text_field(wp_unslash($_POST['order'])) : 'desc';
-			$limit    = isset($_POST['limit']) ? (int) sanitize_text_field(wp_unslash($_POST['limit'])) : -1;
-			$hide_out_of_stock = isset($_POST['hide_out_of_stock']) ? sanitize_text_field(wp_unslash($_POST['hide_out_of_stock'])) : '';
-			$products = WoocommerceHelper::get_products($ids, 'brand', $order_by, $order, $limit);
-			
 			// Filter out of stock products if hide_out_of_stock is enabled
 			if ( 'yes' === $hide_out_of_stock && ! empty($products) ) {
 				$products = array_filter($products, function($product) {
@@ -306,6 +233,84 @@ class Ajax extends Singleton {
 			}
 		}
 		wp_send_json([ 'results' => $return ]);
+	}
+
+	/**
+	 * Get brand.
+	 *
+	 * @return void
+	 */
+	public function rbb_get_brand(): void {
+		$return = [];
+		if ( ( check_ajax_referer(App::get_nonce(), 'nonce') ) ) {
+			if ( isset($_POST['ids']) ) {
+                // phpcs:ignore
+				$ids        = array_map('esc_attr', $_POST['ids']);
+				$brands = WoocommerceHelper::get_brands_by_ids($ids, 'include');
+				foreach ( $brands as $brand ) {
+					$return[] = [
+						'id'   => $brand->term_id,
+						'text' => $brand->name . '(ID: ' . $brand->term_id . ')',
+					];
+				}
+			} elseif ( isset($_GET['q']) ) {
+				$search_results = get_terms(
+					[
+						'taxonomy'   => 'product_brand',
+						'name__like' => sanitize_text_field(wp_unslash($_GET['q'])),
+					]
+				);
+				if ( $search_results ) {
+					foreach ( $search_results as $result ) {
+						$return[] = [
+							'id'   => $result->term_id,
+							'text' => $result->name . ' (ID:' . $result->term_id . ')',
+						];
+					}
+				}
+			}
+		}
+		wp_send_json([ 'results' => $return ]);
+	}
+
+	/**
+	 * Get product by brand.
+	 *
+	 * @return void
+	 */
+	public function get_products_by_brand(): void {
+		$products = [];
+		$fragment = 'item';
+		if ( ( check_ajax_referer(App::get_nonce(), 'nonce') ) ) {
+			$ids      = isset($_POST['id']) ? (int) sanitize_text_field(wp_unslash($_POST['id'])) : [];
+			$order_by = isset($_POST['order_by']) ? sanitize_text_field(wp_unslash($_POST['order_by'])) : 'latest';
+			$order    = isset($_POST['order']) ? sanitize_text_field(wp_unslash($_POST['order'])) : 'desc';
+			$limit    = isset($_POST['limit']) ? (int) sanitize_text_field(wp_unslash($_POST['limit'])) : -1;
+			$hide_out_of_stock = isset($_POST['hide_out_of_stock']) ? sanitize_text_field(wp_unslash($_POST['hide_out_of_stock'])) : '';
+			$products = WoocommerceHelper::get_products($ids, 'brand', $order_by, $order, $limit);
+			$fragment = isset($_POST['fragment']) ? sanitize_text_field(wp_unslash($_POST['fragment'])) : $fragment;
+
+			// Filter out of stock products if hide_out_of_stock is enabled
+			if ( 'yes' === $hide_out_of_stock && ! empty($products) ) {
+				$products = array_filter($products, function($product) {
+					return $product->get_stock_status() === 'instock';
+				});
+			}
+			
+			$fragment = isset($_POST['fragment']) ? sanitize_text_field(wp_unslash($_POST['fragment'])) : $fragment;
+		}
+		global $product;
+		foreach ( $products as $product ) {
+			View::instance()->load(
+				'elementor/widgets/woo-products/fragments/' . $fragment,
+				wp_parse_args(
+					$_POST,
+					[
+						'product' => $product,
+					]
+				)
+			);
+		}
 	}
 
 	/**

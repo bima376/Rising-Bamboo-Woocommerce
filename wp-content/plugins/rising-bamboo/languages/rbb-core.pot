@@ -2,9 +2,9 @@
 # This file is distributed under the same license as the Rising Bamboo Core package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Rising Bamboo Core 1.4.1\n"
+"Project-Id-Version: Rising Bamboo Core 1.4.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/rising-bamboo\n"
-"POT-Creation-Date: 2025-07-31 07:44:47+00:00\n"
+"POT-Creation-Date: 2025-08-23 16:37:00+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
