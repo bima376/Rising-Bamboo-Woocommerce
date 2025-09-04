@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Automize 1.3.2\n"
+"Project-Id-Version: Automize 1.3.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/automize\n"
-"POT-Creation-Date: 2025-04-21 02:49:43+00:00\n"
+"POT-Creation-Date: 2025-08-14 09:11:56+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -2028,7 +2028,7 @@ msgid "List"
 msgstr ""
 
 #: inc/customizer/sections/woocommerce.php:1266
-#: inc/woocommerce/class-woocommerce.php:174
+#: inc/woocommerce/class-woocommerce.php:178
 #: woocommerce/single-product/related.php:31
 msgid "Related Products"
 msgstr ""
@@ -3031,7 +3031,7 @@ msgid "TGMPA v%s"
 msgstr ""
 
 #: inc/tgm/class-tgm-plugin-activation.php:2424
-#: inc/woocommerce/class-woocommerce.php:226
+#: inc/woocommerce/class-woocommerce.php:230
 #: woocommerce/single-product/up-sells.php:31
 msgid "Recommended"
 msgstr ""
@@ -3241,19 +3241,19 @@ msgstr ""
 msgid "Hide Details"
 msgstr ""
 
-#: inc/woocommerce/class-woocommerce.php:480
+#: inc/woocommerce/class-woocommerce.php:484
 #. translators: RisingBamboo.
 msgid "Rated %s out of 5"
 msgstr ""
 
-#: inc/woocommerce/class-woocommerce.php:585
+#: inc/woocommerce/class-woocommerce.php:589
 #. translators: %d:Review count
 msgid "Reviews <span class=\"text-xs font-semibold\">(%d)</span>"
 msgstr ""
 
-#: inc/woocommerce/class-woocommerce.php:745
-#: inc/woocommerce/class-woocommerce.php:751
-#: inc/woocommerce/class-woocommerce.php:807
+#: inc/woocommerce/class-woocommerce.php:749
+#: inc/woocommerce/class-woocommerce.php:755
+#: inc/woocommerce/class-woocommerce.php:811
 msgid "Filter By"
 msgstr ""
 
@@ -3926,170 +3926,6 @@ msgstr ""
 msgid "Filter"
 msgstr ""
 
-#: vendor/gettext/gettext/tests/TranslatorTest.php:44
-msgid "Integer"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/TranslatorTest.php:45
-msgid "This field cannot be blank."
-msgstr ""
-
-#: vendor/gettext/gettext/tests/TranslatorTest.php:46
-#: vendor/gettext/gettext/tests/TranslatorTest.php:47
-#: vendor/gettext/gettext/tests/TranslatorTest.php:48
-#: vendor/gettext/gettext/tests/TranslatorTest.php:49
-#: vendor/gettext/gettext/tests/TranslatorTest.php:51
-msgid "Value %sr is not a valid choice."
-msgstr ""
-
-#: vendor/gettext/gettext/tests/TranslatorTest.php:50
-msgid "%ss must be unique for %ss %ss."
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode/input.php:2
-msgid "text 1"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode/input.php:9
-msgid "text 3 (with parenthesis)"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode/input.php:10
-msgid "text 4 \"with double quotes\""
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode/input.php:11
-msgid "text 5 'with escaped single quotes'"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode/input.php:15
-msgid "text 6"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode/input.php:16
-msgid "text 7 (with parenthesis)"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode/input.php:17
-msgid "text 8 \"with escaped double quotes\""
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode/input.php:18
-msgid "text 9 'with single quotes'"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode/input.php:22
-msgid ""
-"<div id=\"blog\" class=\"container\">\r\n"
-"    <div class=\"row\">\r\n"
-"        <div class=\"col-md-12\">\r\n"
-"            <div id=\"content\">\r\n"
-"                <div class=\"page_post\">\r\n"
-"                    <div class=\"container\">\r\n"
-"                        <div class=\"margin-top-40\"></div>\r\n"
-"                        <div class=\"col-sm-3 col-md-2 centered-xs "
-"an-number\">4</div>\r\n"
-"                    </div>\r\n"
-"                </div>\r\n"
-"                <div class=\"container\">\r\n"
-"                    <h1 class=\"text-center margin-top-10\">Sorry, but we "
-"couldn't find this page</h1>\r\n"
-"                    <div id=\"body-div\">\r\n"
-"                        <div id=\"main-div\">\r\n"
-"                            <div class=\"text-404\">\r\n"
-"                                <div>\r\n"
-"                                    <p>Maybe you have entered an incorrect "
-"URL of the page or page moved to another section or just page is "
-"temporarily unavailable.</p>\r\n"
-"                                </div>\r\n"
-"                            </div>\r\n"
-"                        </div>\r\n"
-"                    </div>\r\n"
-"                </div>\r\n"
-"            </div>\r\n"
-"        </div>\r\n"
-"    </div>\r\n"
-"</div>"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:2
-msgid "plain"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:4
-#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:5
-msgid "DATE \\a\\t TIME"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:6
-msgid "FIELD\tFIELD"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:19
-msgid "No comments"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:26
-msgid "i18n Tagged comment"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:36
-msgid "i18n tagged %s"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:42
-#. Translators: This is a multi-line comment.
-msgid "foo"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:44
-#. translators: this should get extracted.
-msgid "bar"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:51
-#. translators: this comment is indented with a tab.
-msgid "foo bar"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:54
-#. translators: Hello
-msgid "World"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:55
-msgid "No comment"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:57
-#. translators: Only used once
-msgid "Within printf: %s"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:57
-msgid "placeholder"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode2/input.php:57
-msgid "After printf"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode3/input.php:11
-msgid "Foo"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode4/input.php:11
-msgid "skip global 1"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode5/input.php:3
-msgid "no domain"
-msgstr ""
-
-#: vendor/gettext/gettext/tests/assets/phpcode6/input.php:4
-msgid "No domain text"
-msgstr ""
-
 #: vendor/wp-cli/wp-cli/php/utils-wp.php:247
 msgid "Inactive Widgets"
 msgstr ""
@@ -4098,11 +3934,11 @@ msgstr ""
 msgid "Drag widgets here to remove them from the sidebar but keep their settings."
 msgstr ""
 
-#: woocommerce/archive-product.php:135
+#: woocommerce/archive-product.php:137
 msgid "See More +"
 msgstr ""
 
-#: woocommerce/archive-product.php:138
+#: woocommerce/archive-product.php:140
 msgid "See Less -"
 msgstr ""
 
@@ -4320,18 +4156,17 @@ msgstr ""
 msgid "Additional information"
 msgstr ""
 
-#: woocommerce/checkout/payment.php:35
+#: woocommerce/checkout/payment.php:36
 msgid ""
-"Sorry, it seems that there are no available payment methods for your state. "
-"Please contact us if you require assistance or wish to make alternate "
-"arrangements."
+"Sorry, it seems that there are no available payment methods. Please contact "
+"us if you require assistance or wish to make alternate arrangements."
 msgstr ""
 
-#: woocommerce/checkout/payment.php:35
+#: woocommerce/checkout/payment.php:36
 msgid "Please fill in your details above to see available payment methods."
 msgstr ""
 
-#: woocommerce/checkout/payment.php:44
+#: woocommerce/checkout/payment.php:46
 #. translators: $1 and $2 opening and closing emphasis tags respectively
 msgid ""
 "Since your browser does not support JavaScript, or it is disabled, please "
@@ -4340,7 +4175,7 @@ msgid ""
 "do so."
 msgstr ""
 
-#: woocommerce/checkout/payment.php:46
+#: woocommerce/checkout/payment.php:48
 msgid "Update totals"
 msgstr ""
 
@@ -4399,6 +4234,20 @@ msgstr ""
 
 #: woocommerce/global/quantity-input.php:47
 msgid "Product quantity"
+msgstr ""
+
+#: woocommerce/loop/no-products-found.php:19
+msgid "No products found"
+msgstr ""
+
+#: woocommerce/loop/no-products-found.php:20
+msgid ""
+"Sorry, no products matched your selection. Please try again with different "
+"criteria."
+msgstr ""
+
+#: woocommerce/loop/no-products-found.php:22
+msgid "Continue Shopping"
 msgstr ""
 
 #: woocommerce/loop/orderby.php:31

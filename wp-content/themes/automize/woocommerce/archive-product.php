@@ -49,7 +49,9 @@ $wrapper_classes = apply_filters(
 			</header>
 		<?php } ?>
 		<?php
-		if ( woocommerce_product_loop() ) {
+			// Check if we have products before entering the loop.
+			$has_products = wc_get_loop_prop('total') > 0;
+		if ( $has_products && woocommerce_product_loop() ) {
 
 			/**
 			 * Hook: woocommerce_before_shop_loop.

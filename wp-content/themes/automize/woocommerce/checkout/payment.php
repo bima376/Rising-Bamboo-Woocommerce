@@ -12,7 +12,7 @@
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce\Templates
- * @version 8.1.0
+ * @version 9.8.0
  */
 
 use RisingBambooTheme\App\App;
@@ -24,18 +24,20 @@ if ( ! wp_doing_ajax() ) {
 }
 ?>
 <div id="payment" class="woocommerce-checkout-payment">
-	<?php if ( WC()->cart->needs_payment() ) : ?>
-		<div class="wc_payment_methods payment_methods methods">
+	<?php if ( WC()->cart && WC()->cart->needs_payment() ) : ?>
+		<ul class="wc_payment_methods payment_methods methods text-left">
 			<?php
 			if ( ! empty($available_gateways) ) {
 				foreach ( $available_gateways as $gateway ) {
 					wc_get_template('checkout/payment-method.php', [ 'gateway' => $gateway ]);
 				}
 			} else {
-				echo '<div class="woocommerce-notice woocommerce-notice--info woocommerce-info text-sm">' . apply_filters( 'woocommerce_no_available_payment_methods_message', WC()->customer->get_billing_country() ? esc_html__( 'Sorry, it seems that there are no available payment methods for your state. Please contact us if you require assistance or wish to make alternate arrangements.', 'automize' ) : esc_html__( 'Please fill in your details above to see available payment methods.', 'automize' ) ) . '</div>'; // @codingStandardsIgnoreLine
+				echo '<li>';
+				wc_print_notice(apply_filters('woocommerce_no_available_payment_methods_message', WC()->customer->get_billing_country() ? esc_html__('Sorry, it seems that there are no available payment methods. Please contact us if you require assistance or wish to make alternate arrangements.', 'automize') : esc_html__('Please fill in your details above to see available payment methods.', 'automize')), 'notice'); // phpcs:ignore WooCommerce.Commenting.CommentHooks.MissingHookComment
+				echo '</li>';
 			}
 			?>
-		</div>
+		</ul>
 	<?php endif; ?>
 	<div class="form-row place-order">
 		<noscript>
@@ -43,14 +45,13 @@ if ( ! wp_doing_ajax() ) {
 			/* translators: $1 and $2 opening and closing emphasis tags respectively */
 			printf(esc_html__('Since your browser does not support JavaScript, or it is disabled, please ensure you click the %1$sUpdate Totals%2$s button before placing your order. You may be charged more than the amount stated above if you fail to do so.', 'automize'), '<em>', '</em>');
 			?>
-			<button type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="<?php esc_attr_e('Update totals', 'automize'); ?>"><?php esc_html_e('Update totals', 'automize'); ?></button>
+		<button type="submit" class="button alt alt<?php echo esc_attr(wc_wp_theme_get_element_class_name('button') ? ' ' . wc_wp_theme_get_element_class_name('button') : ''); ?>" name="woocommerce_checkout_update_totals" value="<?php esc_attr_e('Update totals', 'automize'); ?>"><?php esc_html_e('Update totals', 'automize'); ?></button>
 		</noscript>
 
 		<?php wc_get_template('checkout/terms.php'); ?>
 
 		<?php do_action('woocommerce_review_order_before_submit'); ?>
-
-		<?php echo apply_filters( 'woocommerce_order_button_html', '<button type="submit" class="button alt rbb-checkout__btn w-full rounded mb-[6px] w-full h-14 text-center !text-white" name="woocommerce_checkout_place_order" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '">' . esc_html( $order_button_text ) . '</button>' ); // @codingStandardsIgnoreLine ?>
+		<?php echo apply_filters( 'woocommerce_order_button_html', '<button type="submit" class="button alt rbb-checkout__btn rounded mb-[6px] w-full h-14 text-center !text-white ' . esc_attr( wc_wp_theme_get_element_class_name( 'button' ) ? ' ' . wc_wp_theme_get_element_class_name( 'button' ) : '' ) . '" name="woocommerce_checkout_place_order" id="place_order" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '">' . esc_html( $order_button_text ) . '</button>' ); // @codingStandardsIgnoreLine ?>
 
 		<?php do_action('woocommerce_review_order_after_submit'); ?>
 

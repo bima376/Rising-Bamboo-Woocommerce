@@ -39,7 +39,7 @@ $grid_classes .= 'gap-0 text-center text-[#9b9b9b] shadow-[0_-8px_29px_0_rgba(0,
 			<span class="block leading-[14px]"><?php echo esc_html__('Home', 'automize'); ?></span>
 		</div>
 		<div class="col-span-1 px-0 pt-2 pb-[5px]">
-			<a href="<?php echo esc_url(home_url('shop')); ?>/" class="inline-block leading-5 !text-[var(--rbb-mobile-navigation-text-color)] hover:!text-[var(--rbb-menu-link-hover-color)]"><i class="rbb-icon-menu-13 text-[1.1rem]"></i></a>
+			<a href="<?php echo esc_url(get_permalink(wc_get_page_id('shop'))); ?>/" class="inline-block leading-5 !text-[var(--rbb-mobile-navigation-text-color)] hover:!text-[var(--rbb-menu-link-hover-color)]"><i class="rbb-icon-menu-13 text-[1.1rem]"></i></a>
 			<span class="block leading-[14px]"><?php echo esc_html__('Shopping', 'automize'); ?></span>
 		</div>
 		<?php if ( Helper::show_wishlist() ) { ?>

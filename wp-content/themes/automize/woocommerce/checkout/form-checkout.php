@@ -23,7 +23,7 @@ use RisingBambooTheme\App\App;
 
 ?>
 <div class="checkout-template">
-	<div class="container mx-auto px-[15px] xl:px-0">
+	<div class="container mx-auto px-[15px] xl:px-0 text-left">
 
 		<div class="flex">
 			<?php do_action('woocommerce_before_checkout_form_notification', $checkout); ?>

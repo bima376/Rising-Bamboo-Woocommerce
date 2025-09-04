@@ -15,12 +15,12 @@ return [
 	[
 		'name'               => esc_html__('Rising Bamboo Core', 'automize'),
 		'slug'               => 'rising-bamboo',
-		'source'             => 'https://plugins.risingbamboo.com/rising-bamboo/rising-bamboo-v1-4-0.zip',
+		'source'             => 'https://plugins.risingbamboo.com/rising-bamboo/rising-bamboo-v1-4-1.zip',
 		'required'           => true,
 		'force_activation'   => true,
 		'force_deactivation' => false,
-		'external_url'       => 'https://plugins.risingbamboo.com/rising-bamboo/rising-bamboo-v1-4-0.zip',
-		'version'            => '1.4.0',
+		'external_url'       => 'https://plugins.risingbamboo.com/rising-bamboo/rising-bamboo-v1-4-1.zip',
+		'version'            => '1.4.1',
 	],
 	[
 		'name'     => esc_html__('One Click Demo Import', 'automize'),

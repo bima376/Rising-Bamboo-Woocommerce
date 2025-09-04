@@ -257,6 +257,10 @@ form.wpcf7-form {
 				margin-bottom: 0;
 				border: none;
 				background: var(--rbb-general-secondary-color);
+				[dir="rtl"] & {
+					margin-left: 0;
+					margin-right: 10px;
+				}
 				&:hover {
 					background: var(--rbb-general-primary-color);
 				}

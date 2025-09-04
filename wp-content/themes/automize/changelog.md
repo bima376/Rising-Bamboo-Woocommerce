@@ -3,6 +3,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
+## [1.3.3]
+### Fixed
+- Fix rtl error in woocommerce.
+- Fix bug where description doesn't appear in Quick View.
+- Updated the “Continue Shopping” button link in the Cart Canvas for better user experience.
+- Improved compatibility with the Stripe payment gateway.
+- Displayed a user-friendly message when the category filter returns no products.
 ## [1.3.2]
 ### Fixed
 - Fix _load_textdomain_just_in_time was called incorrectly. (wordpress 6.7.0)

@@ -10,7 +10,7 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see         https://docs.woocommerce.com/document/template-structure/
+ * @see         https://woocommerce.com/document/template-structure/
  * @package     WooCommerce\Templates
  * @version     3.5.0
  */
@@ -19,20 +19,15 @@ if ( ! defined('ABSPATH') ) {
 	exit;
 }
 ?>
-<div class="rbb-payment__method py-[19px] border-b flex wc_payment_method payment_method_<?php echo esc_attr($gateway->id); ?>">
-	<label class="rbb__input-radio flex items-center grow-0" for="payment_method_<?php echo esc_attr($gateway->id); ?>">
-		<input id="payment_method_<?php echo esc_attr($gateway->id); ?>" type="radio" class="input-radio" name="payment_method" value="<?php echo esc_attr($gateway->id); ?>" <?php checked($gateway->chosen, true); ?> data-order_button_text="<?php echo esc_attr($gateway->order_button_text); ?>" />
-		<span class="presentation"></span>
+<li class="wc_payment_method mb-2 payment_method_<?php echo esc_attr($gateway->id); ?>">
+	<input id="payment_method_<?php echo esc_attr($gateway->id); ?>" type="radio" class="input-radio mr-2" name="payment_method" value="<?php echo esc_attr($gateway->id); ?>" <?php checked($gateway->chosen, true); ?> data-order_button_text="<?php echo esc_attr($gateway->order_button_text); ?>" />
+
+	<label for="payment_method_<?php echo esc_attr($gateway->id); ?>">
+		<?php echo esc_html($gateway->get_title()); ?> <?php echo wp_kses_post($gateway->get_icon()); ?>
 	</label>
-	<div class="flex-grow">
-		<div class="font-semibold flex">
-			<span class="rbb-payment__gateway-title font-bold"><?php echo wp_kses($gateway->get_title(), 'rbb-kses'); ?></span>
-			<span class="rbb-payment__gateway-icon flex-grow ml-2"><?php echo wp_kses($gateway->get_icon(), 'rbb-kses'); ?></span>
-		</div>
-		<?php if ( $gateway->has_fields() || $gateway->get_description() ) : ?>
-		<div class="pt-3 mb-[6px] payment_box payment_method_<?php echo esc_attr($gateway->id); ?>" <?php if ( ! $gateway->chosen ) : /* phpcs:ignore Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace */ ?>style="display:none;"<?php endif; /* phpcs:ignore Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace */ ?>>
+	<?php if ( $gateway->has_fields() || $gateway->get_description() ) : ?>
+		<div class="payment_box payment_method_<?php echo esc_attr($gateway->id); ?>" <?php if ( ! $gateway->chosen ) : /* phpcs:ignore Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace */ ?>style="display:none;"<?php endif; /* phpcs:ignore Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace */ ?>>
 			<?php $gateway->payment_fields(); ?>
 		</div>
-	</div>
 	<?php endif; ?>
-</div>
+</li>

@@ -1,0 +1,27 @@
+/*
+Theme Name: Automize Child
+Description: Child theme untuk Automize
+Author: Your Name
+Template: automize
+Version: 1.3.3
+*/
+
+/* 
+ * Child theme styles akan dimuat setelah parent theme styles
+ * Anda bisa menambahkan custom CSS di sini
+ */
+
+/* Contoh custom styling */
+body {
+    /* Tambahkan custom styles di sini */
+}
+
+/* Custom header styling */
+.site-header {
+    /* Custom header styles */
+}
+
+/* Custom footer styling */
+.site-footer {
+    /* Custom footer styles */
+}

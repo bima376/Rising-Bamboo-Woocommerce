@@ -51,3 +51,13 @@ Autoloader::run('class-', 'RisingBambooTheme');
  *  Theme Initial.
  */
 App::instance();
+
+add_filter(
+	'woocommerce_product_loop',
+	function( $has_products ) {
+		if ( WC_Query::get_main_query()->is_filtered() && ! wc_get_loop_prop('total') ) {
+			return false;
+		}
+		return $has_products;
+	}
+);

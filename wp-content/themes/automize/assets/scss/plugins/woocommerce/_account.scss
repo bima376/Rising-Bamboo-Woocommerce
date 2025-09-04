@@ -38,6 +38,7 @@
 		font-size: 18px;
 		vertical-align: middle;
 		color: #7d7d7d;
+		float: left;
 	}
 }
 
@@ -266,6 +267,7 @@
 		padding-bottom: 16px;
 		.align-middle {
 			display: flex;
+			align-items: center;
 			&:before {
 				content: "";
 				font-family: rbb-font !important;
@@ -297,6 +299,7 @@
 	a{
 		.align-middle {
 			display: flex;
+			align-items: center;
 			&:before {
 				content: "\ea91";
 				font-family: rbb-font;

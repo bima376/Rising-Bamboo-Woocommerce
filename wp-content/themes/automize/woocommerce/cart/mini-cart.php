@@ -14,7 +14,7 @@
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce\Templates
- * @version 9.4.0
+ * @version 10.0.0
  */
 
 use RisingBambooTheme\App\App;
@@ -106,7 +106,7 @@ do_action('woocommerce_before_mini_cart'); ?>
 			?>
 		</p>
 		<div class="shopping font-bold text-xs uppercase pt-3 mb-[30px]">
-			<a class="h-[46px] button max-w-[230px] w-full inline-block rounded-[46px] leading-[46px] px-5 text-white duration-300 bg-[var(--rbb-general-button-bg-color)] hover:bg-[var(--rbb-general-button-bg-hover-color)]" href="<?php echo esc_url(home_url('shop')); ?>">
+			<a class="h-[46px] button max-w-[230px] w-full inline-block rounded-[46px] leading-[46px] px-5 text-white duration-300 bg-[var(--rbb-general-button-bg-color)] hover:bg-[var(--rbb-general-button-bg-hover-color)]" href="<?php echo esc_url(get_permalink(wc_get_page_id('shop'))); ?>">
 				<?php esc_html_e('continue shopping', 'automize'); ?>
 			</a>
 		</div>

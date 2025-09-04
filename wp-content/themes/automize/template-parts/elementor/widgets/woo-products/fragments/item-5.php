@@ -55,7 +55,7 @@ $effect_images  = Setting::get(RISING_BAMBOO_KIRKI_FIELD_WOOCOMMERCE_PRODUCT_IMA
 				</label>
 			<?php } ?>
 		</div>
-		<div class="product_button button-groups absolute bottom-5 left-1/2 -translate-x-1/2 flex">
+		<div class="product_button button-groups absolute bottom-5 left-1/2 -translate-x-1/2 rtl:translate-x-1/2 flex">
 			<?php
 			if ( $show_add_to_cart ) {
 				$args      = [];

@@ -124,7 +124,11 @@ class Woocommerce extends Singleton {
 	 */
 	public function scripts(): void {
 		wp_enqueue_style('rising-bamboo-photoswipe-lightbox', get_template_directory_uri() . '/dist/js/plugins/photoswipe/photoswipe.css', [], App::$version);
-		wp_enqueue_style('rising-bamboo-woocommerce-style', get_template_directory_uri() . '/dist/css/woocommerce.css', [], App::$version);
+		if ( ! is_rtl() ) {
+			wp_enqueue_style('rising-bamboo-woocommerce-style', get_template_directory_uri() . '/dist/css/woocommerce.css', [], App::$version);
+		} else {
+			wp_enqueue_style('rising-bamboo-woocommerce-rtl', get_template_directory_uri() . '/dist/css/woocommerce-rtl.css', [], App::$version);
+		}
 
 		$font_path   = WC()->plugin_url() . '/assets/fonts/';
 		$inline_font = '@font-face {

@@ -37,8 +37,8 @@ do_action('woocommerce_before_account_navigation');
 				?>
 				<li class="<?php echo wc_get_account_menu_item_classes($endpoint); ?>">
 					<a class="font-semibold block <?php echo esc_attr(( $i < $count ) ? 'border-b mb-4 pb-4' : ''); ?>" href="<?php echo esc_url(wc_get_account_endpoint_url($endpoint)); ?>">
-						<div class="inline-block">
-						<?php echo wp_kses_post(Helper::woo_get_account_menu_item_icon($endpoint, 'align-middle mr-6 lg:mr-8')); ?><span class="align-middle"><?php echo esc_html($label); ?></span>
+						<div class="inline-flex">
+						<?php echo wp_kses_post(Helper::woo_get_account_menu_item_icon($endpoint, 'align-middle rtl:align-middle mr-6 lg:mr-8 rtl:ml-0')); ?><span class="align-middle"><?php echo esc_html($label); ?></span>
 						</div>
 					</a>
 				</li>

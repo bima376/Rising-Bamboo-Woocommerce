@@ -21,7 +21,7 @@ $class_string    = implode(' ', array_filter($classes));
 <div id="<?php echo esc_attr($id); ?>" class="banner-image group relative overflow-hidden <?php echo esc_attr($layout); ?>">
 	<div class="mx-auto text-center">
 		<div class="md:grid relative overflow-hidden rounded-[10px]">
-			<div class="absolute left-1/2 -translate-x-1/2 w-full z-10 text-left md:top-[70px] max-w-[300px] top-10 px-5">
+			<div class="absolute left-1/2 -translate-x-1/2 rtl:translate-x-1/2 w-full z-10 text-left md:top-[70px] max-w-[300px] top-10 px-5">
 				<div class="text-center">
 					<div class="title_block">
 						<p class="sub_title text-base text-white mb-2"><?php echo wp_kses_post($sub_title); ?></p>				

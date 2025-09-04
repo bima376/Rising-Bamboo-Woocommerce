@@ -52,11 +52,8 @@ if ( $show_custom_field ) {
 		}
 	}
 }
-
-// Check if product is out of stock to add class to parent
-$is_out_of_stock = ( 'instock' !== $product->get_stock_status() );
 ?>
-<div class="item<?php echo $is_out_of_stock ? ' out-of-stock' : ''; ?>">
+<div class="item">
 	<div class="item-product relative mt-6">
 		<div class="thumbnail-container relative overflow-hidden border bg-white rounded-[10px] 
 		<?php 

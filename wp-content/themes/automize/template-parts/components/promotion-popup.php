@@ -50,7 +50,7 @@ $class_string    = implode(' ', array_filter($classes));
 			</div>
 		<?php } ?>
 		<?php if ( $args['dont_show_again'] ) { ?>
-			<div class="md:absolute md:bottom-5 md:right-1/2 md:translate-x-2/4 md:pt-0 pt-8 text-[11px]">
+			<div class="md:absolute md:bottom-5 md:right-1/2 md:translate-x-2/4 rtl:translate-x-[-50%] md:pt-0 pt-8 text-[11px]">
 				<input class="cursor-pointer" id="rbb_dont_show_again" type="checkbox" name="rbb_dont_show_again">
 				<label for="rbb_dont_show_again"><?php echo esc_html__('Don\'t show this popup again', 'automize'); ?></label>
 			</div>

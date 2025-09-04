@@ -60,7 +60,8 @@ body {
 		font-size: 18px;
 		min-height: 60px;
 		padding: 16px 30px;
-
+		display: flex;
+		align-items: center;
 		i {
 			color: var(--rbb-general-secondary-color);
 		}

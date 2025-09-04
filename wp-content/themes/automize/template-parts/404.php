@@ -37,7 +37,7 @@ get_header();
 						<a href="<?php echo esc_url(home_url('/')); ?>" class="button inline-block duration-300 mb-xs-10 h-12 leading-[22px] rounded-[5px] min-w-[250px] py-[13px] px-10 mx-[5px]">
 							<span class="h-12"><?php echo esc_html__('Back to Homepage', 'automize'); ?></span>
 						</a>
-						<a href="<?php echo esc_url(home_url('shop')); ?>" class="button inline-block md:mt-0 mt-5 duration-300 h-12 leading-[22px] rounded-[5px] min-w-[250px] py-[13px] px-10 mx-[5px]">
+						<a href="<?php echo esc_url(get_permalink(wc_get_page_id('shop'))); ?>" class="button inline-block md:mt-0 mt-5 duration-300 h-12 leading-[22px] rounded-[5px] min-w-[250px] py-[13px] px-10 mx-[5px]">
 							<span class="h-12" ><?php echo esc_html__('Continue shopping', 'automize'); ?></span>
 						</a>
 					</div>

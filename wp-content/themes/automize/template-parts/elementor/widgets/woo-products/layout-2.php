@@ -51,8 +51,8 @@ if ( count($data['products']) ) {
 			</div>
 		<?php } ?>
 		<div class="2xl:container px-[15px] mx-auto">
-			<div class="<?php echo ( 'category' === $data['type'] || 'brand' === $data['type'] ) ? 'md:flex lg:gap-[30px] gap-[20px]' : 'w-full'; ?>">
-				<?php if ( 'category' === $data['type'] || 'brand' === $data['type'] ) { ?>
+			<div class="<?php echo ( 'category' === $data['type'] ) ? 'md:flex lg:gap-[30px] gap-[20px]' : 'w-full'; ?>">
+				<?php if ( 'category' === $data['type'] ) { ?>
 				<div class="title_left group lg:w-1/3 md:w-[42%] w-full lg:mt-[15px] mt-[7px]">
 					<div class="xl:relative sticky top-0 inline-block">
 						<div class="text-center relative overflow-hidden">
@@ -64,69 +64,34 @@ if ( count($data['products']) ) {
 							</div>
 							<?php } ?>
 								<?php
-								if ( 'category' === $data['type'] ) {
-									$cat_count = count($data['categories']);
-									if ( '1' < $cat_count || ( $show_filter && '1' === $cat_count ) ) {
-										?>
-										<select class="appearance-none"
-												data-class="relative inset-0 px-[30px] font-extrabold text-base uppercase cursor-pointer transition-all duration-200 ease-in border-2 rounded-3xl"
-												data-ajax='{
-													"action": "rbb_get_products_by_category",
-													"fragment": "item-5",
-													"order_by" : "<?php echo esc_attr($order_by); ?>",
-													"order" : "<?php echo esc_attr($order); ?>",
-													"limit" : "<?php echo esc_attr($limit); ?>",
-													"show_wishlist" : <?php echo esc_attr(( $show_wishlist ) ? '1' : '0'); ?>,
-													"show_rating" : <?php echo esc_attr(( $show_rating ) ? '1' : '0'); ?>,
-													"show_quickview" : <?php echo esc_attr(( $show_quickview ) ? '1' : '0'); ?>,
-													"show_compare" : <?php echo esc_attr(( $show_compare ) ? '1' : '0'); ?>,
-													"show_add_to_cart" : <?php echo esc_attr(( $show_add_to_cart ) ? '1' : '0'); ?>,
-													"show_countdown" : <?php echo esc_attr(( $show_countdown ) ? '1' : '0'); ?>,
-													"show_percentage_discount" : <?php echo esc_attr(( $show_percentage_discount ) ? '1' : '0'); ?>,
-													"show_stock" : <?php echo esc_attr(( $show_stock ) ? '1' : '0'); ?>,
-													"hide_out_of_stock" : "<?php echo esc_attr($hide_out_of_stock); ?>",
-													"show_custom_field" : <?php echo esc_attr(( $show_custom_field ) ? '1' : '0'); ?>,
-													"custom_fields" : <?php echo wp_json_encode($custom_fields); ?>,
-													"custom_field_ignore" : <?php echo wp_json_encode($custom_field_ignore); ?>
-												}'
-										>
-											<?php foreach ( $data['categories'] as $category_id => $category ) { ?>
-												<option value="<?php echo esc_attr($category_id); ?>"><?php echo wp_kses_post($category); ?></option>
-											<?php } ?>
-										</select>
-									<?php } ?>
-								<?php } elseif ( 'brand' === $data['type'] ) { ?>
-									<?php
-									$brand_count = count($data['brands']);
-									if ( '1' < $brand_count || ( $show_filter && '1' === $brand_count ) ) {
-										?>
-										<select class="appearance-none"
-												data-class="relative inset-0 px-[30px] font-extrabold text-base uppercase cursor-pointer transition-all duration-200 ease-in border-2 rounded-3xl"
-												data-ajax='{
-													"action": "rbb_get_products_by_brand",
-													"fragment": "item-5",
-													"order_by" : "<?php echo esc_attr($order_by); ?>",
-													"order" : "<?php echo esc_attr($order); ?>",
-													"limit" : "<?php echo esc_attr($limit); ?>",
-													"show_wishlist" : <?php echo esc_attr(( $show_wishlist ) ? '1' : '0'); ?>,
-													"show_rating" : <?php echo esc_attr(( $show_rating ) ? '1' : '0'); ?>,
-													"show_quickview" : <?php echo esc_attr(( $show_quickview ) ? '1' : '0'); ?>,
-													"show_compare" : <?php echo esc_attr(( $show_compare ) ? '1' : '0'); ?>,
-													"show_add_to_cart" : <?php echo esc_attr(( $show_add_to_cart ) ? '1' : '0'); ?>,
-													"show_countdown" : <?php echo esc_attr(( $show_countdown ) ? '1' : '0'); ?>,
-													"show_percentage_discount" : <?php echo esc_attr(( $show_percentage_discount ) ? '1' : '0'); ?>,
-													"show_stock" : <?php echo esc_attr(( $show_stock ) ? '1' : '0'); ?>,
-													"hide_out_of_stock" : "<?php echo esc_attr($hide_out_of_stock); ?>",
-													"show_custom_field" : <?php echo esc_attr(( $show_custom_field ) ? '1' : '0'); ?>,
-													"custom_fields" : <?php echo wp_json_encode($custom_fields); ?>,
-													"custom_field_ignore" : <?php echo wp_json_encode($custom_field_ignore); ?>
-												}'
-										>
-											<?php foreach ( $data['brands'] as $brand_id => $brand ) { ?>
-												<option value="<?php echo esc_attr($brand_id); ?>"><?php echo wp_kses_post($brand); ?></option>
-											<?php } ?>
-										</select>
-									<?php } ?>
+								$cat_count = count($data['categories']);
+								if ( '1' < $cat_count || ( $show_filter && '1' === $cat_count ) ) {
+									?>
+									<select class="appearance-none"
+											data-class="relative inset-0 px-[30px] font-extrabold text-base uppercase cursor-pointer transition-all duration-200 ease-in border-2 rounded-3xl"
+											data-ajax='{
+												"action": "rbb_get_products_by_category",
+												"fragment": "item-5",
+												"order_by" : "<?php echo esc_attr($order_by); ?>",
+												"order" : "<?php echo esc_attr($order); ?>",
+												"limit" : "<?php echo esc_attr($limit); ?>",
+												"show_wishlist" : <?php echo esc_attr(( $show_wishlist ) ? '1' : '0'); ?>,
+												"show_rating" : <?php echo esc_attr(( $show_rating ) ? '1' : '0'); ?>,
+												"show_quickview" : <?php echo esc_attr(( $show_quickview ) ? '1' : '0'); ?>,
+												"show_compare" : <?php echo esc_attr(( $show_compare ) ? '1' : '0'); ?>,
+												"show_add_to_cart" : <?php echo esc_attr(( $show_add_to_cart ) ? '1' : '0'); ?>
+												"show_countdown" : <?php echo esc_attr(( $show_countdown ) ? '1' : '0'); ?>,
+												"show_percentage_discount" : <?php echo esc_attr(( $show_percentage_discount ) ? '1' : '0'); ?>,
+												"show_stock" : <?php echo esc_attr(( $show_stock ) ? '1' : '0'); ?>,
+												"show_custom_field" : <?php echo esc_attr(( $show_custom_field ) ? '1' : '0'); ?>,
+												"custom_fields" : <?php echo wp_json_encode($custom_fields); ?>,
+												"custom_field_ignore" : <?php echo wp_json_encode($custom_field_ignore); ?>
+											}'
+									>
+										<?php foreach ( $data['categories'] as $category_id => $category ) { ?>
+											<option value="<?php echo esc_attr($category_id); ?>"><?php echo wp_kses_post($category); ?></option>
+										<?php } ?>
+									</select>
 								<?php } ?>
 							<div class="mt-auto mb-0">
 								<a class="rbb-button button !bg-white !text-[color:var(--rbb-general-button-color)] hover:!text-[color:var(--rbb-general-button-hover-color)] hover:!bg-[color:var(--rbb-general-button-bg-hover-color)] inline-block btn h-[50px] leading-[50px] rounded-[50px] min-w-[140px]" href="<?php echo esc_url($category_link); ?>">
@@ -168,7 +133,7 @@ if ( count($data['products']) ) {
 						<?php } ?>
 				</div>
 				<?php } ?>
-				<div class="md:mt-0 mt-[30px] <?php echo esc_attr('category' === $data['type'] || 'brand' === $data['type']) ? 'lg:w-2/3 md:w-[58%] w-full' : ' w-full'; ?> ">
+				<div class="md:mt-0 mt-[30px] <?php echo esc_attr('category' === $data['type']) ? 'lg:w-2/3 md:w-[58%] w-full' : ' w-full'; ?> ">
 						<div class="rbb-slick-carousel slick-carousel slick-carousel-center" data-slick='{
 							"arrows": <?php echo esc_attr($show_arrows) ? 'true' : 'false'; ?>,
 							"appendArrows" : "#<?php echo esc_attr($id); ?> .arrow-custom",
