@@ -156,7 +156,11 @@ class BrandFilter extends WoocommerceBase {
 
 		$show_count = $this->get_setting($instance, 'count');
 
-		$count = $this->get_filtered_term_product_counts(wp_list_pluck($terms, 'term_id'), self::TAXONOMY_NAME, 'or');
+		// Optimization: Limit number of terms to prevent heavy queries
+		$term_ids = wp_list_pluck($terms, 'term_id');
+		$term_ids = array_slice($term_ids, 0, 10); // Maximum 10 brands
+		
+		$count = $this->get_filtered_term_product_counts($term_ids, self::TAXONOMY_NAME, 'or');
 
 		$base_link = RbbCoreHelperWoocommerce::get_current_page_url();
 
@@ -175,6 +179,8 @@ class BrandFilter extends WoocommerceBase {
 		if ( ! empty($brands) ) {
 			//phpcs:ignore
 			$return = array_map('intval', explode(',', $brands));
+			// Optimization: Limit number of brands that can be selected to prevent heavy queries
+			$return = array_slice($return, 0, 5);
 		}
 		return $return;
 	}

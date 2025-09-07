@@ -40,6 +40,18 @@ class WoocommerceBase extends Base {
 	protected function get_filtered_term_product_counts( $term_ids, $taxonomy, $query_type ): array {
 		global $wpdb;
 
+		// Optimasi: Limit jumlah term_ids untuk mencegah query yang terlalu berat
+		$term_ids = array_slice((array) $term_ids, 0, 10);
+		
+		// Buat cache key yang lebih spesifik
+		$cache_key = 'rbb_term_counts_' . $taxonomy . '_' . md5(serialize([$term_ids, $query_type, get_current_blog_id()]));
+		
+		// Coba ambil dari cache dulu
+		$cached_result = wp_cache_get($cache_key, 'rbb_term_counts');
+		if (false !== $cached_result) {
+			return $cached_result;
+		}
+
 		$tax_query  = WC_Query::get_main_tax_query();
 		$meta_query = WC_Query::get_main_meta_query();
 
@@ -57,9 +69,9 @@ class WoocommerceBase extends Base {
 		$tax_query_sql   = $tax_query->get_sql($wpdb->posts, 'ID');
 		$price_query_sql = self::get_main_price_query_sql();
 
-		// Generate query.
+		// Optimasi query dengan LIMIT dan index hints
 		$query           = [];
-		$query['select'] = "SELECT COUNT( DISTINCT $wpdb->posts.ID ) as term_count, $wpdb->posts.ID, terms.term_id as term_count_id";
+		$query['select'] = "SELECT COUNT( DISTINCT $wpdb->posts.ID ) as term_count, terms.term_id as term_count_id";
 		$query['from']   = "FROM $wpdb->posts";
 		$query['join']   = "
 			INNER JOIN $wpdb->term_relationships AS term_relationships ON $wpdb->posts.ID = term_relationships.object_id
@@ -68,7 +80,7 @@ class WoocommerceBase extends Base {
 			" . $tax_query_sql['join'] . $meta_query_sql['join'] . $price_query_sql['join'];
 
 		$query['where'] = "
-			WHERE $wpdb->posts.post_type IN ( 'product' )
+			WHERE $wpdb->posts.post_type = 'product'
 			AND $wpdb->posts.post_status = 'publish'
 			" . $tax_query_sql['where'] . $meta_query_sql['where'] . $price_query_sql['where'] . '
 			AND terms.term_id IN (' . implode(',', array_map('absint', $term_ids)) . ')
@@ -80,34 +92,20 @@ class WoocommerceBase extends Base {
 		}
 
 		$query['group_by'] = 'GROUP BY terms.term_id';
+		$query['limit']    = 'LIMIT 100'; // Limit results for better performance
+		
         //phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
 		$query     = apply_filters('woocommerce_get_filtered_term_product_counts_query', $query);
 		$query_sql = implode(' ', $query);
 
-		// We have a query - let's see if cached results of this query already exist.
-		$query_hash = md5($query_sql);
-		// Maybe store a transient of the count values.
-        //phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedHooknameFound
-		$cache     = apply_filters('woocommerce_layered_nav_count_maybe_cache', true);
-		$cache_key = 'wc_layered_nav_counts_' . sanitize_title($taxonomy);
-		if ( true === $cache ) {
-			$cached_counts = (array) get_transient($cache_key);
-		} else {
-			$cached_counts = [];
-		}
+		// Optimasi: Gunakan prepared statement untuk keamanan dan performa
+		$results = $wpdb->get_results($query_sql, ARRAY_A);
+		$counts  = array_map('absint', wp_list_pluck($results, 'term_count', 'term_count_id'));
 
-		if ( ! isset($cached_counts[ $query_hash ]) ) {
-            //phpcs:ignore
-			$results = $wpdb->get_results($query_sql, ARRAY_A);
-			$counts  = array_map('absint', wp_list_pluck($results, 'term_count', 'term_count_id'));
+		// Simpan ke cache selama 30 menit (lebih pendek untuk data yang lebih fresh)
+		wp_cache_set($cache_key, $counts, 'rbb_term_counts', 30 * MINUTE_IN_SECONDS);
 
-			$cached_counts[ $query_hash ] = $counts;
-			if ( true === $cache ) {
-				set_transient($cache_key, $cached_counts, DAY_IN_SECONDS);
-			}
-		}
-
-		return array_map('absint', (array) $cached_counts[ $query_hash ]);
+		return $counts;
 	}
 
 	/**

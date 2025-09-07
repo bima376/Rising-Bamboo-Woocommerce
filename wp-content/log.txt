@@ -1,0 +1,999 @@
+[05-Sep-2025 07:51:34] NOTICE: finished trace of 899740
+[05-Sep-2025 07:51:34] WARNING: [pool www] child 899707 exited on signal 15 (SIGTERM) after 3981.463195 seconds from start
+[05-Sep-2025 07:51:34] NOTICE: [pool www] child 903884 started
+[05-Sep-2025 07:51:34] WARNING: [pool www] child 899720 exited on signal 15 (SIGTERM) after 3968.119336 seconds from start
+[05-Sep-2025 07:51:34] NOTICE: [pool www] child 903885 started
+[05-Sep-2025 07:51:37] WARNING: [pool www] child 903853, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,175,192,215,219,216,156") executing too slow (11.337980 sec), logging
+[05-Sep-2025 07:51:37] WARNING: [pool www] child 899752, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,213,166,176,185") execution timed out (61.660987 sec), terminating
+[05-Sep-2025 07:51:37] WARNING: [pool www] child 899730, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,217,154,208,150") executing too slow (11.536993 sec), logging
+[05-Sep-2025 07:51:37] NOTICE: child 899730 stopped for tracing
+[05-Sep-2025 07:51:37] NOTICE: about to trace 899730
+[05-Sep-2025 07:51:37] NOTICE: finished trace of 899730
+[05-Sep-2025 07:51:37] NOTICE: child 903853 stopped for tracing
+[05-Sep-2025 07:51:37] NOTICE: about to trace 903853
+[05-Sep-2025 07:51:37] NOTICE: finished trace of 903853
+[05-Sep-2025 07:51:37] WARNING: [pool www] child 899752 exited on signal 15 (SIGTERM) after 3944.738895 seconds from start
+[05-Sep-2025 07:51:37] NOTICE: [pool www] child 903886 started
+[05-Sep-2025 07:51:40] WARNING: [pool www] child 903860, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,159,215,208,187,181") executing too slow (10.121996 sec), logging
+[05-Sep-2025 07:51:40] WARNING: [pool www] child 903859, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,214,152,4229,219,218") executing too slow (11.287002 sec), logging
+[05-Sep-2025 07:51:40] WARNING: [pool www] child 903785, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,208,202,218,209") execution timed out (60.998997 sec), terminating
+[05-Sep-2025 07:51:40] WARNING: [pool www] child 899718, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,150,215,206,214,175") execution timed out (62.795669 sec), terminating
+[05-Sep-2025 07:51:40] NOTICE: child 903860 stopped for tracing
+[05-Sep-2025 07:51:40] NOTICE: about to trace 903860
+[05-Sep-2025 07:51:40] NOTICE: finished trace of 903860
+[05-Sep-2025 07:51:40] NOTICE: child 903859 stopped for tracing
+[05-Sep-2025 07:51:40] NOTICE: about to trace 903859
+[05-Sep-2025 07:51:40] NOTICE: finished trace of 903859
+[05-Sep-2025 07:51:41] WARNING: [pool www] child 903785 exited on signal 15 (SIGTERM) after 86.625180 seconds from start
+[05-Sep-2025 07:51:41] NOTICE: [pool www] child 903887 started
+[05-Sep-2025 07:51:41] WARNING: [pool www] child 899718 exited on signal 15 (SIGTERM) after 3978.144193 seconds from start
+[05-Sep-2025 07:51:41] NOTICE: [pool www] child 903888 started
+[05-Sep-2025 07:51:44] WARNING: [pool www] child 903786, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,150,204,215,164,201") execution timed out (62.831824 sec), terminating
+[05-Sep-2025 07:51:44] WARNING: [pool www] child 899756, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,192,219,168") executing too slow (12.847802 sec), logging
+[05-Sep-2025 07:51:44] WARNING: [pool www] child 899755, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,195,171,163,193") execution timed out (60.336539 sec), terminating
+[05-Sep-2025 07:51:44] WARNING: [pool www] child 899699, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,214,174,4229,169") executing too slow (11.913829 sec), logging
+[05-Sep-2025 07:51:44] NOTICE: child 899756 stopped for tracing
+[05-Sep-2025 07:51:44] NOTICE: about to trace 899756
+[05-Sep-2025 07:51:44] NOTICE: finished trace of 899756
+[05-Sep-2025 07:51:44] NOTICE: child 899699 stopped for tracing
+[05-Sep-2025 07:51:44] NOTICE: about to trace 899699
+[05-Sep-2025 07:51:44] NOTICE: finished trace of 899699
+[05-Sep-2025 07:51:44] WARNING: [pool www] child 903786 exited on signal 15 (SIGTERM) after 87.864515 seconds from start
+[05-Sep-2025 07:51:44] NOTICE: [pool www] child 903893 started
+[05-Sep-2025 07:51:44] WARNING: [pool www] child 899755 exited on signal 15 (SIGTERM) after 3948.132176 seconds from start
+[05-Sep-2025 07:51:44] NOTICE: [pool www] child 903894 started
+[05-Sep-2025 07:51:47] WARNING: [pool www] child 899719, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,201,214,164,157,150") execution timed out (61.532996 sec), terminating
+[05-Sep-2025 07:51:47] WARNING: [pool www] child 899719 exited on signal 15 (SIGTERM) after 3984.582039 seconds from start
+[05-Sep-2025 07:51:47] NOTICE: [pool www] child 903895 started
+[05-Sep-2025 07:51:50] WARNING: [pool www] child 903864, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,205,199,212,211,192") executing too slow (11.879433 sec), logging
+[05-Sep-2025 07:51:50] WARNING: [pool www] child 903862, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,178,150,185,160") executing too slow (13.138419 sec), logging
+[05-Sep-2025 07:51:50] WARNING: [pool www] child 903817, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,187,214,157,190") executing too slow (12.120441 sec), logging
+[05-Sep-2025 07:51:50] WARNING: [pool www] child 903791, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,214,196,219,204") execution timed out (63.258379 sec), terminating
+[05-Sep-2025 07:51:50] WARNING: [pool www] child 899728, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,195,174,157,213") executing too slow (11.644442 sec), logging
+[05-Sep-2025 07:51:50] WARNING: [pool www] child 899722, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,196,157,176,206") execution timed out (62.125939 sec), terminating
+[05-Sep-2025 07:51:50] NOTICE: child 903817 stopped for tracing
+[05-Sep-2025 07:51:50] NOTICE: about to trace 903817
+[05-Sep-2025 07:51:50] NOTICE: finished trace of 903817
+[05-Sep-2025 07:51:50] NOTICE: child 903862 stopped for tracing
+[05-Sep-2025 07:51:50] NOTICE: about to trace 903862
+[05-Sep-2025 07:51:50] NOTICE: finished trace of 903862
+[05-Sep-2025 07:51:50] NOTICE: child 899728 stopped for tracing
+[05-Sep-2025 07:51:50] NOTICE: about to trace 899728
+[05-Sep-2025 07:51:50] NOTICE: finished trace of 899728
+[05-Sep-2025 07:51:50] NOTICE: child 903864 stopped for tracing
+[05-Sep-2025 07:51:50] NOTICE: about to trace 903864
+[05-Sep-2025 07:51:50] NOTICE: finished trace of 903864
+[05-Sep-2025 07:51:50] WARNING: [pool www] child 903791 exited on signal 15 (SIGTERM) after 89.513630 seconds from start
+[05-Sep-2025 07:51:50] NOTICE: [pool www] child 903896 started
+[05-Sep-2025 07:51:51] WARNING: [pool www] child 899722 exited on signal 15 (SIGTERM) after 3981.447508 seconds from start
+[05-Sep-2025 07:51:51] NOTICE: [pool www] child 903897 started
+[05-Sep-2025 07:51:54] WARNING: [pool www] child 903872, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=198%2C162%2C150%2C151%2C152&filter_product_cat=4138&orderby=price") executing too slow (10.714750 sec), logging
+[05-Sep-2025 07:51:54] WARNING: [pool www] child 903792, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php") execution timed out (62.966751 sec), terminating
+[05-Sep-2025 07:51:54] WARNING: [pool www] child 903706, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,214,215,162,218,151,177") execution timed out (61.109817 sec), terminating
+[05-Sep-2025 07:51:54] WARNING: [pool www] child 899732, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=161,157,215,166,189") execution timed out (62.797749 sec), terminating
+[05-Sep-2025 07:51:54] WARNING: [pool www] child 899700, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=198%2C162%2C194&filter_product_cat=4024&orderby=price-desc") execution timed out (62.453746 sec), terminating
+[05-Sep-2025 07:51:54] NOTICE: child 903872 stopped for tracing
+[05-Sep-2025 07:51:54] NOTICE: about to trace 903872
+[05-Sep-2025 07:51:54] NOTICE: finished trace of 903872
+[05-Sep-2025 07:51:54] WARNING: [pool www] child 899700 exited on signal 15 (SIGTERM) after 4004.651055 seconds from start
+[05-Sep-2025 07:51:54] NOTICE: [pool www] child 903902 started
+[05-Sep-2025 07:51:54] WARNING: [pool www] child 903792 exited on signal 15 (SIGTERM) after 91.851886 seconds from start
+[05-Sep-2025 07:51:54] NOTICE: [pool www] child 903903 started
+[05-Sep-2025 07:51:54] WARNING: [pool www] child 899732 exited on signal 15 (SIGTERM) after 3974.747147 seconds from start
+[05-Sep-2025 07:51:54] NOTICE: [pool www] child 903904 started
+[05-Sep-2025 07:51:54] WARNING: [pool www] child 903706 exited on signal 15 (SIGTERM) after 167.328056 seconds from start
+[05-Sep-2025 07:51:54] NOTICE: [pool www] child 903905 started
+[05-Sep-2025 07:51:57] WARNING: [pool www] child 899721, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,205,214,170") execution timed out (62.620086 sec), terminating
+[05-Sep-2025 07:51:57] WARNING: [pool www] child 899702, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,214,177,154,170,183") execution timed out (60.543087 sec), terminating
+[05-Sep-2025 07:51:57] WARNING: [pool www] child 899701, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,195,211,176,157") executing too slow (10.123087 sec), logging
+[05-Sep-2025 07:51:57] NOTICE: child 899701 stopped for tracing
+[05-Sep-2025 07:51:57] NOTICE: about to trace 899701
+[05-Sep-2025 07:51:57] NOTICE: finished trace of 899701
+[05-Sep-2025 07:51:57] WARNING: [pool www] child 899721 exited on signal 15 (SIGTERM) after 3991.256554 seconds from start
+[05-Sep-2025 07:51:57] NOTICE: [pool www] child 903906 started
+[05-Sep-2025 07:51:57] WARNING: [pool www] child 899702 exited on signal 15 (SIGTERM) after 4007.911839 seconds from start
+[05-Sep-2025 07:51:57] NOTICE: [pool www] child 903907 started
+[05-Sep-2025 07:52:00] WARNING: [pool www] child 903793, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,164,213,171,201") execution timed out (60.407011 sec), terminating
+[05-Sep-2025 07:52:00] WARNING: [pool www] child 899747, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,214,213,150,159,215") execution timed out (62.491994 sec), terminating
+[05-Sep-2025 07:52:00] WARNING: [pool www] child 899747 exited on signal 15 (SIGTERM) after 3971.249906 seconds from start
+[05-Sep-2025 07:52:00] NOTICE: [pool www] child 903908 started
+[05-Sep-2025 07:52:01] WARNING: [pool www] child 903793 exited on signal 15 (SIGTERM) after 91.557591 seconds from start
+[05-Sep-2025 07:52:01] NOTICE: [pool www] child 903909 started
+[05-Sep-2025 07:52:04] WARNING: [pool www] child 903875, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,205,4223,4229,204,197") executing too slow (10.473542 sec), logging
+[05-Sep-2025 07:52:04] WARNING: [pool www] child 903707, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,214,215,217,157,172") execution timed out (61.626658 sec), terminating
+[05-Sep-2025 07:52:04] WARNING: [pool www] child 899713, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=4223%2C4224%2C186%2C204%2C150%2C155%2C164%2C197%2C193%2C183%2C175%2C154%2C203%2C177%2C211%2C152%2C196%2C189%2C195%2C218%2C169%2C173&filter_product_cat=4157&orderby=price-desc") execution timed out (63.154674 sec), terminating
+[05-Sep-2025 07:52:04] NOTICE: child 903875 stopped for tracing
+[05-Sep-2025 07:52:04] NOTICE: about to trace 903875
+[05-Sep-2025 07:52:04] NOTICE: finished trace of 903875
+[05-Sep-2025 07:52:04] WARNING: [pool www] child 903707 exited on signal 15 (SIGTERM) after 175.234434 seconds from start
+[05-Sep-2025 07:52:04] NOTICE: [pool www] child 903916 started
+[05-Sep-2025 07:52:04] WARNING: [pool www] child 899713 exited on signal 15 (SIGTERM) after 4004.537199 seconds from start
+[05-Sep-2025 07:52:04] NOTICE: [pool www] child 903917 started
+[05-Sep-2025 07:52:07] WARNING: [pool www] child 903876, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php") executing too slow (13.128994 sec), logging
+[05-Sep-2025 07:52:07] WARNING: [pool www] child 903809, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,217,210,214,175") executing too slow (12.305989 sec), logging
+[05-Sep-2025 07:52:07] WARNING: [pool www] child 899723, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,208,214,166,162") execution timed out (63.131994 sec), terminating
+[05-Sep-2025 07:52:07] WARNING: [pool www] child 899712, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,168,213,157,4223") execution timed out (61.494982 sec), terminating
+[05-Sep-2025 07:52:07] NOTICE: child 903809 stopped for tracing
+[05-Sep-2025 07:52:07] NOTICE: about to trace 903809
+[05-Sep-2025 07:52:07] NOTICE: finished trace of 903809
+[05-Sep-2025 07:52:07] NOTICE: child 903876 stopped for tracing
+[05-Sep-2025 07:52:07] NOTICE: about to trace 903876
+[05-Sep-2025 07:52:07] NOTICE: finished trace of 903876
+[05-Sep-2025 07:52:07] WARNING: [pool www] child 899712 exited on signal 15 (SIGTERM) after 4007.909504 seconds from start
+[05-Sep-2025 07:52:07] NOTICE: [pool www] child 903950 started
+[05-Sep-2025 07:52:07] WARNING: [pool www] child 899723 exited on signal 15 (SIGTERM) after 3997.983504 seconds from start
+[05-Sep-2025 07:52:07] NOTICE: [pool www] child 903951 started
+[05-Sep-2025 07:52:10] WARNING: [pool www] child 903798, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,192,159,163,172") execution timed out (63.261003 sec), terminating
+[05-Sep-2025 07:52:10] WARNING: [pool www] child 899754, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,175,157,203,178") execution timed out (60.769999 sec), terminating
+[05-Sep-2025 07:52:10] WARNING: [pool www] child 903798 exited on signal 15 (SIGTERM) after 90.291030 seconds from start
+[05-Sep-2025 07:52:10] NOTICE: [pool www] child 903952 started
+[05-Sep-2025 07:52:10] WARNING: [pool www] child 899754 exited on signal 15 (SIGTERM) after 3977.990137 seconds from start
+[05-Sep-2025 07:52:10] NOTICE: [pool www] child 903953 started
+[05-Sep-2025 07:52:14] WARNING: [pool www] child 899746, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,150,204,215,149,213") execution timed out (62.396995 sec), terminating
+[05-Sep-2025 07:52:14] WARNING: [pool www] child 899742, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_cat=4179%2C4221&filter_product_brand=164") execution timed out (60.389981 sec), terminating
+[05-Sep-2025 07:52:14] WARNING: [pool www] child 899697, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,219,151,162,202") execution timed out (61.143991 sec), terminating
+[05-Sep-2025 07:52:14] WARNING: [pool www] child 899746 exited on signal 15 (SIGTERM) after 3984.556856 seconds from start
+[05-Sep-2025 07:52:14] NOTICE: [pool www] child 903958 started
+[05-Sep-2025 07:52:14] WARNING: [pool www] child 899697 exited on signal 15 (SIGTERM) after 4031.064432 seconds from start
+[05-Sep-2025 07:52:14] NOTICE: [pool www] child 903959 started
+[05-Sep-2025 07:52:14] WARNING: [pool www] child 899742 exited on signal 15 (SIGTERM) after 3987.882248 seconds from start
+[05-Sep-2025 07:52:14] NOTICE: [pool www] child 903960 started
+[05-Sep-2025 07:52:17] WARNING: [pool www] child 903808, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,201,171,156,150,218") execution timed out (61.636617 sec), terminating
+[05-Sep-2025 07:52:17] WARNING: [pool www] child 899744, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=4223%2C4224%2C206%2C205%2C185%2C163%2C184%2C173%2C160%2C202%2C183%2C149%2C175%2C192%2C162%2C208%2C204%2C166%2C161%2C209%2C151%2C201&filter_product_cat=4170&orderby=menu_order") executing too slow (11.213620 sec), logging
+[05-Sep-2025 07:52:17] WARNING: [pool www] child 899741, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=201%2C160%2C206%2C216%2C171&filter_product_cat=4113") execution timed out (60.018619 sec), terminating
+[05-Sep-2025 07:52:17] WARNING: [pool www] child 899711, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,192,214,215,168,213") execution timed out (60.815605 sec), terminating
+[05-Sep-2025 07:52:17] NOTICE: child 899744 stopped for tracing
+[05-Sep-2025 07:52:17] NOTICE: about to trace 899744
+[05-Sep-2025 07:52:17] NOTICE: finished trace of 899744
+[05-Sep-2025 07:52:17] WARNING: [pool www] child 899711 exited on signal 15 (SIGTERM) after 4021.287215 seconds from start
+[05-Sep-2025 07:52:17] NOTICE: [pool www] child 903963 started
+[05-Sep-2025 07:52:17] WARNING: [pool www] child 899741 exited on signal 15 (SIGTERM) after 3991.397708 seconds from start
+[05-Sep-2025 07:52:17] NOTICE: [pool www] child 903964 started
+[05-Sep-2025 07:52:17] WARNING: [pool www] child 903808 exited on signal 15 (SIGTERM) after 84.995883 seconds from start
+[05-Sep-2025 07:52:17] NOTICE: [pool www] child 903965 started
+[05-Sep-2025 07:52:20] WARNING: [pool www] child 903887, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,205,199,216,159,219") executing too slow (10.606237 sec), logging
+[05-Sep-2025 07:52:20] WARNING: [pool www] child 903863, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=187%2C150%2C188%2C171%2C195%2C216&filter_product_cat=4101") executing too slow (11.694236 sec), logging
+[05-Sep-2025 07:52:20] WARNING: [pool www] child 899753, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,162,199,214,191") execution timed out (62.447237 sec), terminating
+[05-Sep-2025 07:52:20] WARNING: [pool www] child 899710, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,168,213,219,158") execution timed out (61.522236 sec), terminating
+[05-Sep-2025 07:52:20] NOTICE: child 903887 stopped for tracing
+[05-Sep-2025 07:52:20] NOTICE: about to trace 903887
+[05-Sep-2025 07:52:20] NOTICE: finished trace of 903887
+[05-Sep-2025 07:52:20] NOTICE: child 903863 stopped for tracing
+[05-Sep-2025 07:52:20] NOTICE: about to trace 903863
+[05-Sep-2025 07:52:20] NOTICE: finished trace of 903863
+[05-Sep-2025 07:52:20] WARNING: [pool www] child 899710 exited on signal 15 (SIGTERM) after 4024.496100 seconds from start
+[05-Sep-2025 07:52:20] NOTICE: [pool www] child 903966 started
+[05-Sep-2025 07:52:20] WARNING: [pool www] child 899753 exited on signal 15 (SIGTERM) after 3988.026630 seconds from start
+[05-Sep-2025 07:52:20] NOTICE: [pool www] child 903967 started
+[05-Sep-2025 07:52:27] WARNING: [pool www] child 903894, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=175") executing too slow (12.918902 sec), logging
+[05-Sep-2025 07:52:27] NOTICE: child 903894 stopped for tracing
+[05-Sep-2025 07:52:27] NOTICE: about to trace 903894
+[05-Sep-2025 07:52:27] NOTICE: finished trace of 903894
+[05-Sep-2025 08:35:24] WARNING: [pool www] child 903960, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=4223%2C4224%2C199%2C158%2C179%2C205%2C163%2C184%2C173%2C160%2C165%2C216%2C183%2C213%2C168%2C149%2C175%2C162%2C157%2C193%2C154%2C171%2C207%2C195%2C174%2C187&filter_product_cat=4106&orderby=menu_order") executing too slow (10.050785 sec), logging
+[05-Sep-2025 08:35:24] WARNING: [pool www] child 903958, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,176,192,213,214") executing too slow (10.364937 sec), logging
+[05-Sep-2025 08:35:24] WARNING: [pool www] child 903903, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=151,185,188,219,200,197,155") executing too slow (10.252088 sec), logging
+[05-Sep-2025 08:35:24] NOTICE: child 903958 stopped for tracing
+[05-Sep-2025 08:35:24] NOTICE: about to trace 903958
+[05-Sep-2025 08:35:24] NOTICE: finished trace of 903958
+[05-Sep-2025 08:35:24] NOTICE: child 903903 stopped for tracing
+[05-Sep-2025 08:35:24] NOTICE: about to trace 903903
+[05-Sep-2025 08:35:24] NOTICE: finished trace of 903903
+[05-Sep-2025 08:35:24] NOTICE: child 903960 stopped for tracing
+[05-Sep-2025 08:35:24] NOTICE: about to trace 903960
+[05-Sep-2025 08:35:24] NOTICE: finished trace of 903960
+[05-Sep-2025 08:35:31] WARNING: [pool www] child 903950, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,175,218,159,205,165") executing too slow (10.235381 sec), logging
+[05-Sep-2025 08:35:31] NOTICE: child 903950 stopped for tracing
+[05-Sep-2025 08:35:31] NOTICE: about to trace 903950
+[05-Sep-2025 08:35:31] NOTICE: finished trace of 903950
+[05-Sep-2025 08:35:34] WARNING: [pool www] child 903888, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,159,218,162,157,209") executing too slow (11.966470 sec), logging
+[05-Sep-2025 08:35:34] NOTICE: child 903888 stopped for tracing
+[05-Sep-2025 08:35:34] NOTICE: about to trace 903888
+[05-Sep-2025 08:35:34] NOTICE: finished trace of 903888
+[05-Sep-2025 08:35:41] WARNING: [pool www] child 903964, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=4223%2C4224%2C163%2C184%2C165%2C216%2C168%2C152%2C154%2C175%2C162%2C214%2C169%2C193%2C192%2C194%2C164%2C208%2C210%2C189%2C176%2C171%2C203&filter_product_cat=4117&orderby=price-desc") executing too slow (11.388223 sec), logging
+[05-Sep-2025 08:35:41] WARNING: [pool www] child 903953, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,208,149,205,159") executing too slow (10.773714 sec), logging
+[05-Sep-2025 08:35:41] WARNING: [pool www] child 903951, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,219,214,211,198") executing too slow (12.452693 sec), logging
+[05-Sep-2025 08:35:41] WARNING: [pool www] child 903897, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=168%2C187%2C170%2C167%2C219%2C155&filter_product_cat=4178") executing too slow (11.216544 sec), logging
+[05-Sep-2025 08:35:41] NOTICE: child 903897 stopped for tracing
+[05-Sep-2025 08:35:41] NOTICE: about to trace 903897
+[05-Sep-2025 08:35:41] NOTICE: finished trace of 903897
+[05-Sep-2025 08:35:41] NOTICE: child 903953 stopped for tracing
+[05-Sep-2025 08:35:41] NOTICE: about to trace 903953
+[05-Sep-2025 08:35:41] NOTICE: finished trace of 903953
+[05-Sep-2025 08:35:41] NOTICE: child 903964 stopped for tracing
+[05-Sep-2025 08:35:41] NOTICE: about to trace 903964
+[05-Sep-2025 08:35:41] NOTICE: finished trace of 903964
+[05-Sep-2025 08:35:41] NOTICE: child 903951 stopped for tracing
+[05-Sep-2025 08:35:41] NOTICE: about to trace 903951
+[05-Sep-2025 08:35:41] NOTICE: finished trace of 903951
+[05-Sep-2025 08:35:44] WARNING: [pool www] child 903967, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,175,213,187,171") executing too slow (11.395088 sec), logging
+[05-Sep-2025 08:35:44] NOTICE: child 903967 stopped for tracing
+[05-Sep-2025 08:35:44] NOTICE: about to trace 903967
+[05-Sep-2025 08:35:44] NOTICE: finished trace of 903967
+[05-Sep-2025 08:36:04] WARNING: [pool www] child 903966, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=173") executing too slow (11.624653 sec), logging
+[05-Sep-2025 08:36:04] WARNING: [pool www] child 903893, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=4223%2C4224%2C177%2C214%2C160%2C189%2C216%2C194%2C166%2C193%2C168%2C162%2C159%2C181%2C171%2C178%2C198%2C210%2C152%2C197%2C190%2C161&filter_product_cat=4114&orderby=price-desc") executing too slow (11.691527 sec), logging
+[05-Sep-2025 08:36:04] WARNING: [pool www] child 903884, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,196,157,201,194") executing too slow (10.503998 sec), logging
+[05-Sep-2025 08:36:04] NOTICE: child 903966 stopped for tracing
+[05-Sep-2025 08:36:04] NOTICE: about to trace 903966
+[05-Sep-2025 08:36:04] NOTICE: finished trace of 903966
+[05-Sep-2025 08:36:04] NOTICE: child 903893 stopped for tracing
+[05-Sep-2025 08:36:04] NOTICE: about to trace 903893
+[05-Sep-2025 08:36:04] NOTICE: finished trace of 903893
+[05-Sep-2025 08:36:04] NOTICE: child 903884 stopped for tracing
+[05-Sep-2025 08:36:04] NOTICE: about to trace 903884
+[05-Sep-2025 08:36:04] NOTICE: finished trace of 903884
+[05-Sep-2025 08:36:08] WARNING: [pool www] child 903905, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,175,204,157,217,218") executing too slow (10.970979 sec), logging
+[05-Sep-2025 08:36:08] WARNING: [pool www] child 903877, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=198%2C187%2C186%2C171&filter_product_cat=4130&orderby=rating") executing too slow (11.963304 sec), logging
+[05-Sep-2025 08:36:08] NOTICE: child 903905 stopped for tracing
+[05-Sep-2025 08:36:08] NOTICE: about to trace 903905
+[05-Sep-2025 08:36:08] NOTICE: finished trace of 903905
+[05-Sep-2025 08:36:08] NOTICE: child 903877 stopped for tracing
+[05-Sep-2025 08:36:08] NOTICE: about to trace 903877
+[05-Sep-2025 08:36:08] NOTICE: finished trace of 903877
+[05-Sep-2025 08:36:11] WARNING: [pool www] child 903904, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,199,185,217,174,4224") executing too slow (11.914089 sec), logging
+[05-Sep-2025 08:36:11] NOTICE: child 903904 stopped for tracing
+[05-Sep-2025 08:36:11] NOTICE: about to trace 903904
+[05-Sep-2025 08:36:11] NOTICE: finished trace of 903904
+[05-Sep-2025 08:36:14] WARNING: [pool www] child 903963, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,164,207,159,163") executing too slow (10.107990 sec), logging
+[05-Sep-2025 08:36:14] WARNING: [pool www] child 903908, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,217,180,170,211") executing too slow (12.519003 sec), logging
+[05-Sep-2025 08:36:14] NOTICE: child 903963 stopped for tracing
+[05-Sep-2025 08:36:14] NOTICE: about to trace 903963
+[05-Sep-2025 08:36:14] NOTICE: finished trace of 903963
+[05-Sep-2025 08:36:14] NOTICE: child 903908 stopped for tracing
+[05-Sep-2025 08:36:14] NOTICE: about to trace 903908
+[05-Sep-2025 08:36:14] NOTICE: finished trace of 903908
+[05-Sep-2025 08:36:18] WARNING: [pool www] child 903902, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=4223%2C4224%2C190%2C149%2C208%2C154%2C187%2C161%2C182%2C173%2C178%2C165%2C189%2C164%2C159%2C200%2C204%2C197%2C193%2C202%2C188%2C180%2C172&filter_product_cat=4139&orderby=menu_order") executing too slow (11.111669 sec), logging
+[05-Sep-2025 08:36:18] WARNING: [pool www] child 903879, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,219,162,159,168") executing too slow (11.388671 sec), logging
+[05-Sep-2025 08:36:18] NOTICE: child 903879 stopped for tracing
+[05-Sep-2025 08:36:18] NOTICE: about to trace 903879
+[05-Sep-2025 08:36:18] NOTICE: finished trace of 903879
+[05-Sep-2025 08:36:18] NOTICE: child 903902 stopped for tracing
+[05-Sep-2025 08:36:18] NOTICE: about to trace 903902
+[05-Sep-2025 08:36:18] NOTICE: finished trace of 903902
+[05-Sep-2025 08:36:21] WARNING: [pool www] child 903885, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_cat=3435,2603,3340,2724,3988,3959&filter_product_brand=162,204") executing too slow (11.904054 sec), logging
+[05-Sep-2025 08:36:21] WARNING: [pool www] child 903878, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,175,214,176,213,216") executing too slow (11.494623 sec), logging
+[05-Sep-2025 08:36:21] NOTICE: child 903878 stopped for tracing
+[05-Sep-2025 08:36:21] NOTICE: about to trace 903878
+[05-Sep-2025 08:36:21] NOTICE: finished trace of 903878
+[05-Sep-2025 08:36:21] NOTICE: child 903885 stopped for tracing
+[05-Sep-2025 08:36:21] NOTICE: about to trace 903885
+[05-Sep-2025 08:36:21] NOTICE: finished trace of 903885
+[05-Sep-2025 08:36:24] WARNING: [pool www] child 903958, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,199,216,213,171,214") executing too slow (11.872605 sec), logging
+[05-Sep-2025 08:36:24] WARNING: [pool www] child 903903, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_cat=4091&filter_product_brand=190%2C157%2C192%2C150") executing too slow (10.431001 sec), logging
+[05-Sep-2025 08:36:24] NOTICE: child 903958 stopped for tracing
+[05-Sep-2025 08:36:24] NOTICE: about to trace 903958
+[05-Sep-2025 08:36:24] NOTICE: finished trace of 903958
+[05-Sep-2025 08:36:24] NOTICE: child 903903 stopped for tracing
+[05-Sep-2025 08:36:24] NOTICE: about to trace 903903
+[05-Sep-2025 08:36:24] NOTICE: finished trace of 903903
+[05-Sep-2025 08:36:28] WARNING: [pool www] child 903916, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,175,214,172,215,4224") executing too slow (10.573297 sec), logging
+[05-Sep-2025 08:36:28] WARNING: [pool www] child 903886, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,150,159,162,173,215") executing too slow (13.142292 sec), logging
+[05-Sep-2025 08:36:28] NOTICE: child 903916 stopped for tracing
+[05-Sep-2025 08:36:28] NOTICE: about to trace 903916
+[05-Sep-2025 08:36:28] NOTICE: finished trace of 903916
+[05-Sep-2025 08:36:28] NOTICE: child 903886 stopped for tracing
+[05-Sep-2025 08:36:28] NOTICE: about to trace 903886
+[05-Sep-2025 08:36:28] NOTICE: finished trace of 903886
+[05-Sep-2025 08:36:31] WARNING: [pool www] child 903873, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,214,176,177,168,213") executing too slow (11.049692 sec), logging
+[05-Sep-2025 08:36:31] NOTICE: child 903873 stopped for tracing
+[05-Sep-2025 08:36:31] NOTICE: about to trace 903873
+[05-Sep-2025 08:36:31] NOTICE: finished trace of 903873
+[05-Sep-2025 08:36:34] WARNING: [pool www] child 903965, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=168%2C195%2C170%2C211%2C200%2C172&filter_product_cat=4099") executing too slow (12.715994 sec), logging
+[05-Sep-2025 08:36:34] WARNING: [pool www] child 903950, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,219,196,157,209") executing too slow (12.355155 sec), logging
+[05-Sep-2025 08:36:34] WARNING: [pool www] child 903896, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=4223%2C4224%2C170%2C196%2C157%2C218%2C161%2C150%2C155%2C187%2C176%2C192%2C201%2C151%2C213%2C217%2C165%2C158%2C182%2C174%2C199%2C178%2C197%2C186&filter_product_cat=4109&orderby=menu_order") executing too slow (11.550988 sec), logging
+[05-Sep-2025 08:36:34] NOTICE: child 903950 stopped for tracing
+[05-Sep-2025 08:36:34] NOTICE: about to trace 903950
+[05-Sep-2025 08:36:34] NOTICE: finished trace of 903950
+[05-Sep-2025 08:36:34] NOTICE: child 903965 stopped for tracing
+[05-Sep-2025 08:36:34] NOTICE: about to trace 903965
+[05-Sep-2025 08:36:34] NOTICE: finished trace of 903965
+[05-Sep-2025 08:36:34] NOTICE: child 903896 stopped for tracing
+[05-Sep-2025 08:36:34] NOTICE: about to trace 903896
+[05-Sep-2025 08:36:34] NOTICE: finished trace of 903896
+[05-Sep-2025 08:36:38] WARNING: [pool www] child 903959, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,213,168,218,154") executing too slow (13.324995 sec), logging
+[05-Sep-2025 08:36:38] NOTICE: child 903959 stopped for tracing
+[05-Sep-2025 08:36:38] NOTICE: about to trace 903959
+[05-Sep-2025 08:36:38] NOTICE: finished trace of 903959
+[05-Sep-2025 08:36:41] WARNING: [pool www] child 903951, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,217,150,215") executing too slow (11.461629 sec), logging
+[05-Sep-2025 08:36:41] NOTICE: child 903951 stopped for tracing
+[05-Sep-2025 08:36:41] NOTICE: about to trace 903951
+[05-Sep-2025 08:36:41] NOTICE: finished trace of 903951
+[05-Sep-2025 08:36:44] WARNING: [pool www] child 903953, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,162,160,154,164") executing too slow (12.106931 sec), logging
+[05-Sep-2025 08:36:44] NOTICE: child 903953 stopped for tracing
+[05-Sep-2025 08:36:44] NOTICE: about to trace 903953
+[05-Sep-2025 08:36:44] NOTICE: finished trace of 903953
+[05-Sep-2025 08:36:48] WARNING: [pool www] child 903917, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,196,157,177,192") executing too slow (10.838288 sec), logging
+[05-Sep-2025 08:36:48] NOTICE: child 903917 stopped for tracing
+[05-Sep-2025 08:36:48] NOTICE: about to trace 903917
+[05-Sep-2025 08:36:48] NOTICE: finished trace of 903917
+[05-Sep-2025 08:36:51] WARNING: [pool www] child 903887, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,214,217,185,178,172") executing too slow (11.134632 sec), logging
+[05-Sep-2025 08:36:51] NOTICE: child 903887 stopped for tracing
+[05-Sep-2025 08:36:51] NOTICE: about to trace 903887
+[05-Sep-2025 08:36:51] NOTICE: finished trace of 903887
+[05-Sep-2025 08:36:58] WARNING: [pool www] child 903906, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=198%2C200%2C208%2C159&filter_product_cat=4104&orderby=price") executing too slow (10.281277 sec), logging
+[05-Sep-2025 08:36:58] NOTICE: child 903906 stopped for tracing
+[05-Sep-2025 08:36:58] NOTICE: about to trace 903906
+[05-Sep-2025 08:36:58] NOTICE: finished trace of 903906
+[05-Sep-2025 08:37:01] WARNING: [pool www] child 903966, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=184,172,215,214,199,168") executing too slow (11.616001 sec), logging
+[05-Sep-2025 08:37:01] WARNING: [pool www] child 903876, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,213,184,204,166") executing too slow (12.968000 sec), logging
+[05-Sep-2025 08:37:01] NOTICE: child 903966 stopped for tracing
+[05-Sep-2025 08:37:01] NOTICE: about to trace 903966
+[05-Sep-2025 08:37:01] NOTICE: finished trace of 903966
+[05-Sep-2025 08:37:01] NOTICE: child 903876 stopped for tracing
+[05-Sep-2025 08:37:01] NOTICE: about to trace 903876
+[05-Sep-2025 08:37:01] NOTICE: finished trace of 903876
+[05-Sep-2025 08:37:04] WARNING: [pool www] child 903884, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,214,162,176,202") executing too slow (12.624125 sec), logging
+[05-Sep-2025 08:37:04] NOTICE: child 903884 stopped for tracing
+[05-Sep-2025 08:37:04] NOTICE: about to trace 903884
+[05-Sep-2025 08:37:04] NOTICE: finished trace of 903884
+[05-Sep-2025 08:37:08] WARNING: [pool www] child 903960, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,175,196,157,211,166") executing too slow (10.721998 sec), logging
+[05-Sep-2025 08:37:08] WARNING: [pool www] child 903877, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,164,193,214,207") executing too slow (12.895748 sec), logging
+[05-Sep-2025 08:37:08] NOTICE: child 903877 stopped for tracing
+[05-Sep-2025 08:37:08] NOTICE: about to trace 903877
+[05-Sep-2025 08:37:08] NOTICE: finished trace of 903877
+[05-Sep-2025 08:37:08] NOTICE: child 903960 stopped for tracing
+[05-Sep-2025 08:37:08] NOTICE: about to trace 903960
+[05-Sep-2025 08:37:08] NOTICE: finished trace of 903960
+[05-Sep-2025 08:37:11] WARNING: [pool www] child 903904, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,210,214,199,218") executing too slow (10.741162 sec), logging
+[05-Sep-2025 08:37:11] NOTICE: child 903904 stopped for tracing
+[05-Sep-2025 08:37:11] NOTICE: about to trace 903904
+[05-Sep-2025 08:37:11] NOTICE: finished trace of 903904
+[05-Sep-2025 08:37:14] WARNING: [pool www] child 903879, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,203,192,211,195") executing too slow (10.612735 sec), logging
+[05-Sep-2025 08:37:14] NOTICE: child 903879 stopped for tracing
+[05-Sep-2025 08:37:14] NOTICE: about to trace 903879
+[05-Sep-2025 08:37:14] NOTICE: finished trace of 903879
+[05-Sep-2025 08:37:21] WARNING: [pool www] child 903878, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=4223%2C4224%2C163%2C168%2C159%2C194%2C188%2C167%2C174%2C165%2C175%2C170%2C196%2C190%2C186%2C211%2C180%2C182%2C154%2C213%2C172%2C203%2C169%2C179%2C183%2C215&filter_product_cat=4159&orderby=price-desc") executing too slow (10.931593 sec), logging
+[05-Sep-2025 08:37:21] NOTICE: child 903878 stopped for tracing
+[05-Sep-2025 08:37:21] NOTICE: about to trace 903878
+[05-Sep-2025 08:37:21] NOTICE: finished trace of 903878
+[05-Sep-2025 08:37:24] WARNING: [pool www] child 903958, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,195,214,150,209") executing too slow (11.017831 sec), logging
+[05-Sep-2025 08:37:24] WARNING: [pool www] child 903903, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=168%2C152%2C195%2C170%2C153%2C149&filter_product_cat=4179") executing too slow (11.255985 sec), logging
+[05-Sep-2025 08:37:24] NOTICE: child 903903 stopped for tracing
+[05-Sep-2025 08:37:24] NOTICE: about to trace 903903
+[05-Sep-2025 08:37:24] NOTICE: finished trace of 903903
+[05-Sep-2025 08:37:24] NOTICE: child 903958 stopped for tracing
+[05-Sep-2025 08:37:24] NOTICE: about to trace 903958
+[05-Sep-2025 08:37:24] NOTICE: finished trace of 903958
+[05-Sep-2025 08:37:28] WARNING: [pool www] child 903952, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,164,218,175,185,160") executing too slow (11.289123 sec), logging
+[05-Sep-2025 08:37:28] NOTICE: child 903952 stopped for tracing
+[05-Sep-2025 08:37:28] NOTICE: about to trace 903952
+[05-Sep-2025 08:37:28] NOTICE: finished trace of 903952
+[05-Sep-2025 08:37:31] WARNING: [pool www] child 903886, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,206,197,4229,184") executing too slow (12.024992 sec), logging
+[05-Sep-2025 08:37:31] NOTICE: child 903886 stopped for tracing
+[05-Sep-2025 08:37:31] NOTICE: about to trace 903886
+[05-Sep-2025 08:37:31] NOTICE: finished trace of 903886
+[05-Sep-2025 08:37:34] WARNING: [pool www] child 903967, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=4223%2C4224%2C163%2C168%2C159%2C194%2C188%2C167%2C174%2C165%2C175%2C170%2C196%2C190%2C186%2C211%2C180%2C182%2C154%2C213%2C172%2C203%2C169%2C179%2C183%2C215&filter_product_cat=4167&orderby=price-desc") executing too slow (12.054888 sec), logging
+[05-Sep-2025 08:37:34] WARNING: [pool www] child 903950, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,214,206,173,153") executing too slow (10.951912 sec), logging
+[05-Sep-2025 08:37:34] WARNING: [pool www] child 903896, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,214,170,183,168") executing too slow (12.573710 sec), logging
+[05-Sep-2025 08:37:34] NOTICE: child 903896 stopped for tracing
+[05-Sep-2025 08:37:34] NOTICE: about to trace 903896
+[05-Sep-2025 08:37:34] NOTICE: finished trace of 903896
+[05-Sep-2025 08:37:34] NOTICE: child 903950 stopped for tracing
+[05-Sep-2025 08:37:34] NOTICE: about to trace 903950
+[05-Sep-2025 08:37:34] NOTICE: finished trace of 903950
+[05-Sep-2025 08:37:34] NOTICE: child 903967 stopped for tracing
+[05-Sep-2025 08:37:34] NOTICE: about to trace 903967
+[05-Sep-2025 08:37:34] NOTICE: finished trace of 903967
+[05-Sep-2025 08:37:44] WARNING: [pool www] child 903917, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,210,218,214,181") executing too slow (11.440868 sec), logging
+[05-Sep-2025 08:37:44] NOTICE: child 903917 stopped for tracing
+[05-Sep-2025 08:37:44] NOTICE: about to trace 903917
+[05-Sep-2025 08:37:44] NOTICE: finished trace of 903917
+[05-Sep-2025 08:37:48] WARNING: [pool www] child 903874, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=4223,4224,199,158,179,205,163,184,173,160,165,216,213,168,149,175,162,157,193,154,171,207,195,174,187&filter_product_cat=4106&orderby=menu_order") executing too slow (11.976269 sec), logging
+[05-Sep-2025 08:37:48] NOTICE: child 903874 stopped for tracing
+[05-Sep-2025 08:37:48] NOTICE: about to trace 903874
+[05-Sep-2025 08:37:48] NOTICE: finished trace of 903874
+[05-Sep-2025 08:37:51] WARNING: [pool www] child 903906, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=161,157,215,196,154") executing too slow (11.018624 sec), logging
+[05-Sep-2025 08:37:51] WARNING: [pool www] child 903905, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,219,159,162,189") executing too slow (12.115610 sec), logging
+[05-Sep-2025 08:37:51] WARNING: [pool www] child 903893, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=204%2C192%2C216%2C164&filter_product_cat=4097") executing too slow (12.131563 sec), logging
+[05-Sep-2025 08:37:51] NOTICE: child 903893 stopped for tracing
+[05-Sep-2025 08:37:51] NOTICE: about to trace 903893
+[05-Sep-2025 08:37:51] NOTICE: finished trace of 903893
+[05-Sep-2025 08:37:51] NOTICE: child 903905 stopped for tracing
+[05-Sep-2025 08:37:51] NOTICE: about to trace 903905
+[05-Sep-2025 08:37:51] NOTICE: finished trace of 903905
+[05-Sep-2025 08:37:51] NOTICE: child 903906 stopped for tracing
+[05-Sep-2025 08:37:51] NOTICE: about to trace 903906
+[05-Sep-2025 08:37:51] NOTICE: finished trace of 903906
+[05-Sep-2025 08:37:54] WARNING: [pool www] child 903966, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,162,170,219,160") executing too slow (10.104850 sec), logging
+[05-Sep-2025 08:37:54] WARNING: [pool www] child 903876, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,170,160,202,185") executing too slow (11.913063 sec), logging
+[05-Sep-2025 08:37:54] NOTICE: child 903876 stopped for tracing
+[05-Sep-2025 08:37:54] NOTICE: about to trace 903876
+[05-Sep-2025 08:37:54] NOTICE: finished trace of 903876
+[05-Sep-2025 08:37:54] NOTICE: child 903966 stopped for tracing
+[05-Sep-2025 08:37:54] NOTICE: about to trace 903966
+[05-Sep-2025 08:37:54] NOTICE: finished trace of 903966
+[05-Sep-2025 08:37:58] WARNING: [pool www] child 903963, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,214,198,164,189") executing too slow (10.305191 sec), logging
+[05-Sep-2025 08:37:58] NOTICE: child 903963 stopped for tracing
+[05-Sep-2025 08:37:58] NOTICE: about to trace 903963
+[05-Sep-2025 08:37:58] NOTICE: finished trace of 903963
+[05-Sep-2025 08:38:01] WARNING: [pool www] child 903884, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=4223,4224,199,158,179,205,163,184,173,160,165,216,183,213,168,149,175,162,157,154,171,207,195,174,187&filter_product_cat=4106&orderby=menu_order") executing too slow (11.506872 sec), logging
+[05-Sep-2025 08:38:01] WARNING: [pool www] child 903877, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,162,218,193,214") executing too slow (11.210184 sec), logging
+[05-Sep-2025 08:38:01] NOTICE: child 903877 stopped for tracing
+[05-Sep-2025 08:38:01] NOTICE: about to trace 903877
+[05-Sep-2025 08:38:01] NOTICE: finished trace of 903877
+[05-Sep-2025 08:38:01] NOTICE: child 903884 stopped for tracing
+[05-Sep-2025 08:38:01] NOTICE: about to trace 903884
+[05-Sep-2025 08:38:01] NOTICE: finished trace of 903884
+[05-Sep-2025 08:38:04] WARNING: [pool www] child 903960, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,170,214,216,4224") executing too slow (13.253218 sec), logging
+[05-Sep-2025 08:38:04] WARNING: [pool www] child 903904, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=173") executing too slow (11.854721 sec), logging
+[05-Sep-2025 08:38:04] WARNING: [pool www] child 903879, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,163,204,211,178") executing too slow (10.872848 sec), logging
+[05-Sep-2025 08:38:04] NOTICE: child 903960 stopped for tracing
+[05-Sep-2025 08:38:04] NOTICE: about to trace 903960
+[05-Sep-2025 08:38:04] NOTICE: finished trace of 903960
+[05-Sep-2025 08:38:04] NOTICE: child 903879 stopped for tracing
+[05-Sep-2025 08:38:04] NOTICE: about to trace 903879
+[05-Sep-2025 08:38:04] NOTICE: finished trace of 903879
+[05-Sep-2025 08:38:04] NOTICE: child 903904 stopped for tracing
+[05-Sep-2025 08:38:04] NOTICE: about to trace 903904
+[05-Sep-2025 08:38:04] NOTICE: finished trace of 903904
+[05-Sep-2025 08:38:08] WARNING: [pool www] child 903897, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,208,202,199,186") executing too slow (11.889214 sec), logging
+[05-Sep-2025 08:38:08] NOTICE: child 903897 stopped for tracing
+[05-Sep-2025 08:38:08] NOTICE: about to trace 903897
+[05-Sep-2025 08:38:08] NOTICE: finished trace of 903897
+[05-Sep-2025 08:38:11] WARNING: [pool www] child 903916, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,181,175,4229,184") executing too slow (10.865435 sec), logging
+[05-Sep-2025 08:38:11] WARNING: [pool www] child 903902, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,192,214,164,4229,157") executing too slow (12.525512 sec), logging
+[05-Sep-2025 08:38:11] NOTICE: child 903902 stopped for tracing
+[05-Sep-2025 08:38:11] NOTICE: about to trace 903902
+[05-Sep-2025 08:38:11] NOTICE: finished trace of 903902
+[05-Sep-2025 08:38:11] NOTICE: child 903916 stopped for tracing
+[05-Sep-2025 08:38:11] NOTICE: about to trace 903916
+[05-Sep-2025 08:38:11] NOTICE: finished trace of 903916
+[05-Sep-2025 08:38:14] WARNING: [pool www] child 903878, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,162,214,158,181") executing too slow (11.967819 sec), logging
+[05-Sep-2025 08:38:14] NOTICE: child 903878 stopped for tracing
+[05-Sep-2025 08:38:14] NOTICE: about to trace 903878
+[05-Sep-2025 08:38:14] NOTICE: finished trace of 903878
+[05-Sep-2025 08:38:18] WARNING: [pool www] child 903903, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=4223%2C4224%2C199%2C176%2C208%2C205%2C158%2C215%2C163%2C171%2C196%2C153%2C202%2C175%2C183%2C152%2C193%2C194%2C155%2C170%2C216%2C201%2C185%2C186%2C203&filter_product_cat=4178&orderby=menu_order") executing too slow (10.703365 sec), logging
+[05-Sep-2025 08:38:18] WARNING: [pool www] child 903888, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=197%2C167%2C186%2C166%2C180%2C193%2C4223&filter_product_cat=4129&orderby=price") executing too slow (13.106000 sec), logging
+[05-Sep-2025 08:38:18] WARNING: [pool www] child 903885, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,199,214,171,156,175") executing too slow (11.315009 sec), logging
+[05-Sep-2025 08:38:18] NOTICE: child 903885 stopped for tracing
+[05-Sep-2025 08:38:18] NOTICE: about to trace 903885
+[05-Sep-2025 08:38:18] NOTICE: finished trace of 903885
+[05-Sep-2025 08:38:18] NOTICE: child 903903 stopped for tracing
+[05-Sep-2025 08:38:18] NOTICE: about to trace 903903
+[05-Sep-2025 08:38:18] NOTICE: finished trace of 903903
+[05-Sep-2025 08:38:18] NOTICE: child 903888 stopped for tracing
+[05-Sep-2025 08:38:18] NOTICE: about to trace 903888
+[05-Sep-2025 08:38:18] NOTICE: finished trace of 903888
+[05-Sep-2025 08:38:21] WARNING: [pool www] child 903965, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,170,219,213,168,209") executing too slow (10.070550 sec), logging
+[05-Sep-2025 08:38:21] WARNING: [pool www] child 903958, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,199,215,192,150,4223") executing too slow (13.248988 sec), logging
+[05-Sep-2025 08:38:21] NOTICE: child 903958 stopped for tracing
+[05-Sep-2025 08:38:21] NOTICE: about to trace 903958
+[05-Sep-2025 08:38:21] NOTICE: finished trace of 903958
+[05-Sep-2025 08:38:21] NOTICE: child 903965 stopped for tracing
+[05-Sep-2025 08:38:21] NOTICE: about to trace 903965
+[05-Sep-2025 08:38:21] NOTICE: finished trace of 903965
+[05-Sep-2025 08:38:24] WARNING: [pool www] child 903952, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,184,170,218,193") executing too slow (10.347993 sec), logging
+[05-Sep-2025 08:38:24] WARNING: [pool www] child 903875, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,214,166,210,150") executing too slow (12.186625 sec), logging
+[05-Sep-2025 08:38:24] NOTICE: child 903952 stopped for tracing
+[05-Sep-2025 08:38:24] NOTICE: about to trace 903952
+[05-Sep-2025 08:38:24] NOTICE: finished trace of 903952
+[05-Sep-2025 08:38:24] NOTICE: child 903875 stopped for tracing
+[05-Sep-2025 08:38:24] NOTICE: about to trace 903875
+[05-Sep-2025 08:38:24] NOTICE: finished trace of 903875
+[05-Sep-2025 08:38:28] WARNING: [pool www] child 903894, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,214,198,171,150,192") executing too slow (11.438151 sec), logging
+[05-Sep-2025 08:38:28] NOTICE: child 903894 stopped for tracing
+[05-Sep-2025 08:38:28] NOTICE: about to trace 903894
+[05-Sep-2025 08:38:28] NOTICE: finished trace of 903894
+[05-Sep-2025 08:38:31] WARNING: [pool www] child 903967, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,210,4224,190,178") executing too slow (10.400517 sec), logging
+[05-Sep-2025 08:38:31] WARNING: [pool www] child 903886, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,181,192,214,216") executing too slow (11.902147 sec), logging
+[05-Sep-2025 08:38:31] NOTICE: child 903886 stopped for tracing
+[05-Sep-2025 08:38:31] NOTICE: about to trace 903886
+[05-Sep-2025 08:38:31] NOTICE: finished trace of 903886
+[05-Sep-2025 08:38:31] NOTICE: child 903967 stopped for tracing
+[05-Sep-2025 08:38:31] NOTICE: about to trace 903967
+[05-Sep-2025 08:38:31] NOTICE: finished trace of 903967
+[05-Sep-2025 08:38:38] WARNING: [pool www] child 903959, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=191%2C153%2C4223%2C4224%2C167%2C200%2C199%2C206%2C176%2C159%2C204%2C158%2C150%2C195%2C180%2C173%2C169%2C219%2C216%2C151%2C168%2C162%2C217%2C185&filter_product_cat=4159&orderby=menu_order") executing too slow (11.870063 sec), logging
+[05-Sep-2025 08:38:38] WARNING: [pool www] child 903887, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,214,213,158,215,178") executing too slow (12.438119 sec), logging
+[05-Sep-2025 08:38:38] NOTICE: child 903959 stopped for tracing
+[05-Sep-2025 08:38:38] NOTICE: about to trace 903959
+[05-Sep-2025 08:38:38] NOTICE: finished trace of 903959
+[05-Sep-2025 08:38:38] NOTICE: child 903887 stopped for tracing
+[05-Sep-2025 08:38:38] NOTICE: about to trace 903887
+[05-Sep-2025 08:38:38] NOTICE: finished trace of 903887
+[05-Sep-2025 08:38:41] WARNING: [pool www] child 903953, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,175,214,151,215,172") executing too slow (11.112431 sec), logging
+[05-Sep-2025 08:38:41] WARNING: [pool www] child 903895, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,217,214,211,197") executing too slow (13.229455 sec), logging
+[05-Sep-2025 08:38:41] WARNING: [pool www] child 903872, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=169%2C214%2C177%2C4223&filter_product_cat=4166") executing too slow (10.693464 sec), logging
+[05-Sep-2025 08:38:41] NOTICE: child 903872 stopped for tracing
+[05-Sep-2025 08:38:41] NOTICE: about to trace 903872
+[05-Sep-2025 08:38:41] NOTICE: finished trace of 903872
+[05-Sep-2025 08:38:41] NOTICE: child 903895 stopped for tracing
+[05-Sep-2025 08:38:41] NOTICE: about to trace 903895
+[05-Sep-2025 08:38:41] NOTICE: finished trace of 903895
+[05-Sep-2025 08:38:41] NOTICE: child 903953 stopped for tracing
+[05-Sep-2025 08:38:41] NOTICE: about to trace 903953
+[05-Sep-2025 08:38:41] NOTICE: finished trace of 903953
+[05-Sep-2025 08:38:44] WARNING: [pool www] child 903874, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,214,211,210,215,184") executing too slow (12.453771 sec), logging
+[05-Sep-2025 08:38:44] NOTICE: child 903874 stopped for tracing
+[05-Sep-2025 08:38:44] NOTICE: about to trace 903874
+[05-Sep-2025 08:38:44] NOTICE: finished trace of 903874
+[05-Sep-2025 08:38:48] WARNING: [pool www] child 903906, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,217,214,160,205") executing too slow (11.128337 sec), logging
+[05-Sep-2025 08:38:48] WARNING: [pool www] child 903905, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,175,214,213,219,207") executing too slow (13.067107 sec), logging
+[05-Sep-2025 08:38:48] NOTICE: child 903905 stopped for tracing
+[05-Sep-2025 08:38:48] NOTICE: about to trace 903905
+[05-Sep-2025 08:38:48] NOTICE: finished trace of 903905
+[05-Sep-2025 08:38:48] NOTICE: child 903906 stopped for tracing
+[05-Sep-2025 08:38:48] NOTICE: about to trace 903906
+[05-Sep-2025 08:38:48] NOTICE: finished trace of 903906
+[05-Sep-2025 08:38:51] WARNING: [pool www] child 903966, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,163,218,185,197") executing too slow (10.059994 sec), logging
+[05-Sep-2025 08:38:51] WARNING: [pool www] child 903876, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,170,219,214,213,205") executing too slow (11.543235 sec), logging
+[05-Sep-2025 08:38:51] NOTICE: child 903876 stopped for tracing
+[05-Sep-2025 08:38:51] NOTICE: about to trace 903876
+[05-Sep-2025 08:38:51] NOTICE: finished trace of 903876
+[05-Sep-2025 08:38:51] NOTICE: child 903966 stopped for tracing
+[05-Sep-2025 08:38:51] NOTICE: about to trace 903966
+[05-Sep-2025 08:38:51] NOTICE: finished trace of 903966
+[05-Sep-2025 08:38:54] WARNING: [pool www] child 903963, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=153%2C4223%2C4224%2C200%2C199%2C177%2C206%2C176%2C175%2C204%2C158%2C150%2C195%2C155%2C173%2C219%2C216%2C151%2C178%2C213%2C168%2C166%2C182%2C187%2C157&filter_product_cat=4098&orderby=menu_order") executing too slow (10.258767 sec), logging
+[05-Sep-2025 08:38:54] WARNING: [pool www] child 903909, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price-desc&filter_product_cat=4156%2C4188&filter_product_brand=168,205") executing too slow (11.571781 sec), logging
+[05-Sep-2025 08:38:54] NOTICE: child 903909 stopped for tracing
+[05-Sep-2025 08:38:54] NOTICE: about to trace 903909
+[05-Sep-2025 08:38:54] NOTICE: finished trace of 903909
+[05-Sep-2025 08:38:54] NOTICE: child 903963 stopped for tracing
+[05-Sep-2025 08:38:54] NOTICE: about to trace 903963
+[05-Sep-2025 08:38:54] NOTICE: finished trace of 903963
+[05-Sep-2025 08:38:58] WARNING: [pool www] child 903873, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,175,214,196,213,207") executing too slow (11.937533 sec), logging
+[05-Sep-2025 08:38:58] NOTICE: child 903873 stopped for tracing
+[05-Sep-2025 08:38:58] NOTICE: about to trace 903873
+[05-Sep-2025 08:38:58] NOTICE: finished trace of 903873
+[05-Sep-2025 08:39:01] WARNING: [pool www] child 903884, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=204,214,217,219,158,211") executing too slow (12.776208 sec), logging
+[05-Sep-2025 08:39:01] WARNING: [pool www] child 903877, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,214,203,192,165") executing too slow (10.015444 sec), logging
+[05-Sep-2025 08:39:01] NOTICE: child 903877 stopped for tracing
+[05-Sep-2025 08:39:01] NOTICE: about to trace 903877
+[05-Sep-2025 08:39:01] NOTICE: finished trace of 903877
+[05-Sep-2025 08:39:01] NOTICE: child 903884 stopped for tracing
+[05-Sep-2025 08:39:01] NOTICE: about to trace 903884
+[05-Sep-2025 08:39:01] NOTICE: finished trace of 903884
+[05-Sep-2025 08:39:04] WARNING: [pool www] child 903960, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,217,204,149,214") executing too slow (12.140007 sec), logging
+[05-Sep-2025 08:39:04] WARNING: [pool www] child 903904, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,206,157,210,168") executing too slow (10.111984 sec), logging
+[05-Sep-2025 08:39:04] NOTICE: child 903960 stopped for tracing
+[05-Sep-2025 08:39:04] NOTICE: about to trace 903960
+[05-Sep-2025 08:39:04] NOTICE: finished trace of 903960
+[05-Sep-2025 08:39:04] NOTICE: child 903904 stopped for tracing
+[05-Sep-2025 08:39:04] NOTICE: about to trace 903904
+[05-Sep-2025 08:39:04] NOTICE: finished trace of 903904
+[05-Sep-2025 08:39:08] WARNING: [pool www] child 903897, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,214,213,170,168,210") executing too slow (11.507984 sec), logging
+[05-Sep-2025 08:39:08] WARNING: [pool www] child 903879, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=197%2C202%2C174%2C186%2C182%2C185%2C169&filter_product_cat=4102") executing too slow (11.678161 sec), logging
+[05-Sep-2025 08:39:08] NOTICE: child 903879 stopped for tracing
+[05-Sep-2025 08:39:08] NOTICE: about to trace 903879
+[05-Sep-2025 08:39:08] NOTICE: finished trace of 903879
+[05-Sep-2025 08:39:08] NOTICE: child 903897 stopped for tracing
+[05-Sep-2025 08:39:08] NOTICE: about to trace 903897
+[05-Sep-2025 08:39:08] NOTICE: finished trace of 903897
+[05-Sep-2025 08:39:11] WARNING: [pool www] child 903916, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,214,192,218,211") executing too slow (10.488402 sec), logging
+[05-Sep-2025 08:39:11] WARNING: [pool www] child 903878, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,159,218,149,214,170") executing too slow (10.407376 sec), logging
+[05-Sep-2025 08:39:11] NOTICE: child 903916 stopped for tracing
+[05-Sep-2025 08:39:11] NOTICE: about to trace 903916
+[05-Sep-2025 08:39:11] NOTICE: finished trace of 903916
+[05-Sep-2025 08:39:11] NOTICE: child 903878 stopped for tracing
+[05-Sep-2025 08:39:11] NOTICE: about to trace 903878
+[05-Sep-2025 08:39:11] NOTICE: finished trace of 903878
+[05-Sep-2025 08:39:14] WARNING: [pool www] child 903964, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=4223%2C4224%2C173%2C202%2C165%2C168%2C154%2C214%2C177%2C157%2C184%2C212%2C193%2C187%2C206%2C172%2C155%2C149%2C185%2C218%2C167&filter_product_cat=4122&orderby=price-desc") executing too slow (13.019443 sec), logging
+[05-Sep-2025 08:39:14] WARNING: [pool www] child 903888, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,185,214,210,186") executing too slow (11.273685 sec), logging
+[05-Sep-2025 08:39:14] NOTICE: child 903888 stopped for tracing
+[05-Sep-2025 08:39:14] NOTICE: about to trace 903888
+[05-Sep-2025 08:39:14] NOTICE: finished trace of 903888
+[05-Sep-2025 08:39:14] NOTICE: child 903964 stopped for tracing
+[05-Sep-2025 08:39:14] NOTICE: about to trace 903964
+[05-Sep-2025 08:39:14] NOTICE: finished trace of 903964
+[05-Sep-2025 08:39:18] WARNING: [pool www] child 903903, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,201,214,170,151,211") executing too slow (10.569003 sec), logging
+[05-Sep-2025 08:39:18] WARNING: [pool www] child 903885, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,175,211,178,199") executing too slow (12.181997 sec), logging
+[05-Sep-2025 08:39:18] NOTICE: child 903885 stopped for tracing
+[05-Sep-2025 08:39:18] NOTICE: about to trace 903885
+[05-Sep-2025 08:39:18] NOTICE: finished trace of 903885
+[05-Sep-2025 08:39:18] NOTICE: child 903903 stopped for tracing
+[05-Sep-2025 08:39:18] NOTICE: about to trace 903903
+[05-Sep-2025 08:39:18] NOTICE: finished trace of 903903
+[05-Sep-2025 08:39:24] WARNING: [pool www] child 903965, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,199,159,162,160,207") executing too slow (12.041423 sec), logging
+[05-Sep-2025 08:39:24] WARNING: [pool www] child 903951, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,219,170,176,164") executing too slow (11.665688 sec), logging
+[05-Sep-2025 08:39:24] WARNING: [pool www] child 903875, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,175,170,201,178,199") executing too slow (11.147687 sec), logging
+[05-Sep-2025 08:39:24] NOTICE: child 903875 stopped for tracing
+[05-Sep-2025 08:39:24] NOTICE: about to trace 903875
+[05-Sep-2025 08:39:24] NOTICE: finished trace of 903875
+[05-Sep-2025 08:39:24] NOTICE: child 903951 stopped for tracing
+[05-Sep-2025 08:39:24] NOTICE: about to trace 903951
+[05-Sep-2025 08:39:24] NOTICE: finished trace of 903951
+[05-Sep-2025 08:39:24] NOTICE: child 903965 stopped for tracing
+[05-Sep-2025 08:39:24] NOTICE: about to trace 903965
+[05-Sep-2025 08:39:24] NOTICE: finished trace of 903965
+[05-Sep-2025 08:39:28] WARNING: [pool www] child 903952, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,208,166,213,211") executing too slow (11.580006 sec), logging
+[05-Sep-2025 08:39:28] NOTICE: child 903952 stopped for tracing
+[05-Sep-2025 08:39:28] NOTICE: about to trace 903952
+[05-Sep-2025 08:39:28] NOTICE: finished trace of 903952
+[05-Sep-2025 08:39:31] WARNING: [pool www] child 903950, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,214,213,211,180") executing too slow (10.739994 sec), logging
+[05-Sep-2025 08:39:31] WARNING: [pool www] child 903894, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,214,187,165,189") executing too slow (12.524987 sec), logging
+[05-Sep-2025 08:39:31] NOTICE: child 903894 stopped for tracing
+[05-Sep-2025 08:39:31] NOTICE: about to trace 903894
+[05-Sep-2025 08:39:31] NOTICE: finished trace of 903894
+[05-Sep-2025 08:39:31] NOTICE: child 903950 stopped for tracing
+[05-Sep-2025 08:39:31] NOTICE: about to trace 903950
+[05-Sep-2025 08:39:31] NOTICE: finished trace of 903950
+[05-Sep-2025 08:39:34] WARNING: [pool www] child 903907, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,199,215,217,214,4223") executing too slow (11.709228 sec), logging
+[05-Sep-2025 08:39:34] WARNING: [pool www] child 903893, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=191%2C153%2C4223%2C4224%2C155%2C202%2C176%2C165%2C163%2C204%2C203%2C181%2C197%2C208%2C159%2C194%2C196%2C154%2C166%2C207%2C209%2C157%2C217%2C199%2C180&filter_product_cat=4137&orderby=price-desc") executing too slow (11.859939 sec), logging
+[05-Sep-2025 08:39:34] WARNING: [pool www] child 903886, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=197%2C158%2C153%2C187%2C208%2C156&filter_product_cat=4090") executing too slow (12.635463 sec), logging
+[05-Sep-2025 08:39:34] NOTICE: child 903893 stopped for tracing
+[05-Sep-2025 08:39:34] NOTICE: about to trace 903893
+[05-Sep-2025 08:39:34] NOTICE: finished trace of 903893
+[05-Sep-2025 08:39:34] NOTICE: child 903886 stopped for tracing
+[05-Sep-2025 08:39:34] NOTICE: about to trace 903886
+[05-Sep-2025 08:39:34] NOTICE: finished trace of 903886
+[05-Sep-2025 08:39:34] NOTICE: child 903907 stopped for tracing
+[05-Sep-2025 08:39:34] NOTICE: about to trace 903907
+[05-Sep-2025 08:39:34] NOTICE: finished trace of 903907
+[05-Sep-2025 08:39:38] WARNING: [pool www] child 903967, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,214,162,197,150") executing too slow (11.179981 sec), logging
+[05-Sep-2025 08:39:38] WARNING: [pool www] child 903908, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,200,154,214,165") executing too slow (10.597999 sec), logging
+[05-Sep-2025 08:39:38] NOTICE: child 903967 stopped for tracing
+[05-Sep-2025 08:39:38] NOTICE: about to trace 903967
+[05-Sep-2025 08:39:38] NOTICE: finished trace of 903967
+[05-Sep-2025 08:39:38] NOTICE: child 903908 stopped for tracing
+[05-Sep-2025 08:39:38] NOTICE: about to trace 903908
+[05-Sep-2025 08:39:38] NOTICE: finished trace of 903908
+[05-Sep-2025 08:39:41] WARNING: [pool www] child 903959, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,192,214,217,210,190") executing too slow (12.703323 sec), logging
+[05-Sep-2025 08:39:41] WARNING: [pool www] child 903953, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,217,166,210,219") executing too slow (10.707320 sec), logging
+[05-Sep-2025 08:39:41] NOTICE: child 903959 stopped for tracing
+[05-Sep-2025 08:39:41] NOTICE: about to trace 903959
+[05-Sep-2025 08:39:41] NOTICE: finished trace of 903959
+[05-Sep-2025 08:39:41] NOTICE: child 903953 stopped for tracing
+[05-Sep-2025 08:39:41] NOTICE: about to trace 903953
+[05-Sep-2025 08:39:41] NOTICE: finished trace of 903953
+[05-Sep-2025 08:39:44] WARNING: [pool www] child 903874, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,214,219,204,187,159") executing too slow (10.353216 sec), logging
+[05-Sep-2025 08:39:44] WARNING: [pool www] child 903872, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=151,185,188,219,200,190,174,172") executing too slow (11.064991 sec), logging
+[05-Sep-2025 08:39:44] NOTICE: child 903872 stopped for tracing
+[05-Sep-2025 08:39:44] NOTICE: about to trace 903872
+[05-Sep-2025 08:39:44] NOTICE: finished trace of 903872
+[05-Sep-2025 08:39:44] NOTICE: child 903874 stopped for tracing
+[05-Sep-2025 08:39:44] NOTICE: about to trace 903874
+[05-Sep-2025 08:39:44] NOTICE: finished trace of 903874
+[05-Sep-2025 08:39:48] WARNING: [pool www] child 903906, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,219,175,214,181") executing too slow (10.428624 sec), logging
+[05-Sep-2025 08:39:48] WARNING: [pool www] child 903905, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,155,175,190,157") executing too slow (11.877248 sec), logging
+[05-Sep-2025 08:39:48] NOTICE: child 903905 stopped for tracing
+[05-Sep-2025 08:39:48] NOTICE: about to trace 903905
+[05-Sep-2025 08:39:48] NOTICE: finished trace of 903905
+[05-Sep-2025 08:39:48] NOTICE: child 903906 stopped for tracing
+[05-Sep-2025 08:39:48] NOTICE: about to trace 903906
+[05-Sep-2025 08:39:48] NOTICE: finished trace of 903906
+[05-Sep-2025 08:39:51] WARNING: [pool www] child 903876, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,150,215,162,204,171") executing too slow (12.100333 sec), logging
+[05-Sep-2025 08:39:51] NOTICE: child 903876 stopped for tracing
+[05-Sep-2025 08:39:51] NOTICE: about to trace 903876
+[05-Sep-2025 08:39:51] NOTICE: finished trace of 903876
+[05-Sep-2025 08:39:54] WARNING: [pool www] child 903909, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,208,186,157,189") executing too slow (11.844641 sec), logging
+[05-Sep-2025 08:39:54] NOTICE: child 903909 stopped for tracing
+[05-Sep-2025 08:39:54] NOTICE: about to trace 903909
+[05-Sep-2025 08:39:54] NOTICE: finished trace of 903909
+[05-Sep-2025 08:39:58] WARNING: [pool www] child 903960, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=197%2C216%2C196%2C164&filter_product_cat=4138") executing too slow (10.007992 sec), logging
+[05-Sep-2025 08:39:58] WARNING: [pool www] child 903902, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,217,176,213,191") executing too slow (10.155988 sec), logging
+[05-Sep-2025 08:39:58] WARNING: [pool www] child 903896, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=4223%2C4224%2C170%2C196%2C157%2C218%2C161%2C150%2C155%2C187%2C176%2C192%2C201%2C151%2C213%2C217%2C165%2C158%2C182%2C174%2C199%2C178%2C197%2C186&filter_product_cat=4099&orderby=menu_order") executing too slow (11.693995 sec), logging
+[05-Sep-2025 08:39:58] WARNING: [pool www] child 903884, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,214,217,154,155,153") executing too slow (12.327000 sec), logging
+[05-Sep-2025 08:39:58] WARNING: [pool www] child 903873, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,175,196,168,172") executing too slow (12.495995 sec), logging
+[05-Sep-2025 08:39:58] NOTICE: child 903960 stopped for tracing
+[05-Sep-2025 08:39:58] NOTICE: about to trace 903960
+[05-Sep-2025 08:39:58] NOTICE: finished trace of 903960
+[05-Sep-2025 08:39:58] NOTICE: child 903873 stopped for tracing
+[05-Sep-2025 08:39:58] NOTICE: about to trace 903873
+[05-Sep-2025 08:39:58] NOTICE: finished trace of 903873
+[05-Sep-2025 08:39:58] NOTICE: child 903896 stopped for tracing
+[05-Sep-2025 08:39:58] NOTICE: about to trace 903896
+[05-Sep-2025 08:39:58] NOTICE: finished trace of 903896
+[05-Sep-2025 08:39:58] NOTICE: child 903884 stopped for tracing
+[05-Sep-2025 08:39:58] NOTICE: about to trace 903884
+[05-Sep-2025 08:39:58] NOTICE: finished trace of 903884
+[05-Sep-2025 08:39:58] NOTICE: child 903902 stopped for tracing
+[05-Sep-2025 08:39:58] NOTICE: about to trace 903902
+[05-Sep-2025 08:39:58] NOTICE: finished trace of 903902
+[05-Sep-2025 08:40:01] WARNING: [pool www] child 903904, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,168,186,150,193") executing too slow (11.234529 sec), logging
+[05-Sep-2025 08:40:01] NOTICE: child 903904 stopped for tracing
+[05-Sep-2025 08:40:01] NOTICE: about to trace 903904
+[05-Sep-2025 08:40:01] NOTICE: finished trace of 903904
+[05-Sep-2025 08:40:04] WARNING: [pool www] child 903958, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,175,214,204,219,210") executing too slow (12.499622 sec), logging
+[05-Sep-2025 08:40:04] WARNING: [pool www] child 903897, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,191,219,198,150") executing too slow (10.604617 sec), logging
+[05-Sep-2025 08:40:04] NOTICE: child 903897 stopped for tracing
+[05-Sep-2025 08:40:04] NOTICE: about to trace 903897
+[05-Sep-2025 08:40:04] NOTICE: finished trace of 903897
+[05-Sep-2025 08:40:04] NOTICE: child 903958 stopped for tracing
+[05-Sep-2025 08:40:04] NOTICE: about to trace 903958
+[05-Sep-2025 08:40:04] NOTICE: finished trace of 903958
+[05-Sep-2025 08:40:08] WARNING: [pool www] child 903879, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,205,4223,4229,185,172") executing too slow (12.182927 sec), logging
+[05-Sep-2025 08:40:08] NOTICE: child 903879 stopped for tracing
+[05-Sep-2025 08:40:08] NOTICE: about to trace 903879
+[05-Sep-2025 08:40:08] NOTICE: finished trace of 903879
+[05-Sep-2025 08:40:11] WARNING: [pool www] child 903916, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,168,160,165,177") executing too slow (13.009970 sec), logging
+[05-Sep-2025 08:40:11] WARNING: [pool www] child 903878, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,214,213,170,219,207") executing too slow (10.823589 sec), logging
+[05-Sep-2025 08:40:11] NOTICE: child 903916 stopped for tracing
+[05-Sep-2025 08:40:11] NOTICE: about to trace 903916
+[05-Sep-2025 08:40:11] NOTICE: finished trace of 903916
+[05-Sep-2025 08:40:11] NOTICE: child 903878 stopped for tracing
+[05-Sep-2025 08:40:11] NOTICE: about to trace 903878
+[05-Sep-2025 08:40:11] NOTICE: finished trace of 903878
+[05-Sep-2025 08:40:14] WARNING: [pool www] child 903964, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,175,179,157,172") executing too slow (11.534582 sec), logging
+[05-Sep-2025 08:40:14] NOTICE: child 903964 stopped for tracing
+[05-Sep-2025 08:40:14] NOTICE: about to trace 903964
+[05-Sep-2025 08:40:14] NOTICE: finished trace of 903964
+[05-Sep-2025 08:40:18] WARNING: [pool www] child 903888, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,205,199,4224,155,186") executing too slow (12.006987 sec), logging
+[05-Sep-2025 08:40:18] WARNING: [pool www] child 903885, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,214,204,189,177") executing too slow (11.890995 sec), logging
+[05-Sep-2025 08:40:18] NOTICE: child 903888 stopped for tracing
+[05-Sep-2025 08:40:18] NOTICE: about to trace 903888
+[05-Sep-2025 08:40:18] NOTICE: finished trace of 903888
+[05-Sep-2025 08:40:18] NOTICE: child 903885 stopped for tracing
+[05-Sep-2025 08:40:18] NOTICE: about to trace 903885
+[05-Sep-2025 08:40:18] NOTICE: finished trace of 903885
+[05-Sep-2025 08:40:21] WARNING: [pool www] child 903903, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,215,175,165") executing too slow (12.191930 sec), logging
+[05-Sep-2025 08:40:21] WARNING: [pool www] child 903895, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,205,199,172,215,155") executing too slow (11.215691 sec), logging
+[05-Sep-2025 08:40:21] NOTICE: child 903903 stopped for tracing
+[05-Sep-2025 08:40:21] NOTICE: about to trace 903903
+[05-Sep-2025 08:40:21] NOTICE: finished trace of 903903
+[05-Sep-2025 08:40:21] NOTICE: child 903895 stopped for tracing
+[05-Sep-2025 08:40:21] NOTICE: about to trace 903895
+[05-Sep-2025 08:40:21] NOTICE: finished trace of 903895
+[05-Sep-2025 08:40:24] WARNING: [pool www] child 903951, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=198%2C162%2C167%2C149%2C161&filter_product_cat=4121&orderby=price") executing too slow (11.027891 sec), logging
+[05-Sep-2025 08:40:24] WARNING: [pool www] child 903875, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,159,218,171,170,175") executing too slow (11.738995 sec), logging
+[05-Sep-2025 08:40:24] NOTICE: child 903951 stopped for tracing
+[05-Sep-2025 08:40:24] NOTICE: about to trace 903951
+[05-Sep-2025 08:40:24] NOTICE: finished trace of 903951
+[05-Sep-2025 08:40:24] NOTICE: child 903875 stopped for tracing
+[05-Sep-2025 08:40:24] NOTICE: about to trace 903875
+[05-Sep-2025 08:40:24] NOTICE: finished trace of 903875
+[05-Sep-2025 08:40:28] WARNING: [pool www] child 903952, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,205,199,203,157,210") executing too slow (11.716984 sec), logging
+[05-Sep-2025 08:40:28] WARNING: [pool www] child 903894, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=4223%2C4224%2C158%2C170%2C196%2C177%2C210%2C168%2C201%2C178%2C157%2C218%2C193%2C150%2C208%2C198%2C180%2C165%2C161%2C205%2C173%2C191%2C153%2C214%2C190%2C149&filter_product_cat=4168&orderby=menu_order") executing too slow (11.605660 sec), logging
+[05-Sep-2025 08:40:28] WARNING: [pool www] child 903887, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price-desc&filter_product_cat=4156%2C4188&filter_product_brand=168,183") executing too slow (12.575989 sec), logging
+[05-Sep-2025 08:40:28] NOTICE: child 903952 stopped for tracing
+[05-Sep-2025 08:40:28] NOTICE: about to trace 903952
+[05-Sep-2025 08:40:28] NOTICE: finished trace of 903952
+[05-Sep-2025 08:40:28] NOTICE: child 903887 stopped for tracing
+[05-Sep-2025 08:40:28] NOTICE: about to trace 903887
+[05-Sep-2025 08:40:28] NOTICE: finished trace of 903887
+[05-Sep-2025 08:40:28] NOTICE: child 903894 stopped for tracing
+[05-Sep-2025 08:40:28] NOTICE: about to trace 903894
+[05-Sep-2025 08:40:28] NOTICE: finished trace of 903894
+[05-Sep-2025 08:40:31] WARNING: [pool www] child 903966, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,214,217,175,150") executing too slow (11.810014 sec), logging
+[05-Sep-2025 08:40:31] WARNING: [pool www] child 903907, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,192,190,199,168") executing too slow (10.495118 sec), logging
+[05-Sep-2025 08:40:31] WARNING: [pool www] child 903886, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=4224") executing too slow (11.720015 sec), logging
+[05-Sep-2025 08:40:31] NOTICE: child 903907 stopped for tracing
+[05-Sep-2025 08:40:31] NOTICE: about to trace 903907
+[05-Sep-2025 08:40:31] NOTICE: finished trace of 903907
+[05-Sep-2025 08:40:31] NOTICE: child 903886 stopped for tracing
+[05-Sep-2025 08:40:31] NOTICE: about to trace 903886
+[05-Sep-2025 08:40:31] NOTICE: finished trace of 903886
+[05-Sep-2025 08:40:31] NOTICE: child 903966 stopped for tracing
+[05-Sep-2025 08:40:31] NOTICE: about to trace 903966
+[05-Sep-2025 08:40:31] NOTICE: finished trace of 903966
+[05-Sep-2025 08:40:34] WARNING: [pool www] child 903877, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,214,193,204,177") executing too slow (12.251867 sec), logging
+[05-Sep-2025 08:40:34] NOTICE: child 903877 stopped for tracing
+[05-Sep-2025 08:40:34] NOTICE: about to trace 903877
+[05-Sep-2025 08:40:34] NOTICE: finished trace of 903877
+[05-Sep-2025 08:40:38] WARNING: [pool www] child 903908, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,214,170,204,169,213") executing too slow (12.911853 sec), logging
+[05-Sep-2025 08:40:38] NOTICE: child 903908 stopped for tracing
+[05-Sep-2025 08:40:38] NOTICE: about to trace 903908
+[05-Sep-2025 08:40:38] NOTICE: finished trace of 903908
+[05-Sep-2025 08:40:41] WARNING: [pool www] child 903959, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,214,198,204,185") executing too slow (12.920190 sec), logging
+[05-Sep-2025 08:40:41] WARNING: [pool www] child 903874, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,199,159,162,151,4229") executing too slow (10.765192 sec), logging
+[05-Sep-2025 08:40:41] NOTICE: child 903874 stopped for tracing
+[05-Sep-2025 08:40:41] NOTICE: about to trace 903874
+[05-Sep-2025 08:40:41] NOTICE: finished trace of 903874
+[05-Sep-2025 08:40:41] NOTICE: child 903959 stopped for tracing
+[05-Sep-2025 08:40:41] NOTICE: about to trace 903959
+[05-Sep-2025 08:40:41] NOTICE: finished trace of 903959
+[05-Sep-2025 08:40:44] WARNING: [pool www] child 903905, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,218,196,192") executing too slow (11.975637 sec), logging
+[05-Sep-2025 08:40:44] WARNING: [pool www] child 903872, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,214,213,219,194,216") executing too slow (10.156992 sec), logging
+[05-Sep-2025 08:40:44] NOTICE: child 903905 stopped for tracing
+[05-Sep-2025 08:40:44] NOTICE: about to trace 903905
+[05-Sep-2025 08:40:44] NOTICE: finished trace of 903905
+[05-Sep-2025 08:40:44] NOTICE: child 903872 stopped for tracing
+[05-Sep-2025 08:40:44] NOTICE: about to trace 903872
+[05-Sep-2025 08:40:44] NOTICE: finished trace of 903872
+[05-Sep-2025 08:40:48] WARNING: [pool www] child 903906, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,199,215,214,170,162") executing too slow (10.902867 sec), logging
+[05-Sep-2025 08:40:48] NOTICE: child 903906 stopped for tracing
+[05-Sep-2025 08:40:48] NOTICE: about to trace 903906
+[05-Sep-2025 08:40:48] NOTICE: finished trace of 903906
+[05-Sep-2025 08:40:51] WARNING: [pool www] child 903965, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=168%2C187%2C170%2C158%2C175%2C185%2C193%2C186%2C4224&filter_product_cat=4181") executing too slow (12.035990 sec), logging
+[05-Sep-2025 08:40:51] WARNING: [pool www] child 903917, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,176,212,156,216") executing too slow (12.588987 sec), logging
+[05-Sep-2025 08:40:51] WARNING: [pool www] child 903909, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,213,168,217,219,157") executing too slow (10.744985 sec), logging
+[05-Sep-2025 08:40:51] NOTICE: child 903909 stopped for tracing
+[05-Sep-2025 08:40:51] NOTICE: about to trace 903909
+[05-Sep-2025 08:40:51] NOTICE: finished trace of 903909
+[05-Sep-2025 08:40:51] NOTICE: child 903965 stopped for tracing
+[05-Sep-2025 08:40:51] NOTICE: about to trace 903965
+[05-Sep-2025 08:40:51] NOTICE: finished trace of 903965
+[05-Sep-2025 08:40:51] NOTICE: child 903917 stopped for tracing
+[05-Sep-2025 08:40:51] NOTICE: about to trace 903917
+[05-Sep-2025 08:40:51] NOTICE: finished trace of 903917
+[05-Sep-2025 08:40:54] WARNING: [pool www] child 903884, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price") executing too slow (10.955464 sec), logging
+[05-Sep-2025 08:40:54] WARNING: [pool www] child 903873, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,175,150,159,201,164") executing too slow (11.587474 sec), logging
+[05-Sep-2025 08:40:54] NOTICE: child 903873 stopped for tracing
+[05-Sep-2025 08:40:54] NOTICE: about to trace 903873
+[05-Sep-2025 08:40:54] NOTICE: finished trace of 903873
+[05-Sep-2025 08:40:54] NOTICE: child 903884 stopped for tracing
+[05-Sep-2025 08:40:54] NOTICE: about to trace 903884
+[05-Sep-2025 08:40:54] NOTICE: finished trace of 903884
+[05-Sep-2025 08:40:58] WARNING: [pool www] child 903904, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,214,210,212,4223") executing too slow (10.790003 sec), logging
+[05-Sep-2025 08:40:58] WARNING: [pool www] child 903896, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,192,214,215,170,186") executing too slow (12.209998 sec), logging
+[05-Sep-2025 08:40:58] NOTICE: child 903896 stopped for tracing
+[05-Sep-2025 08:40:58] NOTICE: about to trace 903896
+[05-Sep-2025 08:40:58] NOTICE: finished trace of 903896
+[05-Sep-2025 08:40:58] NOTICE: child 903904 stopped for tracing
+[05-Sep-2025 08:40:58] NOTICE: about to trace 903904
+[05-Sep-2025 08:40:58] NOTICE: finished trace of 903904
+[05-Sep-2025 08:41:01] WARNING: [pool www] child 903960, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,214,176,199,153") executing too slow (12.480992 sec), logging
+[05-Sep-2025 08:41:01] WARNING: [pool www] child 903902, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,175,162,160,202") executing too slow (10.996995 sec), logging
+[05-Sep-2025 08:41:01] NOTICE: child 903960 stopped for tracing
+[05-Sep-2025 08:41:01] NOTICE: about to trace 903960
+[05-Sep-2025 08:41:01] NOTICE: finished trace of 903960
+[05-Sep-2025 08:41:01] NOTICE: child 903902 stopped for tracing
+[05-Sep-2025 08:41:01] NOTICE: about to trace 903902
+[05-Sep-2025 08:41:01] NOTICE: finished trace of 903902
+[05-Sep-2025 08:41:04] WARNING: [pool www] child 903950, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,219,153,157,177") executing too slow (11.736989 sec), logging
+[05-Sep-2025 08:41:04] NOTICE: child 903950 stopped for tracing
+[05-Sep-2025 08:41:04] NOTICE: about to trace 903950
+[05-Sep-2025 08:41:04] NOTICE: finished trace of 903950
+[05-Sep-2025 08:41:08] WARNING: [pool www] child 903897, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,192,154,214,184") executing too slow (11.383992 sec), logging
+[05-Sep-2025 08:41:08] WARNING: [pool www] child 903893, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,214,213,186,204") executing too slow (12.352618 sec), logging
+[05-Sep-2025 08:41:08] WARNING: [pool www] child 903879, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=4223,4224,163,168,159,194,188,167,174,165,175,170,196,190,186,211,180,154,213,172,203,169,179,183,215&filter_product_cat=4167&orderby=price-desc") executing too slow (10.669995 sec), logging
+[05-Sep-2025 08:41:08] NOTICE: child 903879 stopped for tracing
+[05-Sep-2025 08:41:08] NOTICE: about to trace 903879
+[05-Sep-2025 08:41:08] NOTICE: finished trace of 903879
+[05-Sep-2025 08:41:08] NOTICE: child 903893 stopped for tracing
+[05-Sep-2025 08:41:08] NOTICE: about to trace 903893
+[05-Sep-2025 08:41:08] NOTICE: finished trace of 903893
+[05-Sep-2025 08:41:08] NOTICE: child 903897 stopped for tracing
+[05-Sep-2025 08:41:08] NOTICE: about to trace 903897
+[05-Sep-2025 08:41:08] NOTICE: finished trace of 903897
+[05-Sep-2025 08:41:11] WARNING: [pool www] child 912433, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,219,217,206,155") executing too slow (12.945964 sec), logging
+[05-Sep-2025 08:41:11] WARNING: [pool www] child 903964, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,169,4229,178,195,197") executing too slow (11.175971 sec), logging
+[05-Sep-2025 08:41:11] WARNING: [pool www] child 903878, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_cat=3435,2603,2807,3981,3950") executing too slow (12.017997 sec), logging
+[05-Sep-2025 08:41:11] NOTICE: child 903964 stopped for tracing
+[05-Sep-2025 08:41:11] NOTICE: about to trace 903964
+[05-Sep-2025 08:41:11] NOTICE: finished trace of 903964
+[05-Sep-2025 08:41:11] NOTICE: child 903878 stopped for tracing
+[05-Sep-2025 08:41:11] NOTICE: about to trace 903878
+[05-Sep-2025 08:41:11] NOTICE: finished trace of 903878
+[05-Sep-2025 08:41:11] NOTICE: child 912433 stopped for tracing
+[05-Sep-2025 08:41:11] NOTICE: about to trace 912433
+[05-Sep-2025 08:41:11] NOTICE: finished trace of 912433
+[05-Sep-2025 08:41:14] WARNING: [pool www] child 903963, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,192,214,219,189") executing too slow (10.246876 sec), logging
+[05-Sep-2025 08:41:14] WARNING: [pool www] child 903876, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,201,214,211,216,157") executing too slow (11.979702 sec), logging
+[05-Sep-2025 08:41:14] NOTICE: child 903963 stopped for tracing
+[05-Sep-2025 08:41:14] NOTICE: about to trace 903963
+[05-Sep-2025 08:41:14] NOTICE: finished trace of 903963
+[05-Sep-2025 08:41:14] NOTICE: child 903876 stopped for tracing
+[05-Sep-2025 08:41:14] NOTICE: about to trace 903876
+[05-Sep-2025 08:41:14] NOTICE: finished trace of 903876
+[05-Sep-2025 08:41:18] WARNING: [pool www] child 903888, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,166,176,153,196") executing too slow (10.804731 sec), logging
+[05-Sep-2025 08:41:18] WARNING: [pool www] child 903885, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=204%2C185%2C164%2C184%2C197&filter_product_cat=4124") executing too slow (13.012729 sec), logging
+[05-Sep-2025 08:41:18] NOTICE: child 903885 stopped for tracing
+[05-Sep-2025 08:41:18] NOTICE: about to trace 903885
+[05-Sep-2025 08:41:18] NOTICE: finished trace of 903885
+[05-Sep-2025 08:41:18] NOTICE: child 903888 stopped for tracing
+[05-Sep-2025 08:41:18] NOTICE: about to trace 903888
+[05-Sep-2025 08:41:18] NOTICE: finished trace of 903888
+[05-Sep-2025 08:41:21] WARNING: [pool www] child 903953, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,170,195,197,158") executing too slow (12.569558 sec), logging
+[05-Sep-2025 08:41:21] NOTICE: child 903953 stopped for tracing
+[05-Sep-2025 08:41:21] NOTICE: about to trace 903953
+[05-Sep-2025 08:41:21] NOTICE: finished trace of 903953
+[05-Sep-2025 08:41:24] WARNING: [pool www] child 912476, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,215,164,170,157,209") executing too slow (12.193354 sec), logging
+[05-Sep-2025 08:41:24] WARNING: [pool www] child 903903, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,159,185,164,193,150") executing too slow (13.327348 sec), logging
+[05-Sep-2025 08:41:24] WARNING: [pool www] child 903895, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,159,204,215,166,216") executing too slow (10.580343 sec), logging
+[05-Sep-2025 08:41:24] NOTICE: child 903903 stopped for tracing
+[05-Sep-2025 08:41:24] NOTICE: about to trace 903903
+[05-Sep-2025 08:41:24] NOTICE: finished trace of 903903
+[05-Sep-2025 08:41:24] NOTICE: child 903895 stopped for tracing
+[05-Sep-2025 08:41:24] NOTICE: about to trace 903895
+[05-Sep-2025 08:41:24] NOTICE: finished trace of 903895
+[05-Sep-2025 08:41:24] NOTICE: child 912476 stopped for tracing
+[05-Sep-2025 08:41:24] NOTICE: about to trace 912476
+[05-Sep-2025 08:41:24] NOTICE: finished trace of 912476
+[05-Sep-2025 08:41:28] WARNING: [pool www] child 912483, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,208,166,206,178") executing too slow (12.230664 sec), logging
+[05-Sep-2025 08:41:28] NOTICE: child 912483 stopped for tracing
+[05-Sep-2025 08:41:28] NOTICE: about to trace 912483
+[05-Sep-2025 08:41:28] NOTICE: finished trace of 912483
+[05-Sep-2025 08:41:31] WARNING: [pool www] child 903951, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,217,214,178,219") executing too slow (13.232894 sec), logging
+[05-Sep-2025 08:41:31] WARNING: [pool www] child 903875, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,205,199,4229,183,177") executing too slow (11.489063 sec), logging
+[05-Sep-2025 08:41:31] NOTICE: child 903951 stopped for tracing
+[05-Sep-2025 08:41:31] NOTICE: about to trace 903951
+[05-Sep-2025 08:41:31] NOTICE: finished trace of 903951
+[05-Sep-2025 08:41:31] NOTICE: child 903875 stopped for tracing
+[05-Sep-2025 08:41:31] NOTICE: about to trace 903875
+[05-Sep-2025 08:41:31] NOTICE: finished trace of 903875
+[05-Sep-2025 08:41:34] WARNING: [pool www] child 903952, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,175,162,157,178") executing too slow (10.526330 sec), logging
+[05-Sep-2025 08:41:34] WARNING: [pool www] child 903887, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,175,196,213,178,192") executing too slow (12.306313 sec), logging
+[05-Sep-2025 08:41:34] NOTICE: child 903887 stopped for tracing
+[05-Sep-2025 08:41:34] NOTICE: about to trace 903887
+[05-Sep-2025 08:41:34] NOTICE: finished trace of 903887
+[05-Sep-2025 08:41:34] NOTICE: child 903952 stopped for tracing
+[05-Sep-2025 08:41:34] NOTICE: about to trace 903952
+[05-Sep-2025 08:41:34] NOTICE: finished trace of 903952
+[05-Sep-2025 08:41:38] WARNING: [pool www] child 903966, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,217,218,149,208") executing too slow (12.347980 sec), logging
+[05-Sep-2025 08:41:38] WARNING: [pool www] child 903958, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?add-to-cart=99823&filter_product_brand=4223%2C4224%2C199%2C176%2C208%2C205%2C158%2C215%2C163%2C171%2C196%2C153%2C202%2C175%2C183%2C152%2C193%2C194%2C155%2C170%2C216%2C201%2C185%2C186%2C203&filter_product_cat=4178&orderby=menu_order") executing too slow (10.582993 sec), logging
+[05-Sep-2025 08:41:38] NOTICE: child 903958 stopped for tracing
+[05-Sep-2025 08:41:38] NOTICE: about to trace 903958
+[05-Sep-2025 08:41:38] NOTICE: finished trace of 903958
+[05-Sep-2025 08:41:38] NOTICE: child 903966 stopped for tracing
+[05-Sep-2025 08:41:38] NOTICE: about to trace 903966
+[05-Sep-2025 08:41:38] NOTICE: finished trace of 903966
+[05-Sep-2025 08:41:41] WARNING: [pool www] child 903907, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,175,214,213,165,163") executing too slow (11.361654 sec), logging
+[05-Sep-2025 08:41:41] WARNING: [pool www] child 903886, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,205,199,159,202,164") executing too slow (13.288658 sec), logging
+[05-Sep-2025 08:41:41] NOTICE: child 903886 stopped for tracing
+[05-Sep-2025 08:41:41] NOTICE: about to trace 903886
+[05-Sep-2025 08:41:41] NOTICE: finished trace of 903886
+[05-Sep-2025 08:41:41] NOTICE: child 903907 stopped for tracing
+[05-Sep-2025 08:41:41] NOTICE: about to trace 903907
+[05-Sep-2025 08:41:41] NOTICE: finished trace of 903907
+[05-Sep-2025 08:41:44] WARNING: [pool www] child 912513, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,214,215,176,210,204") executing too slow (12.337245 sec), logging
+[05-Sep-2025 08:41:44] WARNING: [pool www] child 912512, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=159%2C153%2C152%2C202%2C218%2C163&filter_product_cat=4165") executing too slow (12.967247 sec), logging
+[05-Sep-2025 08:41:44] WARNING: [pool www] child 903877, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,192,214,215,208,175") executing too slow (11.155244 sec), logging
+[05-Sep-2025 08:41:44] NOTICE: child 912512 stopped for tracing
+[05-Sep-2025 08:41:44] NOTICE: about to trace 912512
+[05-Sep-2025 08:41:44] NOTICE: finished trace of 912512
+[05-Sep-2025 08:41:44] NOTICE: child 912513 stopped for tracing
+[05-Sep-2025 08:41:44] NOTICE: about to trace 912513
+[05-Sep-2025 08:41:44] NOTICE: finished trace of 912513
+[05-Sep-2025 08:41:44] NOTICE: child 903877 stopped for tracing
+[05-Sep-2025 08:41:44] NOTICE: about to trace 903877
+[05-Sep-2025 08:41:44] NOTICE: finished trace of 903877
+[05-Sep-2025 08:41:48] WARNING: [pool www] child 912528, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=162,214,170,218,185,200") executing too slow (10.418009 sec), logging
+[05-Sep-2025 08:41:48] NOTICE: child 912528 stopped for tracing
+[05-Sep-2025 08:41:48] NOTICE: about to trace 912528
+[05-Sep-2025 08:41:48] NOTICE: finished trace of 912528
+[05-Sep-2025 08:41:51] WARNING: [pool www] child 912535, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,214,160,197,196") executing too slow (13.321983 sec), logging
+[05-Sep-2025 08:41:51] WARNING: [pool www] child 903959, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,202,177,214,196") executing too slow (11.912002 sec), logging
+[05-Sep-2025 08:41:51] NOTICE: child 903959 stopped for tracing
+[05-Sep-2025 08:41:51] NOTICE: about to trace 903959
+[05-Sep-2025 08:41:51] NOTICE: finished trace of 903959
+[05-Sep-2025 08:41:51] NOTICE: child 912535 stopped for tracing
+[05-Sep-2025 08:41:51] NOTICE: about to trace 912535
+[05-Sep-2025 08:41:51] NOTICE: finished trace of 912535
+[05-Sep-2025 08:41:54] WARNING: [pool www] child 903967, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_cat=4188,4128") executing too slow (12.873955 sec), logging
+[05-Sep-2025 08:41:54] WARNING: [pool www] child 903916, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,199,214,205,159,155,162") executing too slow (10.204981 sec), logging
+[05-Sep-2025 08:41:54] WARNING: [pool www] child 903874, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,219,157,218,190,178") executing too slow (13.267989 sec), logging
+[05-Sep-2025 08:41:54] NOTICE: child 903874 stopped for tracing
+[05-Sep-2025 08:41:54] NOTICE: about to trace 903874
+[05-Sep-2025 08:41:54] NOTICE: finished trace of 903874
+[05-Sep-2025 08:41:54] NOTICE: child 903916 stopped for tracing
+[05-Sep-2025 08:41:54] NOTICE: about to trace 903916
+[05-Sep-2025 08:41:54] NOTICE: finished trace of 903916
+[05-Sep-2025 08:41:55] NOTICE: child 903967 stopped for tracing
+[05-Sep-2025 08:41:55] NOTICE: about to trace 903967
+[05-Sep-2025 08:41:55] NOTICE: finished trace of 903967
+[05-Sep-2025 08:41:58] WARNING: [pool www] child 903905, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,164,204,198,192") executing too slow (11.497520 sec), logging
+[05-Sep-2025 08:41:58] WARNING: [pool www] child 903878, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,150,185,192,154,210") executing too slow (12.872523 sec), logging
+[05-Sep-2025 08:41:58] WARNING: [pool www] child 903872, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php") executing too slow (11.148510 sec), logging
+[05-Sep-2025 08:41:58] NOTICE: child 903878 stopped for tracing
+[05-Sep-2025 08:41:58] NOTICE: about to trace 903878
+[05-Sep-2025 08:41:58] NOTICE: finished trace of 903878
+[05-Sep-2025 08:41:58] NOTICE: child 903872 stopped for tracing
+[05-Sep-2025 08:41:58] NOTICE: about to trace 903872
+[05-Sep-2025 08:41:58] NOTICE: finished trace of 903872
+[05-Sep-2025 08:41:58] NOTICE: child 903905 stopped for tracing
+[05-Sep-2025 08:41:58] NOTICE: about to trace 903905
+[05-Sep-2025 08:41:58] NOTICE: finished trace of 903905
+[05-Sep-2025 08:42:01] WARNING: [pool www] child 903906, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=182,215,164,168,172,187") executing too slow (12.182999 sec), logging
+[05-Sep-2025 08:42:01] WARNING: [pool www] child 903894, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=152,157,209,215,187") executing too slow (10.287988 sec), logging
+[05-Sep-2025 08:42:01] NOTICE: child 903894 stopped for tracing
+[05-Sep-2025 08:42:01] NOTICE: about to trace 903894
+[05-Sep-2025 08:42:01] NOTICE: finished trace of 903894
+[05-Sep-2025 08:42:01] NOTICE: child 903906 stopped for tracing
+[05-Sep-2025 08:42:01] NOTICE: about to trace 903906
+[05-Sep-2025 08:42:01] NOTICE: finished trace of 903906
+[05-Sep-2025 08:42:04] WARNING: [pool www] child 903965, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,199,216,4224,219,200") executing too slow (12.292135 sec), logging
+[05-Sep-2025 08:42:04] WARNING: [pool www] child 903909, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=154,204,157,170,219,156") executing too slow (10.309141 sec), logging
+[05-Sep-2025 08:42:04] NOTICE: child 903965 stopped for tracing
+[05-Sep-2025 08:42:04] NOTICE: about to trace 903965
+[05-Sep-2025 08:42:04] NOTICE: finished trace of 903965
+[05-Sep-2025 08:42:05] NOTICE: child 903909 stopped for tracing
+[05-Sep-2025 08:42:05] NOTICE: about to trace 903909
+[05-Sep-2025 08:42:05] NOTICE: finished trace of 903909
+[05-Sep-2025 08:42:08] WARNING: [pool www] child 903888, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?orderby=price&filter_product_brand=203,215,192,194,163,180") executing too slow (11.571875 sec), logging
+[05-Sep-2025 08:42:08] WARNING: [pool www] child 903884, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=197%2C158%2C214%2C151%2C155%2C177%2C164%2C162&filter_product_cat=4090") executing too slow (11.549007 sec), logging
+[05-Sep-2025 08:42:08] NOTICE: child 903888 stopped for tracing
+[05-Sep-2025 08:42:08] NOTICE: about to trace 903888
+[05-Sep-2025 08:42:08] NOTICE: finished trace of 903888
+[05-Sep-2025 08:42:08] NOTICE: child 903884 stopped for tracing
+[05-Sep-2025 08:42:08] NOTICE: about to trace 903884
+[05-Sep-2025 08:42:08] NOTICE: finished trace of 903884
+[05-Sep-2025 08:42:10] NOTICE: Finishing ...
+[05-Sep-2025 08:42:10] NOTICE: exiting, bye-bye!
+[05-Sep-2025 14:05:48] NOTICE: fpm is running, pid 945631
+[05-Sep-2025 14:05:48] NOTICE: ready to handle connections
+[05-Sep-2025 14:06:18] WARNING: [pool www] child 945632, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_cat=4129,4172&filter_product_brand=218,208,201") executing too slow (10.294701 sec), logging
+[05-Sep-2025 14:06:18] NOTICE: child 945632 stopped for tracing
+[05-Sep-2025 14:06:18] NOTICE: about to trace 945632
+[05-Sep-2025 14:06:18] NOTICE: finished trace of 945632
+[05-Sep-2025 14:06:21] WARNING: [pool www] child 945633, script '/www/wwwroot/layzmotor.com/public_html/index.php' (request: "GET /index.php?filter_product_brand=168%2C152%2C218%2C170%2C175%2C198%2C156%2C183%2C178&filter_product_cat=4164") executing too slow (11.844270 sec), logging
+[05-Sep-2025 14:06:21] NOTICE: child 945633 stopped for tracing
+[05-Sep-2025 14:06:21] NOTICE: about to trace 945633
+[05-Sep-2025 14:06:21] NOTICE: finished trace of 945633

@@ -1510,4 +1510,5 @@ class Products extends Base {
 			'woosw_remove',
 		];
 	}
+
 }
