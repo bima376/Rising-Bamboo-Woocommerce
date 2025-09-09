@@ -11,16 +11,8 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('OTW_PLUGIN_FILE', __FILE__);
-define('OTW_PLUGIN_DIR', plugin_dir_path(__FILE__));
-define('OTW_PLUGIN_URL', plugin_dir_url(__FILE__));
-define('OTW_PLUGIN_BASENAME', plugin_basename(__FILE__));
-define('OTW_VERSION', '1.0.0');
+define('OTW_VERSION', '1.0.2');
 
-// Include debug file if WP_DEBUG is enabled
-if (defined('WP_DEBUG') && WP_DEBUG) {
-    require_once OTW_PLUGIN_DIR . 'debug.php';
-}
 
 /**
  * Main plugin class
@@ -152,41 +144,41 @@ class OrderTrackingWooCommerce {
         $settings = get_option('otw_settings', array());
         ?>
         <div class="wrap">
-            <h1><?php 'Order Tracking Settings'; ?></h1>
+            <h1>Order Tracking Settings</h1>
             
             <form method="post" action="options.php">
                 <?php settings_fields('otw_settings'); ?>
                 
                 <table class="form-table">
                     <tr>
-                        <th scope="row"><?php 'Enable All Custom Fields'; ?></th>
+                        <th scope="row">Enable All Custom Fields</th>
                         <td>
                             <label>
                                 <input type="checkbox" name="otw_settings[otw_enable_all_fields]" value="yes" 
                                        <?php checked(isset($settings['otw_enable_all_fields']) ? $settings['otw_enable_all_fields'] : 'yes', 'yes'); ?>>
-                                <?php 'Display all custom fields in order tracking'; ?>
+                                Display all custom fields in order tracking
                             </label>
-                            <p class="description"><?php 'If enabled, all non-protected custom fields will be displayed.'; ?></p>
+                            <p class="description">If enabled, all non-protected custom fields will be displayed.</p>
                         </td>
                     </tr>
                     
                     <tr>
-                        <th scope="row"><?php 'Enable Specific Tracking Fields'; ?></th>
+                        <th scope="row">Enable Specific Tracking Fields</th>
                         <td>
                             <label>
                                 <input type="checkbox" name="otw_settings[otw_enable_tracking_fields]" value="yes" 
                                        <?php checked(isset($settings['otw_enable_tracking_fields']) ? $settings['otw_enable_tracking_fields'] : 'yes', 'yes'); ?>>
-                                <?php 'Display specific tracking fields'; ?>
+                                Display specific tracking fields
                             </label>
-                            <p class="description"><?php 'If enabled, only specific tracking fields will be displayed.'; ?></p>
+                            <p class="description">If enabled, only specific tracking fields will be displayed.</p>
                         </td>
                     </tr>
                     
                     <tr>
-                        <th scope="row"><?php 'Tracking Fields'; ?></th>
+                        <th scope="row">Tracking Fields</th>
                         <td>
-                            <fieldset></fieldset>
-                                <legend class="screen-reader-text"><?php 'Select tracking fields to display'; ?></legend>
+                            <fieldset>
+                                <legend class="screen-reader-text">Select tracking fields to display</legend>
                                 <?php
                                 $default_tracking_fields = array(
                                     'tracking_number' => 'Tracking Number',
@@ -209,7 +201,7 @@ class OrderTrackingWooCommerce {
                                 }
                                 ?>
                             </fieldset>
-                            <p class="description"><?php 'Select which custom fields to display in the tracking section.'; ?></p>
+                            <p class="description">Select which custom fields to display in the tracking section.</p>
                         </td>
                     </tr>
                     
@@ -219,12 +211,12 @@ class OrderTrackingWooCommerce {
             </form>
             
             <div class="card">
-                <h2><?php 'How to Use'; ?></h2>
+                <h2>How to Use</h2>
                 <ol>
-                    <li><?php 'Go to WooCommerce > Orders and edit an order'; ?></li>
-                    <li><?php 'Scroll down to the "Custom Fields" meta box'; ?></li>
-                    <li><?php 'Add custom fields with keys like "tracking_number", "shipping_company", etc.'; ?></li>
-                    <li><?php 'The custom fields will automatically appear on the order tracking page'; ?></li>
+                    <li>Go to WooCommerce > Orders and edit an order</li>
+                    <li>Scroll down to the "Custom Fields" meta box</li>
+                    <li>Add custom fields with keys like "tracking_number", "shipping_company", etc.</li>
+                    <li>The custom fields will automatically appear on the order tracking page</li>
                 </ol>
             </div>
         </div>
@@ -274,7 +266,7 @@ class OrderTrackingWooCommerce {
         // Only display if there are custom fields
         if (!empty($custom_fields)) {
             ?>
-            <section class="">
+            <section>
                 <div class="rbb-account__order-detail-info">
                     <?php foreach ($custom_fields as $field) : ?>
                         <div class="rbb-account__order-detail-subtotal flex justify-between pb-4 mb-4">
@@ -301,14 +293,6 @@ class OrderTrackingWooCommerce {
             return;
         }
         
-        $this->display_tracking_custom_fields($order);
-    }
-    
-    
-    /**
-     * Display specific tracking custom fields
-     */
-    public function display_tracking_custom_fields($order) {
         if (!$order || !is_object($order)) {
             return;
         }
@@ -340,7 +324,7 @@ class OrderTrackingWooCommerce {
      * Display specific custom fields only
      */
     public function display_specific_order_custom_fields($order, $allowed_fields = array()) {
-        if (!$order || !is_object($order) || empty($allowed_fields)) {
+        if (!$order || !is_object($order)) {
             return;
         }
         
@@ -349,7 +333,6 @@ class OrderTrackingWooCommerce {
             return;
         }
         
-        $settings = get_option('otw_settings', array());
         $custom_fields = array();
         
         foreach ($allowed_fields as $field_key) {
@@ -364,7 +347,7 @@ class OrderTrackingWooCommerce {
         
         if (!empty($custom_fields)) {
             ?>
-            <section class="">
+            <section class="woocommerce-order-details rbb-account__order-detail-content bg-white rounded-2xl px-[30px] pt-[30px] pb-[1px]">
                 <div class="rbb-account__order-detail-info">
                     <?php foreach ($custom_fields as $field) : ?>
                         <div class="rbb-account__order-detail-subtotal flex justify-between pb-4 mb-4">
