@@ -1,7 +1,6 @@
 <?php
 /**
  * Plugin Name: Order Tracking WooCommerce
- * Plugin URI: https://yourwebsite.com/order-tracking-woocommerce
  * Description: Menampilkan custom fields dari order di halaman tracking WooCommerce. Plugin ini memungkinkan admin untuk menambahkan custom fields di order dan menampilkannya di frontend tracking page.
  */
 

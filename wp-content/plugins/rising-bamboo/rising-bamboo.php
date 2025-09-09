@@ -2,16 +2,6 @@
 /**
 Plugin Name: Rising Bamboo Core
 Description: Core functions for Rising Bamboo theme
-Author: Rising Bamboo
-Author URI: https://risingbamboo.com
-Version: 1.4.2
-Plugin URI: https://wp.risingbamboo.com
-Text Domain: rbb-core
-Domain Path: /languages/
-Requires PHP: 5.6
-Requires at least: 4.0
-WC requires at least: 3.0
-WC tested up to: 9.1
  *
  * @package RisingBambooCore
  */
