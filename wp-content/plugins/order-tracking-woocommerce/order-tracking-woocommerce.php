@@ -265,8 +265,7 @@ class OrderTrackingWooCommerce {
         // Only display if there are custom fields
         if (!empty($custom_fields)) {
             ?>
-            <section>
-                <div class="rbb-account__order-detail-info">
+                <div class="rbb-account__order-detail-info resi">
                     <?php foreach ($custom_fields as $field) : ?>
                         <div class="rbb-account__order-detail-subtotal flex justify-between pb-4 mb-4">
                             <div class="rbb-account__order-detail-title font-semibold text-sm">
@@ -278,7 +277,6 @@ class OrderTrackingWooCommerce {
                         </div>
                     <?php endforeach; ?>
                 </div>
-            </section>
             <?php
         }
     }

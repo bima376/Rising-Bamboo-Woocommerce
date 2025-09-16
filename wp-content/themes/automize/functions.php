@@ -61,4 +61,3 @@ add_filter(
 		return $has_products;
 	}
 );
-

@@ -116,11 +116,13 @@ if ( $show_custom_field ) {
 	</div>
 	<div class="product_info w-full mt-4 mb-[7px]">
 		<div class="product-title">
-			<div class="title-category uppercase font-semibold pb-[9px]">
-				<a class="text-xs duration-300 !text-[#cdcdcd] hover:!text-[color:var(--rbb-general-secondary-color)]" href="<?php echo esc_url($category_link); ?>">
-					<?php echo wp_kses_post($category_name); ?>
-				</a>
-			</div>
+			<?php if ( $show_category ) { ?>
+				<div class="title-category uppercase font-semibold pb-[9px]">
+					<a class="text-xs duration-300 !text-[#cdcdcd] hover:!text-[color:var(--rbb-general-secondary-color)]" href="<?php echo esc_url($category_link); ?>">
+						<?php echo wp_kses_post($category_name); ?>
+					</a>
+				</div>
+			<?php } ?>
 			<a href="<?php echo esc_url($product->get_permalink()); ?>" class="product_name leading-6 block text-sm !font-semibold mb-3">
 				<span class="line-clamp-2"><?php echo wp_kses_post($product->get_name()); ?></span>
 			</a>
@@ -146,11 +148,13 @@ if ( $show_custom_field ) {
 		</div>
 		<div class="product-popup bg-white absolute inset-x-0 bottom-0 opacity-0">
 			<div class="product-title pt-5">
-				<div class="title-category uppercase font-semibold pb-[9px]">
-					<a class="text-xs duration-300 !text-[#cdcdcd] hover:!text-[color:var(--rbb-general-secondary-color)]" href="<?php echo esc_url($category_link); ?>">
-						<?php echo esc_html($category_name); ?>
-					</a>
-				</div>
+				<?php if ( $show_category ) { ?>
+					<div class="title-category uppercase font-semibold pb-[9px]">
+						<a class="text-xs duration-300 !text-[#cdcdcd] hover:!text-[color:var(--rbb-general-secondary-color)]" href="<?php echo esc_url($category_link); ?>">
+							<?php echo esc_html($category_name); ?>
+						</a>
+					</div>
+				<?php } ?>
 				<a href="<?php echo esc_url($product->get_permalink()); ?>" class="product_name leading-6 block text-sm !font-semibold mb-3">
 					<span class="line-clamp-2"><?php echo wp_kses_post($product->get_name()); ?></span>
 				</a>

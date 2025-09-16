@@ -1623,6 +1623,18 @@ RisingBambooKirki::add_field(
 		'priority'    => $priority_product_catalog++,
 	]
 );
+
+RisingBambooKirki::add_field(
+	RISING_BAMBOO_KIRKI_CONFIG,
+	[
+		'type'        => 'toggle',
+		'settings'    => RISING_BAMBOO_KIRKI_SECTION_WOOCOMMERCE_PRODUCT_CATALOG_PRODUCT_ITEM_SHOW_CATEGORY,
+		'label'       => esc_html__('Show Category', 'automize'),
+		'section'     => RISING_BAMBOO_KIRKI_SECTION_WOOCOMMERCE_PRODUCT_CATALOG,
+		'default'     => CustomizerHelper::get_default(RISING_BAMBOO_KIRKI_SECTION_WOOCOMMERCE_PRODUCT_CATALOG_PRODUCT_ITEM_SHOW_CATEGORY),
+		'priority'    => $priority_product_catalog++,
+	]
+);
 RisingBambooKirki::add_field(
 	RISING_BAMBOO_KIRKI_CONFIG,
 	[

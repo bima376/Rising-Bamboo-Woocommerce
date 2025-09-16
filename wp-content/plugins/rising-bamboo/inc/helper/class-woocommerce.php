@@ -80,19 +80,16 @@ class Woocommerce extends Singleton {
 			$args['category'] = $cat_slug;
 			$args['limit']    = $limit;
 		} elseif ( 'brand' === $by ) {
-			// Optimization: Use term_id directly instead of slug lookup
-			$brand_ids = array_map('intval', (array) $ids);
-			
-			// Limit number of brands to prevent heavy queries
-			$brand_ids = array_slice($brand_ids, 0, 5);
-			
+			$brands     = self::get_brands_by_ids($ids);
+			$brand_slug = [];
+			foreach ( $brands as $brand ) {
+				$brand_slug[] = $brand->slug;
+			}
 			$args['tax_query'] = [
 				[
-					'taxonomy'         => 'product_brand',
-					'field'            => 'term_id', // Use term_id for better performance
-					'terms'            => $brand_ids,
-					'include_children' => false,
-					'operator'         => 'IN', // Explicit operator
+					'taxonomy' => 'product_brand',
+					'field'    => 'slug',
+					'terms'    => $brand_slug,
 				],
 			];
 			$args['limit']     = $limit;
@@ -156,42 +153,15 @@ class Woocommerce extends Singleton {
 	 * @return int[]|string|string[]|\WP_Error|\WP_Term[]
 	 */
 	public static function get_brands_by_ids( $ids, string $oder_by = 'none', string $oder = 'ASC' ) {
-		// Create cache key based on parameters
-		$cache_key = 'rbb_brands_' . md5(serialize([$ids, $oder_by, $oder]));
-		
-		// Try to get from cache first
-		$cached_result = wp_cache_get($cache_key, 'rbb_brands');
-		if (false !== $cached_result) {
-			return $cached_result;
-		}
-		
-		// If not in cache, query database
-		$result = get_terms(
+		return get_terms(
 			[
 				'taxonomy' => 'product_brand',
 				'include'  => (array) $ids,
 				'orderby'  => $oder_by,
 				'order'    => $oder,
-				'hide_empty' => false, // Ensure no unnecessary filters
 			]
 		);
-		
-		// Save to cache for 1 hour
-		wp_cache_set($cache_key, $result, 'rbb_brands', HOUR_IN_SECONDS);
-		
-		return $result;
 	}
-
-	/**
-	 * Clear brand cache.
-	 *
-	 * @return void
-	 */
-	public static function clear_brand_cache(): void {
-		wp_cache_flush_group('rbb_brands');
-		wp_cache_flush_group('rbb_term_counts');
-	}
-
 
 	/**
 	 * Get attachment image.

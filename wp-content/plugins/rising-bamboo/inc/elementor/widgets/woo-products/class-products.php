@@ -409,6 +409,18 @@ class Products extends Base {
 		);
 
 		$this->add_control(
+			$this->get_name_setting('show_category'),
+			[
+				'label'        => __('Show Category', App::get_domain()),
+				'type'         => Controls_Manager::SWITCHER,
+				'label_on'     => esc_html__('Show', App::get_domain()),
+				'label_off'    => esc_html__('Hide', App::get_domain()),
+				'return_value' => 'yes',
+				'default'      => 'yes',
+			]
+		);
+
+		$this->add_control(
 			$this->get_name_setting('hide_out_of_stock'),
 			[
 				'label'        => __('Hide Out of Stock Products', App::get_domain()),
@@ -1383,6 +1395,7 @@ class Products extends Base {
 				'show_countdown'                 => $this->get_value_setting('show_countdown'),
 				'show_stock'                     => $this->get_value_setting('show_stock'),
 				'show_custom_field'              => $this->get_value_setting('show_custom_field'),
+				'show_category'                  => $this->get_value_setting('show_category'),
 				'custom_fields'                  => $this->get_value_setting('custom_fields'),
 				'custom_field_ignore'            => $this->get_custom_field_ignore(),
 				'hide_out_of_stock'              => $this->get_value_setting('hide_out_of_stock'),
@@ -1510,5 +1523,4 @@ class Products extends Base {
 			'woosw_remove',
 		];
 	}
-
 }

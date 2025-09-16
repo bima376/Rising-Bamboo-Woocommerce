@@ -266,15 +266,10 @@ class Woocommerce extends Singleton {
 		if ( ! is_admin() && is_main_query() && ( is_tax('product_cat') || is_post_type_archive('product') ) ) {
 			$chosen = RbbCoreWoocommerceHelper::get_chosen_term(Brands::TAXONOMY_NAME);
 			if ( $chosen ) {
-				// Limit number of brands that can be filtered to prevent heavy queries
-				$chosen = array_slice($chosen, 0, 5);
-				
 				$tax_query[] = [
 					'taxonomy'         => Brands::TAXONOMY_NAME,
-					'field'            => 'term_id', // Use term_id for better performance
-					'terms'            => array_map('intval', $chosen), // Ensure all are integers
+					'terms'            => $chosen,
 					'include_children' => false,
-					'operator'         => 'IN', // Explicit operator for better performance
 				];
 			}
 		}

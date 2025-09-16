@@ -137,11 +137,16 @@ if ( $show_custom_field ) {
 			</div>
 			<div class="product_info w-full">
 				<div class="product_info-bottom bg-white pt-4 md:px-0 px-3">
-					<div class="title-category uppercase font-semibold pb-[9px]">
-						<a class="text-xs duration-300 !text-[#cdcdcd] hover:!text-[color:var(--rbb-general-secondary-color)]" href="<?php echo esc_url($category_link); ?>">
-							<?php echo wp_kses_post($category_name); ?>
-						</a>
-					</div>
+					<?php 
+					$show_category = Setting::get(RISING_BAMBOO_KIRKI_SECTION_WOOCOMMERCE_PRODUCT_CATALOG_PRODUCT_ITEM_SHOW_CATEGORY);
+					if ( $show_category ) { 
+					?>
+						<div class="title-category uppercase font-semibold pb-[9px]">
+							<a class="text-xs duration-300 !text-[#cdcdcd] hover:!text-[color:var(--rbb-general-secondary-color)]" href="<?php echo esc_url($category_link); ?>">
+								<?php echo wp_kses_post($category_name); ?>
+							</a>
+						</div>
+					<?php } ?>
 					<?php if ( $show_wishlist ) { ?>
 						<div class="wishlist absolute hidden -md:top-2 top-2 right-5">
 							<?php echo Tag::wish_list_button($product); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>

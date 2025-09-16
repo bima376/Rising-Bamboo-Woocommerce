@@ -36,11 +36,6 @@ class Brands extends Singleton {
 			add_action('edit_term', [ $this, 'save_brands_fields' ], 10, 3);
 			add_action('admin_enqueue_scripts', [ $this, 'admin_scripts' ]);
 			add_filter('wp_terms_checklist_args', [ $this, 'checklist_args' ]);
-			
-			// Clear cache saat brand diupdate
-			add_action('created_' . self::TAXONOMY_NAME, [ $this, 'clear_brand_cache' ]);
-			add_action('edited_' . self::TAXONOMY_NAME, [ $this, 'clear_brand_cache' ]);
-			add_action('delete_' . self::TAXONOMY_NAME, [ $this, 'clear_brand_cache' ]);
 		}
 	}
 
@@ -239,15 +234,6 @@ class Brands extends Singleton {
 			$args['checked_ontop'] = false;
 		}
 		return $args;
-	}
-
-	/**
-	 * Clear brand cache.
-	 *
-	 * @return void
-	 */
-	public function clear_brand_cache(): void {
-		\RisingBambooCore\Helper\WoocommerceHelper::clear_brand_cache();
 	}
 }
 
